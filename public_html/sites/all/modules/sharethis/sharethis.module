@@ -18,8 +18,12 @@ function sharethis_help($path, $arg) {
   global $base_url;
   switch ($path) {
     case "admin/help#sharethis":
-      $return_value = "<p>" . t("This plugin places the ShareThis widget on each node.") . '</p><p>';
-      return $return_value . t('For various configuration options please got to') . ' <a href="' . $base_url . '/admin/config/sharethis">The Settings Page</a></p><p>' . t('For more information, please visit') . ' <a href="http://help.sharethis.com/integration/drupal">help.sharethis.com</a></p><br />';
+      $return_value = "<p>" . t("This plugin places the ShareThis widget on each node.") . '</p>';
+      $return_value .= "<p>" . t("You can also enable the included block module, to place it anywhere on your page.  The main differences are:") . '</p>';
+      $return_value .= "<ul><li>" . t("The Block pulls the URL from the current page and current Drupal title, the node version pulls it from the node title and url.") . '</li>';
+      $return_value .= "<li>" . t("The block can be placed anywhere on a page, the node is limited to where nodes normally go") . '</li>';
+      $return_value .= "<li>" . t("The block module is more likely to be compatible with other plugins that use blocks rather than nodes. (Panels works nicely with the block)") . '</li></ul>';
+      return $return_value . "<p>" . t('For various configuration options please got to') . ' <a href="' . $base_url . '/admin/config/sharethis">The Settings Page</a></p><p>' . t('For more information, please visit') . ' <a href="http://help.sharethis.com/integration/drupal">help.sharethis.com</a></p><br />';
       break;
   }
 } 
@@ -136,14 +140,13 @@ function sharethis_form($form, &$form_state) {
   );
   $form['options']['node_option'] = array(
     '#title' => t("Choose the node types you want to show the buttons on."),
-    '#required' => TRUE,
     '#type' => 'checkboxes',
     '#options' => $node_type_options,
     '#default_value' => $nodes_selected
   );
   $form['options']['publisherID'] = array(
     '#title' => t("Insert a publisher key (optional)."),
-    '#description' => t("If you don't have a publisher key, go to <a href='http://www.sharethis.com/account'>ShareThis</a> and get one.<br />It can be found under 'My Account'.<br />It allows you to get detailed analytics about sharing done on your site."),
+    '#description' => t("When you install the module, we create a random publisher key.  You can register the key with ShareThis by contacting customer support.  Otherwise, you can go to <a href='http://www.sharethis.com/account'>ShareThis</a> and create an account.<br />Your official publisher key can be found under 'My Account'.<br />It allows you to get detailed analytics about sharing done on your site."),
     '#type' => 'textfield',
     '#default_value' => $publisher
   );
@@ -197,7 +200,12 @@ function sharethis_form_submit($form, &$form_state) {
     }
     $record->st_value = substr($node_string, 0, -1); 
     drupal_write_record('st_table', $record, 'st_option');
-  }  
+  } else {
+    $record = (object) NULL;
+    $record->st_option = "nodeType";
+    $record->st_value = "";
+	drupal_write_record('st_table', $record, 'st_option');
+  }
   
   // Record the teaser option.
   if (isset($form_state['input']['teaser_option'])) {
@@ -266,7 +274,10 @@ function sharethis_menu() {
  *   Information about the language
  */
 function sharethis_node_view($node, $view_mode, $langcode) {
-
+  // Don't display if searched
+  if ($view_mode == 'search_result' || $view_mode == 'search_index') {
+    return;
+  }
   // First get all of the options for the sharethis widget from the database:
   $data_options = get_options_array();
   
@@ -285,6 +296,13 @@ function sharethis_node_view($node, $view_mode, $langcode) {
   else {
     $path_module = "/node/" . $node->nid;
   }
+
+  // Pathauto integration !
+  if (module_exists('pathauto')) {
+    $path_module ='/';
+    $path_module .= drupal_lookup_path('alias',"node/".$node->nid);
+  }
+
   global $base_url;
   // Get the full path to insert into the Share Buttons.
   $mPath = $base_url . $path_module;
@@ -296,36 +314,11 @@ function sharethis_node_view($node, $view_mode, $langcode) {
       // Do nothing.
     } 
     else {
-      // Create the code for chicklets.
-  
-      // The share buttons are simply spans of the form class='st_SERVICE_BUTTONTYPE' -- "st" stands for ShareThis.
-      $type = substr($data_options['buttons'], 4);
-      $type = $type == "_" ? "" : $type;
-      $service_array = explode(",", $data_options['services']);
-      $st_spans = "";
-      for ($i=0; $i<sizeof($service_array); $i++) {
-        // Strip the quotes from the element in the array (They are there for javascript)
-        $service = explode(":", $service_array[$i]);
-        $serviceCodeName = substr($service[1], 0, -1);
-        $display = "displaytext=";
-        $display .= $service[0] . "\"";
-        $display = ($type == "") ? "" : $display;
-        $st_spans .= "<span st_url=$mPath st_title='$mTitle' class='st_$serviceCodeName$type' $display></span>";
-      }
-  
-      // These are the ShareThis scripts:
-      // If switchTo5x is set to false, then the "classic" widget will be selected.
-      $is_five = $data_options['widget'] == 'st_multi' ? 'true' : 'false';
-      $publisher_id = $data_options['publisherID'];
-      $st_js = "<script type='text/javascript'>var switchTo5x=$is_five;</script>
-        <script type='text/javascript' src='http://w.sharethis.com/button/buttons.js'></script>
-        <script type='text/javascript'>stLight.options({publisher:'$publisher_id'});</script>";
-
       // This puts the buttons on the node and adds the necessary scripts.
       // You can change the weight to change whether the buttons are near the top or bottom of the node.
       // Default is at the bottom:
       $node->content['my_additional_field'] = array(
-        '#markup' => $st_spans . $st_js, 
+        '#markup' => get_button_HTML($data_options, $mPath, $mTitle), 
         '#weight' => 10
       );
     }
@@ -345,6 +338,35 @@ function get_options_array() {
     $data_options[$record->st_option] = $record->st_value;
   }
   return $data_options;
+}
+
+ /**
+  * get_button_HTML is the function that creates the ShareThis code
+  * It returns the appropriate html based on your settings.
+  */
+function get_button_HTML($data_options, $mPath, $mTitle) {
+  // The share buttons are simply spans of the form class='st_SERVICE_BUTTONTYPE' -- "st" stands for ShareThis.
+  $type = substr($data_options['buttons'], 4);
+  $type = $type == "_" ? "" : $type;
+  $service_array = explode(",", $data_options['services']);
+  $st_spans = "";
+  for ($i=0; $i<sizeof($service_array); $i++) {
+    // Strip the quotes from the element in the array (They are there for javascript)
+    $service = explode(":", $service_array[$i]);
+    $serviceCodeName = substr($service[1], 0, -1);
+    $display = "displaytext=";
+    $display .= $service[0] . "\"";
+    $display = ($type == "") ? "" : $display;
+    $st_spans .= "<span st_url=$mPath st_title='$mTitle' class='st_$serviceCodeName$type' $display></span>";
+  }
+  // These are the ShareThis scripts:
+  // If switchTo5x is set to false, then the "classic" widget will be selected.
+  $is_five = $data_options['widget'] == 'st_multi' ? 'true' : 'false';
+  $publisher_id = $data_options['publisherID'];
+  $st_js = "<script type='text/javascript'>var switchTo5x=$is_five;</script>
+    <script type='text/javascript' src='http://w.sharethis.com/button/buttons.js'></script>
+    <script type='text/javascript'>stLight.options({publisher:'$publisher_id'});</script>";
+  return $st_spans . $st_js;
 }
 
  /**

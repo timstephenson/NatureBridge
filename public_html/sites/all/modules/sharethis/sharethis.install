@@ -34,7 +34,7 @@ function sharethis_install() {
   
   $record = (object) NULL;
   $record->st_option = 'publisherID';
-  $record->st_value = '';
+  $record->st_value = create_default_publisher_key();
   drupal_write_record('st_table', $record);
 }
 
@@ -66,4 +66,17 @@ function sharethis_schema() {
     'primary key' => array('st_option'),
   );
   return $schema;
+}
+
+function create_default_publisher_key() {
+	$pubkey = "dr-";
+	$pubkey .= dechex(mt_rand( 0, 0xffff ));
+	$pubkey .= dechex(mt_rand( 0, 0xffff )) . "-";
+	$pubkey .= dechex(mt_rand( 0, 0xffff )) . "-";
+	$pubkey .= dechex(mt_rand( 0, 0xffff )) . "-";
+	$pubkey .= dechex(mt_rand( 0, 0xffff )) . "-";
+	$pubkey .= dechex(mt_rand( 0, 0xffff ));
+	$pubkey .= dechex(mt_rand( 0, 0xffff ));
+	$pubkey .= dechex(mt_rand( 0, 0xffff ));
+	return $pubkey;
 }

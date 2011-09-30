@@ -1,8 +1,8 @@
-name = ShareThis
-description = This module adds the <a href="http://sharethis.com/">ShareThis</a> widget to a node on your site.
+name = ShareThis Block
+description = This module creates a custom block for the <a href="http://sharethis.com/">ShareThis</a> widget.
 core = 7.x
 package = Sharing
-configure = admin/config/sharethis
+dependencies[] = sharethis
 ; Information added by drupal.org packaging script on 2011-09-28
 version = "7.x-2.2"
 core = "7.x"

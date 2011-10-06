@@ -24,8 +24,7 @@ ul li.collapsed {
   list-style-type: disc;
 }
 ul li.leaf {
-  list-style-image: url(../../misc/menu-leaf.png);
-  list-style-type: square;
+    
 }
 li.expanded,
 li.collapsed,
@@ -34,7 +33,7 @@ li.leaf {
   margin: 0;
 }
 li a.active {
-  color: #000;
+  color: #007239;
 }
 td.menu-disabled {
   background: #ccc;

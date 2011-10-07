@@ -219,7 +219,7 @@ ol ol, ol ul,
 
 li {
   margin: 0;
-  padding: 0;
+  padding: 2px, 0, 0, 5px;
 }
 
 .item-list ul li,
@@ -388,9 +388,13 @@ button {
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
 a:link {
+    color: #007239;
+    text-decoration: none !important;
 }
 
 a:visited {
+    color: #007239;
+
 }
 
 a:hover,

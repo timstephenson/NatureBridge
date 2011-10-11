@@ -47,7 +47,7 @@ li a.active {
     width: 670px;
 }
 
-.menu-536 {
+.menu-613 {
     width: 110px;
     height: 42px;
     font-size: 1.2em;
@@ -101,7 +101,7 @@ li a.active {
     border-right: 1px solid #d5d3ce;
 }
 
-.menu-605 {
+.menu-615 {
     position:relative;
     top:19px;
     right:1px;
@@ -109,42 +109,108 @@ li a.active {
     z-index: 9;
 }
 
-.menu-604 {
+.menu-614 {
     position:relative;
     top:19px;
     right:1px;
 }
 
-.menu-606 {
+.menu-616 {
     position:relative;
     top:19px;
     right:1px;
 }
 
-.menu-607 {
+.menu-617 {
     position:relative;
     top:-50px;
     right:-143px;
     
 }
 
-.menu-608 {
+.menu-617 {
     position:relative;
     top:-50px;
     right:-143px;
 }
 
-.menu-609 {
-    position:relative;
-    top:-50px;
-    right:-143px;
+.menu-556 {
+    width: 110px;
+    height: 23px;
+    font-size: 1.2em;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    color: #007239;
+    border-left: 1px solid #d5d3ce;}
+
 }
 
-.menu-610 {
-    position:relative;
-    top:-119px;
-    right:-286px;
+.menu-618 {
+    width: 110px;
+    height: 23px;
+    font-size: 1.2em;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    color: #007239;
+    border-left: 1px solid #d5d3ce;
+
 }
+
+#block-nice-menus-2 {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    height: 23px;
+    font-size: 1.2em;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    z-index: 8;
+
+}
+
+.menu-624 {
+    width: 110px;
+    height: 23px;
+    position: relative;
+    top: 52px;
+    right: 223px;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    border-left: 1px solid #d5d3ce;
+    
+}
+
+.menu-625 {
+    width: 110px;
+    height: 23px;
+    position: relative;
+    top: 52px;
+    right: 223px;
+    color: #fff;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    background: url(../images/donorbutton.png);    
+}
+
+.menu-625 a {
+    color: #fff !important;
+}
+
+.menu-626 {
+    position:relative;
+    top:19px;
+    right:1px;
+}
+
+.menu-627 {
+    position:relative;
+    top:19px;
+    right:1px;
+}
+
+.menu-628 {
+    position:relative;
+    top:19px;
+    right:1px;
+}
+
+
+
 
 #secondary-menu {
   float: left;

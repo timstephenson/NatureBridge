@@ -61,6 +61,10 @@
 .field-type-user-reference {
 }
 
+.field-type-image-smallimage {
+    position: absolute;
+    top: 30;
+}
 
 /*
  * Named fields

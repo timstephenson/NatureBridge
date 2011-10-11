@@ -13,28 +13,35 @@
 body {
     background: url(../images/backgroundgradient.png);
     background-repeat: repeat;
+
 }
 
 #page-wrapper {
-    background-color: #ffffff;
+    background: #ffffff;
 
 }
 
 #page {
+
+    
 }
 
 #header {
+    
 }
 
 #header .section {
+  
 }
 
 #main-wrapper {
-
+    
 }
 
 #main {
+
 }
 
 .region-footer {
+
 }

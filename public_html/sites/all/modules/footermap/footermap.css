@@ -1,0 +1,41 @@
+
+div.footermap 
+{
+  height: 100%;
+  display: inline;
+  margin: 0 auto;
+  width: 600px;
+}
+
+div.footermap-col
+{
+    padding-left: 50px;
+    padding-top: 50px;
+    -moz-column-count: 6;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 6;
+    -webkit-column-gap:20px;
+    -webkit-column-width:100px;
+    column-count: 6;
+    column-gap: 20px;
+    float: left;
+    height: 100px;
+    margin-bottom: 0px;
+    margin-left: -30px;
+    margin-right: 0px;
+    margin-top: 0px;
+    text-align: left;
+    color: #fff !important;
+}
+
+ul.footermap-item {
+  margin: 0;
+  padding: 0;
+}
+
+ul.footermap-item li {
+  list-style-type: none;
+  margin: 0 0 5px;
+  padding: 0px;
+  display: block;
+}

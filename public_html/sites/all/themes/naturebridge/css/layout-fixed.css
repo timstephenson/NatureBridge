@@ -73,9 +73,9 @@ body {
 #content,
 .no-sidebars #content {
   float: left; /* LTR */
-  width: 940px;
+  width:   1000px;
   margin-left: 0; /* LTR */
-  margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
+  margin-right: 0px; /* LTR */ /* Negative value of #content's width + left margin. */
   padding: 0; /* DO NOT CHANGE. Add padding or margin to #content .section. */
 }
 
@@ -181,6 +181,7 @@ body {
 .region-bottom {
   overflow: visible;
   word-wrap: break-word; /* A very nice CSS3 property */
+
 }
 
 /*

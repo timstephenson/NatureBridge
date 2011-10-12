@@ -142,56 +142,61 @@ h4, h5 {
 
 /* Headings */
 h1 {
-  font-size: 2em;
-  line-height: 1.5em;
-  margin: 0.75em 0;
+    font-size: 2.4em;
+    line-height: 1.2em;
+    margin: 0.75em 0;
   /* 0.75em is equivalent to 1.5em in the page's base font. font. Remember, a
      margin specified in ems is relative to the element's font-size, not to the
      pages' base font size. So, for example, if we want a 1.5em margin (relative
      to the base font), we have to divide that length by the element's
      font-size:  1.5em / 2em = 0.5em  */
+    font-weight: normal;
 }
 
 h2 {
-  font-size: 1.8em;
+    font-size: 2.4em;
     line-height: 1.2em;
-  margin: 0 0 0 0; /* Equivalent to 1.5em in the page's base font: 1.5 / 1.5 = 1em */
+    margin: 0 0 0 0; /* Equivalent to 1.5em in the page's base font: 1.5 / 1.5 = 1em */
     font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
     color: #746d5d;
+    font-weight: normal;    
     
 }
 
 h3 {
   
-  font-size: 1em;
-  margin: 1em 0 -1em 0; /*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
-
+    font-size: 1.8em;
+    margin: 1em 0 -1em 0; /*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
     color: #746d5d;
     weight: strong;
-
+    font-weight: normal;
 }
 
-h6 {
-  font-size: 1.1em;
-  margin: 0; /* Equivalent to 1.5em in the page's base font: 1.5 / 1.1 = 1.364 */
-    color: #6da838;
-}
 
 h4 {
     font-size: 1.6em;
-    line-height: 1em;
+    line-height: 1.2em;
     margin: 0;
     font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
-    color: #007239;
+    color: #746d5d;
+    font-weight: normal;
 }
 
 h5 {
-    font-size: 1em;
+    font-size: 1.4em;
     line-height: 1.4em;
     margin: 0 0 20px 0;
-    color: #007239;
+    color: #746d5d;
+    font-weight: normal;
 }
 
+
+h6 {
+    font-size: 1.2em;
+    margin: 0; /* Equivalent to 1.5em in the page's base font: 1.5 / 1.1 = 1.364 */
+    color: #6da838;
+    font-weight: normal;
+}
 
 /* Other block-level elements */
 p {
@@ -258,7 +263,7 @@ li.last {
     /*border-bottom: 1px solid #d5d3ce !important;*/
 }
 
-ul          { list-style-type: disc; }
+ul          { list-style-type: disc; margin: 0px;}
 ul ul       { list-style-type: circle; }
 ul ul ul    { list-style-type: square; }
 ul ul ul ul { list-style-type: circle; }
@@ -286,82 +291,88 @@ dd {
     color: #007239;
     font-size: 1.6em;
     line-height: 1em;
+    vertical-align: top;
+}
+
+.panels-flexible-region-middle {
+    width: 940px;
+    position: relative;
+    top: 20px;
+    left: 30px;
 }
 
 .panels-flexible-region-leftc {
-    padding: 0 10px 0 0;
+
 }
 
 .panels-flexible-region-centerc {
-    padding: 10px 10px 10px 0;
+    position: relative;
+    left: 20px;
 }
 
 .panels-flexible-region-rightc {
-    padding: 15px 0px 0 10px;
+    position: relative;
+    left: 40px;
 }
 
 .panels-flexible-region-top {
-    padding: 0 30px 0 30px;
-    background: url(../images/topbackground.png);
+    background: url(../images/smallbackground.png);
     background-repeat: no-repeat;
-    background-position-x: 30px;
-    width: 940px;
+    background-position: center;
+    width: 1000px;
     height: 220px;
+    padding-left: 0px;
 }
 
 .panels-flexible-region-topb {
-    
-    padding: 0 30px 0 30px;
-    background: url(../images/topbbackground.png);
+    background: url(../images/tallbackground.png);
     background-repeat: no-repeat;
-    background-position-x: 30px;
-    width: 940px;
-    height: 379px;
-    
-    
+    background-position: top center;
+    height: 378px;
+    width: 1000px;
 }
 
 .panels-flexible-region-contentb {
-    padding-left: 40px;
-
+    vertical-align: top;
+    position: relative;
+    left: 50px;
+    top: -20px;
 }
-
 
 .panels-flexible-region-middle {
-    
-    padding: 0 30px 0 30px;
     width: 940px;
-    
+    position: relative;
+    top: 30px;
 }
 
-
 .panels-flexible-region-bottomcontent {
-    
     background: url(../images/bottomcontent.png);
     background-repeat: no-repeat;
     width: 1000px;
     height: 85px;
-    padding: 0;
-    
+    margin-top: 40px;
+
 }
 
 .panels-flexible-region-footer {
-    
     background: url(../images/backgroundfooter.png);
     background-repeat: no-repeat;
     width: 1000px;
     height: 252px;
-    padding: 0;
-    
+
 }
 
 #partnerspotlight {
-   padding: 15px 0px 0 0px;
+
 }
 
 #bottomcornerspotlight {
     width: 220;
-    }
+}
+
+.removepadding {
+    padding: 0;
+}
 
 #titletemplatec {
     font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
@@ -369,7 +380,10 @@ dd {
     color: #ffffff;
     font-size: 2.4em;
     line-height: 1.2em;
-    padding: 30px 0 0 20px;
+    position: relative;
+    top: 30px;
+    left: 60px;
+    width: 350;
 }
 
 #beneathtitle {
@@ -378,24 +392,52 @@ dd {
     color: #ffffff;
     font-size: 1.8em;
     line-height: 1.2em;
-    padding: 40px 0 0 20px;
+    position: relative;
+    top: 80px;
+    left: 60px;
 }
 
 #headerimage {
-    padding: 30px 0 0 0;
+    position: relative;
+    top: 30px;
+    right: 25px;
+    width: 560px;
+    height: 190px;
 }
 
 #headerimageb {
-    padding: 31px 0 0 13px;
+    position: relative;
+    top: 30px;
+    left: 73px
 }
 
-.image-border {
-    border:5px solid red;
+#headerimageaboutus {
+    position: relative;
+    top: 30px;
+    left: -27px
+}
+
+
+#headerimageba {
+    position: relative;
+    top: 30px;
+    left: 88px
 }
 
 #bottomrow {
     padding: 20px 0 0 0;
 }
+
+.panels-flexible-region-inside {
+    padding: 0;
+}
+
+.panels-flexible-row {
+    float: none;
+    padding: 0;
+    width: auto;
+}
+
 
 /*
  * Tables

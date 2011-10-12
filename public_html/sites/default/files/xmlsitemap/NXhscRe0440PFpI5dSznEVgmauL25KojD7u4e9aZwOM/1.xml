@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/?q=sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<<<<<<< HEAD
 <url><loc>http://nb.raddhq.com/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
 <url><loc>http://nb.raddhq.com/?q=howweteach</loc></url>
 <url><loc>http://nb.raddhq.com/?q=about</loc><lastmod>2011-10-11T23:18Z</lastmod><changefreq>hourly</changefreq></url>
@@ -16,4 +17,21 @@
 <url><loc>http://nb.raddhq.com/?q=templatec/2</loc></url>
 <url><loc>http://nb.raddhq.com/?q=templatec/3</loc></url>
 <url><loc>http://nb.raddhq.com/?q=templatec/4</loc></url>
+=======
+<url><loc>http://localhost:8888/naturebridge/public_html/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>http://localhost:8888/naturebridge/public_html/?q=howweteach</loc></url>
+<url><loc>http://localhost:8888/naturebridge/public_html/?q=about</loc><lastmod>2011-10-12T18:37Z</lastmod><changefreq>hourly</changefreq></url>
+<url><loc>http://localhost:8888/naturebridge/public_html/?q=node/6</loc></url>
+<url><loc>http://localhost:8888/naturebridge/public_html/?q=taxonomy/term/2</loc></url>
+<url><loc>http://localhost:8888/naturebridge/public_html/?q=taxonomy/term/3</loc></url>
+<url><loc>http://localhost:8888/naturebridge/public_html/?q=templateb/5</loc></url>
+<url><loc>http://localhost:8888/naturebridge/public_html/?q=templateba/10</loc></url>
+<url><loc>http://localhost:8888/naturebridge/public_html/?q=templateba/6</loc></url>
+<url><loc>http://localhost:8888/naturebridge/public_html/?q=templateba/7</loc></url>
+<url><loc>http://localhost:8888/naturebridge/public_html/?q=templateba/8</loc></url>
+<url><loc>http://localhost:8888/naturebridge/public_html/?q=templateba/9</loc></url>
+<url><loc>http://localhost:8888/naturebridge/public_html/?q=templatec/2</loc></url>
+<url><loc>http://localhost:8888/naturebridge/public_html/?q=templatec/3</loc></url>
+<url><loc>http://localhost:8888/naturebridge/public_html/?q=templatec/4</loc></url>
+>>>>>>> Commit before attempting mysql sync
 </urlset>

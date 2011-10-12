@@ -10,7 +10,8 @@
 ul.menu {
   border: none;
   list-style: none;
-  text-align: left; /* LTR */
+  text-align: left;
+    padding-top: 0;/* LTR */
 }
 ul.menu li {
   margin: 0 0 0 0.5em; /* LTR */

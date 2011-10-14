@@ -73,6 +73,7 @@ li a.active {
     color: #007239;
     border-left: 1px solid #d5d3ce;}
 
+
 .menu-598 {
     width: 110px;
     height: 42px;
@@ -91,7 +92,7 @@ li a.active {
     border-left: 1px solid #d5d3ce;
 }
 
-.menu-600 {
+.menu-669 {
     width: 110px;
     height: 42px;
     font-size: 1.2em;
@@ -198,19 +199,63 @@ li a.active {
 }
 
 .menu-627 {
-    position:relative;
+    /*position:relative;
     top:19px;
-    right:1px;
+    right:1px;*/
 }
 
 .menu-628 {
-    position:relative;
+    /*position:relative;
     top:19px;
-    right:1px;
+    right:1px;*/
 }
 
+.menu-673 {
+    width: 110px;
+    height: 40px;
+    font-size: 1.2em;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    color: #007239;
+    background-color: grey;
+    border-left: 1px solid #d5d3ce;
+}
 
+.menu-671 {
+    width: 110px;
+    height: 40px;
+    font-size: 1.2em;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    color: #007239;
+    border-left: 1px solid #d5d3ce;
+}
 
+.menu-672 {
+    width: 110px;
+    height: 40px;
+    font-size: 1.2em;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    color: #007239;
+    border-left: 1px solid #d5d3ce;
+}
+
+.menu-670 {
+    width: 110px;
+    height: 40px;
+    font-size: 1.2em;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    color: #007239;
+    border-left: 1px solid #d5d3ce;
+}
+
+#nice-menu-3 {
+    float: left;
+    background-color: #aca79e;
+    position: absolute;
+    height: 40px;
+    top: 0px;
+    right: 516px;
+    color: #fff;
+}
 
 #secondary-menu {
   float: left;

@@ -41,82 +41,99 @@
   padding-bottom: 0;
 }
 
-.panels-flexible-column-10-main {
+.panels-flexible-column-11-main {
   float: left;
   width: 99.0000%;
 }
 
-.panels-flexible-10-inside {
+.panels-flexible-11-inside {
   padding-right: 0px;
 }
 
-.panels-flexible-10 {
+.panels-flexible-11 {
   width: auto;
 }
 
-.panels-flexible-region-10-left_column {
+.panels-flexible-region-11-left_column_ {
   position: relative;
   float: left;
   background-color: transparent;
-  width: 182px;
+  width: 892px;
 }
 
-.panels-flexible-region-10-right_column {
+.panels-flexible-row-11-5-inside {
+  padding-left: 892px;
+  margin-left: -892px;
+  padding-right: 0px;
+}
+
+* html .panels-flexible-row-11-5-inside {
+  left: 892px;
+}
+
+.panels-flexible-region-11-left {
   position: relative;
   float: left;
   background-color: transparent;
   width: 700px;
 }
 
-.panels-flexible-row-10-1-inside {
-  padding-left: 882px;
-  margin-left: -882px;
-  padding-right: 0px;
-}
-
-* html .panels-flexible-row-10-1-inside {
-  left: 882px;
-}
-
-.panels-flexible-region-10-left {
+.panels-flexible-region-11-content_right {
   position: relative;
   float: left;
   background-color: transparent;
   width: 192px;
 }
 
-.panels-flexible-region-10-content_right {
-  position: relative;
-  float: left;
-  background-color: transparent;
-  width: 700px;
-}
-
-.panels-flexible-row-10-main-row-inside {
+.panels-flexible-row-11-main-row-inside {
   padding-left: 892px;
   margin-left: -892px;
   padding-right: 0px;
 }
 
-* html .panels-flexible-row-10-main-row-inside {
+* html .panels-flexible-row-11-main-row-inside {
   left: 892px;
 }
 
-.panels-flexible-region-10-bottom_content {
+.panels-flexible-region-11-left_column {
+  position: relative;
   float: left;
-  width: 99.0000%;
+  background-color: transparent;
+  width: 620.5px;
 }
 
-.panels-flexible-row-10-2-inside {
+.panels-flexible-region-11-left_content {
+  position: relative;
+  float: left;
+  background-color: transparent;
+  width: 272px;
+}
+
+.panels-flexible-row-11-2-inside {
+  padding-left: 892.5px;
+  margin-left: -892.5px;
   padding-right: 0px;
 }
 
-.panels-flexible-region-10-footer {
+* html .panels-flexible-row-11-2-inside {
+  left: 892.5px;
+}
+
+.panels-flexible-region-11-footer {
   float: left;
   width: 99.0000%;
 }
 
-.panels-flexible-row-10-3-inside {
+.panels-flexible-row-11-3-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-region-11-new_bottom {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-11-4-inside {
   padding-right: 0px;
 }
 

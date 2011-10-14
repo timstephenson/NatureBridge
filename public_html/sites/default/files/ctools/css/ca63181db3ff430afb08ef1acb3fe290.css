@@ -41,83 +41,100 @@
   padding-bottom: 0;
 }
 
-.panels-flexible-column-2-main {
+.panels-flexible-column-12-main {
   float: left;
   width: 99.0000%;
 }
 
-.panels-flexible-2-inside {
+.panels-flexible-12-inside {
   padding-right: 0px;
 }
 
-.panels-flexible-2 {
+.panels-flexible-12 {
   width: auto;
 }
 
-.panels-flexible-region-2-right_column {
-  float: left;
-  width: 561px;
-}
-
-.panels-flexible-region-2-title_column {
+.panels-flexible-region-12-green_top_bar {
   float: left;
   width: 99.0000%;
 }
 
-.panels-flexible-row-2-1-middle {
-  margin-right: 561px;
-}
-
-.panels-flexible-row-2-1-inside {
+.panels-flexible-row-12-5-inside {
   padding-right: 0px;
 }
 
-.panels-flexible-region-2-left_column {
+.panels-flexible-region-12-grey_bottom_bar {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-12-4-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-region-12-left_region {
+  position: relative;
+  float: left;
+  background-color: transparent;
+  width: 704px;
+}
+
+.panels-flexible-region-12-right_regiona {
   position: relative;
   float: left;
   background-color: transparent;
   width: 220px;
 }
 
-.panels-flexible-region-2-center {
-  position: relative;
-  float: left;
-  background-color: transparent;
-  width: 540px;
-}
-
-.panels-flexible-region-2-right_rail {
-  position: relative;
-  float: left;
-  background-color: transparent;
-  width: 140px;
-}
-
-.panels-flexible-row-2-main-row-inside {
-  padding-left: 900px;
-  margin-left: -900px;
+.panels-flexible-row-12-1-inside {
+  padding-left: 924px;
+  margin-left: -924px;
   padding-right: 0px;
 }
 
-* html .panels-flexible-row-2-main-row-inside {
-  left: 900px;
+* html .panels-flexible-row-12-1-inside {
+  left: 924px;
 }
 
-.panels-flexible-region-2-bottom_content {
+.panels-flexible-region-12-center {
+  position: relative;
+  float: left;
+  background-color: transparent;
+  width: 592px;
+}
+
+.panels-flexible-region-12-right_rail {
+  position: relative;
+  float: left;
+  background-color: transparent;
+  width: 300px;
+}
+
+.panels-flexible-row-12-main-row-inside {
+  padding-left: 892px;
+  margin-left: -892px;
+  padding-right: 0px;
+}
+
+* html .panels-flexible-row-12-main-row-inside {
+  left: 892px;
+}
+
+.panels-flexible-region-12-bottom_content {
   float: left;
   width: 99.0000%;
 }
 
-.panels-flexible-row-2-2-inside {
+.panels-flexible-row-12-2-inside {
   padding-right: 0px;
 }
 
-.panels-flexible-region-2-footer {
+.panels-flexible-region-12-footer {
   float: left;
   width: 99.0000%;
 }
 
-.panels-flexible-row-2-3-inside {
+.panels-flexible-row-12-3-inside {
   padding-right: 0px;
 }
 

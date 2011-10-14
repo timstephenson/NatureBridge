@@ -186,7 +186,7 @@ h5 {
     font-size: 1.4em;
     line-height: 1.4em;
     margin: 0 0 20px 0;
-    color: #746d5d;
+    color: #ffffff;
     font-weight: normal;
 }
 
@@ -302,7 +302,8 @@ dd {
 }
 
 .panels-flexible-region-leftc {
-
+    position: relative;
+    left: 20px;
 }
 
 .panels-flexible-region-centerc {
@@ -332,11 +333,35 @@ dd {
     width: 1000px;
 }
 
+.panels-flexible-region-topnews {
+    background: url(../images/newsheader.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 60px;
+    width: 940px;
+}
+
+.panels-flexible-region-topnewsgreybar {
+    background: url(../images/greynewsbar.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 40px;
+    width: 940px;
+}
+
 .panels-flexible-region-contentb {
     vertical-align: top;
     position: relative;
     left: 50px;
-    top: -20px;
+    top: 0px;
+}
+
+.panels-flexible-region-centerpics {
+    vertical-align: top;
+    position: relative;
+    left: 53px;
+    top: 0px;
+
 }
 
 .panels-flexible-region-middle {
@@ -378,23 +403,54 @@ dd {
     font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
     margin: 0;
     color: #ffffff;
-    font-size: 2.4em;
-    line-height: 1.2em;
-    position: relative;
-    top: 30px;
-    left: 60px;
-    width: 350;
+    position: absolute;
+    top: 10px;
+    left: 45px;
+    width: 350px;
+    height: 110px;
+}
+
+#titlenews {
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    margin: 0;
+    color: #ffffff;
+    position: absolute;
+    top: 0px;
+    left: 45px;
+    width: 350px;
+    height: 110px;
 }
 
 #beneathtitle {
     font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
     margin: 0;
     color: #ffffff;
-    font-size: 1.8em;
-    line-height: 1.2em;
-    position: relative;
-    top: 80px;
+    position: absolute;
+    top: 125px;
+    left: 45px;
+    width: 350px;
+    height: 110px;
+}
+
+#titletemplateb {
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    margin: 0;
+    color: #ffffff;
+    position: absolute;
+    top: 10px;
     left: 60px;
+    width: 200px;
+}
+
+#beneathtitleb {
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    margin: 0;
+    color: #ffffff;
+    position: absolute;
+    top: 140px;
+    left: 60px;
+    width: 190px;
+    
 }
 
 #headerimage {
@@ -411,7 +467,7 @@ dd {
     left: 73px
 }
 
-#headerimageaboutus {
+#headerimagelarge {
     position: relative;
     top: 30px;
     left: -27px
@@ -438,6 +494,42 @@ dd {
     width: auto;
 }
 
+.panels-flexible-region-middle img {
+    padding-top: 20px;
+    border: 1px solid #c8c5be;
+    padding: 4px;
+}
+
+.panels-flexible-region-middle:hover img
+.views-row:hover img {
+    outline: 3px solid #6da838;
+}
+
+.pane-template-b-content-panel-pane-12 {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #c8c5be;
+}
+
+/*.view-display-id-panel_pane_9 img:hover
+.view-display-id-panel_pane_9 img:focus {
+    outline: 3px solid #6da838;
+}*/
+
+/*.border {
+    border: 1px solid #c8c5be;
+    padding: 2px;
+}
+
+.border:hover,
+.border:focus {
+    outline: 3px solid #6da838;
+}*/
+
+/*.field-type-image {
+    border: 1px solid #c8c5be;
+    padding: 2px;
+}*/
+    
 
 /*
  * Tables
@@ -481,7 +573,7 @@ tr {
 }
 
 .row-2 {
-    padding: 10px 0 0 0;
+    padding: 20px 0 0 0;
 }
 
 
@@ -491,16 +583,17 @@ td {
 }
 
 .col-1 {
-    padding: 20px 10px 0 0;
+    padding: 0px 10px 0 0;
 }
 
 .col-2 {
-    padding: 20px 10px 0 10px;
+    padding: 0px 10px 0 10px;
 }
 
 .col-3 {
-    padding: 20px 0px 0 10px;
+    padding: 0px 0px 0 10px;
 }
+
 
 
 

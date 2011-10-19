@@ -75,7 +75,7 @@ body {
   float: left; /* LTR */
   width:   1000px;
   margin-left: 0; /* LTR */
-  margin-right: 0px; /* LTR */ /* Negative value of #content's width + left margin. */
+  margin-right: -1000px; /* LTR */ /* Negative value of #content's width + left margin. */
   padding: 0; /* DO NOT CHANGE. Add padding or margin to #content .section. */
 }
 

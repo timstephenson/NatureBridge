@@ -123,7 +123,7 @@ ul.nice-menu-down li {
 
 ul.nice-menu-down li li {
     /*border-top: 0;*/
-    background: #ccc;
+    background: #aca79e;
     
 }
 
@@ -149,7 +149,7 @@ ul.nice-menu-down li.menuparent {
 }
 
 ul.nice-menu-down li.menuparent:hover {
-  background: #ccc right center no-repeat; /* LTR */
+  background: #aca79e right center no-repeat; /* LTR */
 }
 
 ul.nice-menu-down li li.menuparent {

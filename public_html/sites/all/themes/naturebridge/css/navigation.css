@@ -47,6 +47,737 @@ li a.active {
     width: 670px;
 }
 
+/*
+ *Main Menu styling with horizontal images...
+ */
+
+/*National Parks Menu*/
+ul.nice-menu li.menu-629,
+ul.nice-menu li.menu-629 a:link,
+ul.nice-menu li.menu-629 a:visited {
+    background-image: url(../images/yosemiteoffwords.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    /*padding: 20px 0 0 10px;*/
+    height: 78px;
+    width: 221px;
+}
+
+ul.nice-menu li.menu-629 a {
+    padding: 55px 0 0 120px;
+    color: #fff;
+}
+
+ul.nice-menu li.menu-629 a:hover,
+ul.nice-menu li.menu-629 a:active {
+    background-image: url(../images/yosemiteonwords.png);
+}
+
+.menu-path-templateba-6 {
+    position: relative;
+    right: 444px;
+    top: 2px;
+}
+
+ul.nice-menu li.menu-631,
+ul.nice-menu li.menu-631 a:link,
+ul.nice-menu li.menu-631 a:visited {
+    background-image: url(../images/goldengateoff.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    /*padding: 20px 0 0 10px;*/
+    height: 78px;
+    width: 112px;
+}
+
+ul.nice-menu li.menu-631 a {
+    padding: 55px 0 0 10px;
+    color: #fff;
+}
+
+ul.nice-menu li.menu-631 a:hover,
+ul.nice-menu li.menu-631 a:active {
+    background-image: url(../images/goldengateon.png);
+}
+
+.menu-path-templateba-7 {
+    position: relative;
+    right: 332px;
+    top: -76px;
+}
+
+ul.nice-menu li.menu-632,
+ul.nice-menu li.menu-632 a:link,
+ul.nice-menu li.menu-632 a:visited {
+    background-image: url(../images/olympicoff.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    /*padding: 20px 0 0 10px;*/
+    height: 78px;
+    width: 112px;
+}
+
+ul.nice-menu li.menu-632 a {
+    padding: 55px 0 0 10px;
+    color: #fff;
+}
+
+ul.nice-menu li.menu-632 a:hover,
+ul.nice-menu li.menu-632 a:active {
+    background-image: url(../images/olympicon.png);
+}
+
+.menu-path-templateba-8 {
+    position: relative;
+    right: 221px;
+    top: -154px;
+}
+
+ul.nice-menu li.menu-633,
+ul.nice-menu li.menu-633 a:link,
+ul.nice-menu li.menu-633 a:visited {
+    background-image: url(../images/santamonicaoff.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+     height: 78px;
+    width: 112px;
+}
+
+ul.nice-menu li.menu-633 a {
+    padding: 40px 0 0 10px;
+    color: #fff
+}
+
+ul.nice-menu li.menu-633 a:hover,
+ul.nice-menu li.menu-633 a:active {
+    background-image: url(../images/santamonicaon.png);
+}
+
+.menu-path-templateba-9 {
+    position: relative;
+    right: 111px;
+    top: -232px;
+}
+
+ul.nice-menu li.menu-634,
+ul.nice-menu li.menu-634 a:link,
+ul.nice-menu li.menu-634 a:visited {
+    background-image: url(../images/channeloff.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    height: 78px;
+    width: 112px;
+}
+
+ul.nice-menu li.menu-634 a {
+    padding: 55px 0 0 10px;
+    color: #fff
+}
+
+ul.nice-menu li.menu-634 a:hover,
+ul.nice-menu li.menu-634 a:active {
+    background-image: url(../images/channelon.png);
+}
+
+.menu-path-templateba-10 {
+    position: relative;
+    right: 0px;
+    top: -310px;
+}
+
+/* For placeholder text "Choose a location:"
+ul.nice-menu li.menu-684,
+ul.nice-menu li.menu-684 a:link,
+ul.nice-menu li.menu-684 a:visited {
+    height: 78px;
+    width: 110px;
+}
+
+ul.nice-menu li.menu-684 a {
+    padding: 55px 0 0 10px;
+    color: #fff
+}
+
+ul.nice-menu li.menu-634 a:hover,
+ul.nice-menu li.menu-634 a:active {
+}
+
+.menu-path-templateba-11 {
+    position: relative;
+    right: -109px;
+    top: -310px;
+}*/
+
+/* School & Group Field Science Menu */
+
+ul.nice-menu li.menu-653,
+ul.nice-menu li.menu-653 a:link,
+ul.nice-menu li.menu-653 a:visited {
+    background-image: url(../images/yosemiteoffwords.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    /*padding: 20px 0 0 10px;*/
+    height: 78px;
+    width: 222px;
+}
+
+ul.nice-menu li.menu-653 a {
+    padding: 55px 0 0 120px;
+    color: #fff;
+}
+
+ul.nice-menu li.menu-653 a:hover,
+ul.nice-menu li.menu-653 a:active {
+    background-image: url(../images/yosemiteonwords.png);
+}
+
+.menu-path-templateca-27 {
+    position: relative;
+    right: 111px;
+    top: 2px;
+}
+
+ul.nice-menu li.menu-654,
+ul.nice-menu li.menu-654 a:link,
+ul.nice-menu li.menu-654 a:visited {
+    background-image: url(../images/goldengateoff.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    /*padding: 20px 0 0 10px;*/
+    height: 78px;
+    width: 112px;
+}
+
+ul.nice-menu li.menu-654 a {
+    padding: 55px 0 0 10px;
+    color: #fff;
+}
+
+ul.nice-menu li.menu-654 a:hover,
+ul.nice-menu li.menu-654 a:active {
+    background-image: url(../images/goldengateon.png);
+}
+
+.menu-path-templateca-28 {
+    position: relative;
+    right: 0px;
+    top: -76px;
+}
+
+ul.nice-menu li.menu-655,
+ul.nice-menu li.menu-655 a:link,
+ul.nice-menu li.menu-655 a:visited {
+    background-image: url(../images/olympicoff.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    /*padding: 20px 0 0 10px;*/
+    height: 78px;
+    width: 112px;
+}
+
+ul.nice-menu li.menu-655 a {
+    padding: 55px 0 0 10px;
+    color: #fff;
+}
+
+ul.nice-menu li.menu-655 a:hover,
+ul.nice-menu li.menu-655 a:active {
+    background-image: url(../images/olympicon.png);
+}
+
+.menu-path-templateca-29 {
+    position: relative;
+    right: -111px;
+    top: -154px;
+}
+
+ul.nice-menu li.menu-656,
+ul.nice-menu li.menu-656 a:link,
+ul.nice-menu li.menu-656 a:visited {
+    background-image: url(../images/santamonicaoff.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    height: 78px;
+    width: 112px;
+}
+
+ul.nice-menu li.menu-656 a {
+    padding: 40px 0 0 10px;
+    color: #fff
+}
+
+ul.nice-menu li.menu-656 a:hover,
+ul.nice-menu li.menu-656 a:active {
+    background-image: url(../images/santamonicaon.png);
+}
+
+.menu-path-templateca-30 {
+    position: relative;
+    right: -221px;
+    top: -232px;
+}
+
+ul.nice-menu li.menu-657,
+ul.nice-menu li.menu-657 a:link,
+ul.nice-menu li.menu-657 a:visited {
+    background-image: url(../images/channeloff.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    height: 78px;
+    width: 112px;
+}
+
+ul.nice-menu li.menu-657 a {
+    padding: 55px 0 0 10px;
+    color: #fff;
+}
+
+ul.nice-menu li.menu-657 a:hover,
+ul.nice-menu li.menu-657 a:active {
+    background-image: url(../images/channelon.png);
+}
+
+.menu-path-templateca-31 {
+    position: relative;
+    right: -332px;
+    top: -310px;
+}
+
+/* For placeholder text "Choose a location:"
+ ul.nice-menu li.menu-684,
+ ul.nice-menu li.menu-684 a:link,
+ ul.nice-menu li.menu-684 a:visited {
+ height: 78px;
+ width: 110px;
+ }
+ 
+ ul.nice-menu li.menu-684 a {
+ padding: 55px 0 0 10px;
+ color: #fff
+ }
+ 
+ ul.nice-menu li.menu-634 a:hover,
+ ul.nice-menu li.menu-634 a:active {
+ }
+ 
+ .menu-path-templateba-11 {
+ position: relative;
+ right: -109px;
+ top: -310px;
+ }*/
+
+
+/*About Us Sub-Menu theming*/
+
+ul.nice-menu li.menu-627,
+ul.nice-menu li.menu-627 a:link,
+ul.nice-menu li.menu-627 a:visited {
+    /*background-image: url(../images/yosemiteoffwords.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    /*padding: 20px 0 0 10px;*/
+    height: 31px;
+    width: 141px;
+}
+
+ul.nice-menu li.menu-627 a {
+    padding: 15px 0 0 10px;
+    color: #fff;
+}
+
+ul.nice-menu li.menu-627 a:hover,
+ul.nice-menu li.menu-627 a:active {
+    color: #007239 !important;
+}
+
+.menu-path-templateaboutus-4 {
+    position: relative;
+    right: 385px;
+    top: 17px;
+}
+
+ul.nice-menu li.menu-628,
+ul.nice-menu li.menu-628 a:link,
+ul.nice-menu li.menu-628 a:visited {
+    /*background-image: url(../images/yosemiteoffwords.png);
+     background-repeat: no-repeat;
+     background-position: 5px 5px;
+     /*padding: 20px 0 0 10px;*/
+    height: 16px;
+    width: 141px;
+}
+
+ul.nice-menu li.menu-628 a {
+    padding: 2px 0 0 10px;
+    color: #fff;
+}
+
+ul.nice-menu li.menu-628 a:hover,
+ul.nice-menu li.menu-628 a:active {
+    color: #007239 !important;
+}
+
+.menu-path-templateaboutus-3 {
+    position: relative;
+    right: 385px;
+    top: 17px;
+}
+
+ul.nice-menu li.menu-658,
+ul.nice-menu li.menu-658 a:link,
+ul.nice-menu li.menu-658 a:visited {
+    /*background-image: url(../images/yosemiteoffwords.png);
+     background-repeat: no-repeat;
+     background-position: 5px 5px;
+     /*padding: 20px 0 0 10px;*/
+    height: 31px;
+    width: 141px;
+}
+
+ul.nice-menu li.menu-658 a {
+    padding: 3px 0 0 10px;
+    color: #fff;
+}
+
+ul.nice-menu li.menu-658 a:hover,
+ul.nice-menu li.menu-658 a:active {
+    color: #007239 !important;
+}
+
+.menu-path-templateaboutus-33 {
+    position: relative;
+    right: 385px;
+    top: 17px;
+}
+
+ul.nice-menu li.menu-659,
+ul.nice-menu li.menu-659 a:link,
+ul.nice-menu li.menu-659 a:visited {
+    /*background-image: url(../images/yosemiteoffwords.png);
+     background-repeat: no-repeat;
+     background-position: 5px 5px;
+     /*padding: 20px 0 0 10px;*/
+    height: 31px;
+    width: 142px;
+}
+
+ul.nice-menu li.menu-659 a {
+    padding: 15px 0 0 10px;
+    color: #fff;
+}
+
+ul.nice-menu li.menu-659 a:hover,
+ul.nice-menu li.menu-659 a:active {
+    color: #007239 !important;
+}
+
+.menu-path-templateaboutus-34 {
+    position: relative;
+    right: 245px;
+    top: -61px;
+}
+
+ul.nice-menu li.menu-660,
+ul.nice-menu li.menu-660 a:link,
+ul.nice-menu li.menu-660 a:visited {
+    /*background-image: url(../images/yosemiteoffwords.png);
+     background-repeat: no-repeat;
+     background-position: 5px 5px;
+     /*padding: 20px 0 0 10px;*/
+    height: 16px;
+    width: 526px;
+}
+
+ul.nice-menu li.menu-660 a {
+    padding: 1px 0 0 10px;
+    color: #fff;
+}
+
+ul.nice-menu li.menu-660 a:hover,
+ul.nice-menu li.menu-660 a:active {
+    color: #007239 !important;
+}
+
+.menu-path-templateaboutus-35 {
+    position: relative;
+    right: -139px;
+    top: -62px;
+}
+
+ul.nice-menu li.menu-661,
+ul.nice-menu li.menu-661 a:link,
+ul.nice-menu li.menu-661 a:visited {
+    /*background-image: url(../images/yosemiteoffwords.png);
+     background-repeat: no-repeat;
+     background-position: 5px 5px;
+     /*padding: 20px 0 0 10px;*/
+    height: 32px;
+    width: 526px;
+}
+
+ul.nice-menu li.menu-661 a {
+    padding: 3px 0 0 9px;
+    color: #fff;
+}
+
+ul.nice-menu li.menu-661 a:hover,
+ul.nice-menu li.menu-661 a:active {
+    color: #007239 !important;
+}
+
+.menu-path-templateaboutus-36 {
+    position: relative;
+    right: -140px;
+    top: -62px;
+}
+
+ul.nice-menu li.menu-662,
+ul.nice-menu li.menu-662 a:link,
+ul.nice-menu li.menu-662 a:visited {
+    /*background-image: url(../images/yosemiteoffwords.png);
+     background-repeat: no-repeat;
+     background-position: 5px 5px;
+     /*padding: 20px 0 0 10px;*/
+    height: 31px;
+    width: 384px;
+}
+
+ul.nice-menu li.menu-662 a {
+    padding: 15px 0 0 10px;
+    color: #fff;
+}
+
+ul.nice-menu li.menu-662 a:hover,
+ul.nice-menu li.menu-662 a:active {
+    color: #007239 !important;
+}
+
+.menu-path-templateaboutus-37 {
+    position: relative;
+    right: -139px;
+    top: -140px;
+}
+/* end */
+
+/*Training and Tools Menu */
+
+ul.nice-menu li.menu-680,
+ul.nice-menu li.menu-680 a:link,
+ul.nice-menu li.menu-680 a:visited {
+    /*background-image: url(../images/yosemiteoffwords.png);
+     background-repeat: no-repeat;
+     background-position: 5px 5px;
+     /*padding: 20px 0 0 10px;*/
+    height: 31px;
+    width: 665px;
+}
+
+ul.nice-menu li.menu-680 a {
+    padding: 15px 0 0 343px;
+    color: #fff;
+}
+
+ul.nice-menu li.menu-680 a:hover,
+ul.nice-menu li.menu-680 a:active {
+    color: #007239 !important;
+}
+
+.menu-path-templatebalt-43 {
+    position: relative;
+    right: 333px;
+    top: 2px;
+}
+
+ul.nice-menu li.menu-685,
+ul.nice-menu li.menu-685 a:link,
+ul.nice-menu li.menu-685 a:visited {
+    /*background-image: url(../images/yosemiteoffwords.png);
+     background-repeat: no-repeat;
+     background-position: 5px 5px;
+     /*padding: 20px 0 0 10px;*/
+    height: 47px;
+    width: 665px;
+}
+
+ul.nice-menu li.menu-685 a {
+    padding: 2px 0 0 343px;
+    color: #fff;
+}
+
+ul.nice-menu li.menu-685 a:hover,
+ul.nice-menu li.menu-685 a:active {
+    color: #007239 !important;
+}
+
+.menu-path-templatebalt-44 {
+    position: relative;
+    right: 333px;
+    top: 2px;
+}
+/*end*/
+
+/* Family and Youth Programs Menu */
+
+ul.nice-menu li.menu-686,
+ul.nice-menu li.menu-686 a:link,
+ul.nice-menu li.menu-686 a:visited {
+    background-image: url(../images/yosemiteoffwords.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    /*padding: 20px 0 0 10px;*/
+    height: 78px;
+    width: 221px;
+}
+
+ul.nice-menu li.menu-686 a {
+    padding: 55px 0 0 120px;
+    color: #fff;
+}
+
+ul.nice-menu li.menu-686 a:hover,
+ul.nice-menu li.menu-686 a:active {
+    background-image: url(../images/yosemiteonwords.png);
+}
+
+.menu-path-templateb-39 {
+    position: relative;
+    right: 334px;
+    top: 2px;
+}
+
+ul.nice-menu li.menu-687,
+ul.nice-menu li.menu-687 a:link,
+ul.nice-menu li.menu-687 a:visited {
+    background-image: url(../images/goldengateoff.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    /*padding: 20px 0 0 10px;*/
+    height: 78px;
+    width: 112px;
+}
+
+ul.nice-menu li.menu-687 a {
+    padding: 55px 0 0 10px;
+    color: #fff;
+}
+
+ul.nice-menu li.menu-687 a:hover,
+ul.nice-menu li.menu-687 a:active {
+    background-image: url(../images/goldengateon.png);
+}
+
+.menu-path-templateb-40 {
+    position: relative;
+    right: 222px;
+    top: -76px;
+}
+
+ul.nice-menu li.menu-688,
+ul.nice-menu li.menu-688 a:link,
+ul.nice-menu li.menu-688 a:visited {
+    background-image: url(../images/olympicoff.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    /*padding: 20px 0 0 10px;*/
+    height: 78px;
+    width: 333px;
+}
+
+ul.nice-menu li.menu-688 a {
+    padding: 55px 0 0 10px;
+    color: #fff;
+}
+
+ul.nice-menu li.menu-688 a:hover,
+ul.nice-menu li.menu-688 a:active {
+    background-image: url(../images/olympicon.png);
+}
+
+.menu-path-templateb-41 {
+    position: relative;
+    right: -110px;
+    top: -154px;
+}
+
+/*end*/
+
+/* News and comm menus */
+
+ul.nice-menu li.menu-674,
+ul.nice-menu li.menu-674 a:link,
+ul.nice-menu li.menu-674 a:visited {
+    height: 31px;
+    width: 665px;
+}
+
+ul.nice-menu li.menu-674 a {
+    padding: 15px 0 0 565px;
+    color: #fff;
+}
+
+ul.nice-menu li.menu-674 a:hover,
+ul.nice-menu li.menu-674 a:active {
+    color: #007239 !important;
+}
+
+.menu-path-newscomm-47 {
+    position: relative;
+    right: 555px;
+    top: 2px;
+}
+
+ul.nice-menu li.menu-675,
+ul.nice-menu li.menu-675 a:link,
+ul.nice-menu li.menu-675 a:visited {
+    height: 17px;
+    width: 665px;
+}
+
+ul.nice-menu li.menu-675 a {
+    padding: 2px 0 0 565px;
+    color: #fff;
+}
+
+ul.nice-menu li.menu-675 a:hover,
+ul.nice-menu li.menu-675 a:active {
+    color: #007239 !important;
+}
+
+.menu-path-newscomm-48 {
+    position: relative;
+    right: 555px;
+    top: 2px;
+}
+
+ul.nice-menu li.menu-676,
+ul.nice-menu li.menu-676 a:link,
+ul.nice-menu li.menu-676 a:visited {
+    /*background-image: url(../images/yosemiteoffwords.png);
+     background-repeat: no-repeat;
+     background-position: 5px 5px;
+     /*padding: 20px 0 0 10px;*/
+    height: 30px;
+    width: 665px;
+}
+
+ul.nice-menu li.menu-676 a {
+    padding: 3px 0 0 565px;
+    color: #fff;
+}
+
+ul.nice-menu li.menu-676 a:hover,
+ul.nice-menu li.menu-676 a:active {
+    color: #007239 !important;
+}
+
+.menu-path-newscomm-49 {
+    position: relative;
+    right: 555px;
+    top: 2px;
+}
+
+/* end */
+
 .menu-613 {
     width: 110px;
     height: 42px;
@@ -162,9 +893,13 @@ li a.active {
     height: 23px;
     font-size: 1.2em;
     font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
-    z-index: 8;
-
+    z-index: 0;
 }
+
+#block-nice-menus-1 a:hover {
+    color: #fff;
+}
+
 
 .menu-624 {
     width: 110px;
@@ -179,7 +914,6 @@ li a.active {
 
 .menu-625 {
     width: 110px;
-    height: 23px;
     position: relative;
     top: 52px;
     right: 223px;
@@ -196,18 +930,6 @@ li a.active {
     position:relative;
     top:19px;
     right:1px;
-}
-
-.menu-627 {
-    /*position:relative;
-    top:19px;
-    right:1px;*/
-}
-
-.menu-628 {
-    /*position:relative;
-    top:19px;
-    right:1px;*/
 }
 
 .menu-673 {
@@ -252,7 +974,7 @@ li a.active {
     background-color: #aca79e;
     position: absolute;
     height: 40px;
-    top: 0px;
+    top: 60px;
     right: 516px;
     color: #fff;
 }

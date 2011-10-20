@@ -18,6 +18,7 @@ ul.nice-menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
+   
   /*border-top: 1px solid #ccc;*/
 }
 
@@ -108,12 +109,10 @@ ul.nice-menu-left a, ul.nice-menu-left ul a {
 ******************************/
 
 ul.nice-menu-down {
-  float: left; /* LTR */
+    float: right; /* LTR */
   /*border: 0;*/
     top:-50px;
-    right:-270px;
-
- 
+    
 }
 
 ul.nice-menu-down li {

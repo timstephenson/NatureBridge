@@ -376,12 +376,13 @@ ul.nice-menu li.menu-627 a:visited {
     background-repeat: no-repeat;
     background-position: 5px 5px;
     /*padding: 20px 0 0 10px;*/
-    height: 31px;
+    float: left;
+    height: 30px;
     width: 141px;
 }
 
 ul.nice-menu li.menu-627 a {
-    padding: 15px 0 0 10px;
+    padding: 14px 0 0 10px;
     color: #fff;
 }
 
@@ -392,7 +393,7 @@ ul.nice-menu li.menu-627 a:active {
 
 .menu-path-templateaboutus-4 {
     position: relative;
-    right: 385px;
+    left: 0px;
     top: 17px;
 }
 
@@ -403,6 +404,7 @@ ul.nice-menu li.menu-628 a:visited {
      background-repeat: no-repeat;
      background-position: 5px 5px;
      /*padding: 20px 0 0 10px;*/
+    float: left:
     height: 16px;
     width: 141px;
 }
@@ -419,7 +421,7 @@ ul.nice-menu li.menu-628 a:active {
 
 .menu-path-templateaboutus-3 {
     position: relative;
-    right: 385px;
+    left: -164px;
     top: 17px;
 }
 
@@ -430,6 +432,7 @@ ul.nice-menu li.menu-658 a:visited {
      background-repeat: no-repeat;
      background-position: 5px 5px;
      /*padding: 20px 0 0 10px;*/
+    float: left;
     height: 31px;
     width: 141px;
 }
@@ -446,8 +449,8 @@ ul.nice-menu li.menu-658 a:active {
 
 .menu-path-templateaboutus-33 {
     position: relative;
-    right: 385px;
-    top: 17px;
+    left: 0px;
+    top: 16px;
 }
 
 ul.nice-menu li.menu-659,
@@ -457,7 +460,8 @@ ul.nice-menu li.menu-659 a:visited {
      background-repeat: no-repeat;
      background-position: 5px 5px;
      /*padding: 20px 0 0 10px;*/
-    height: 31px;
+    float: left;
+    height: 30px;
     width: 142px;
 }
 
@@ -473,7 +477,7 @@ ul.nice-menu li.menu-659 a:active {
 
 .menu-path-templateaboutus-34 {
     position: relative;
-    right: 245px;
+    left: 139px;
     top: -61px;
 }
 
@@ -484,12 +488,13 @@ ul.nice-menu li.menu-660 a:visited {
      background-repeat: no-repeat;
      background-position: 5px 5px;
      /*padding: 20px 0 0 10px;*/
-    height: 16px;
-    width: 526px;
+    float: left;
+    height: 17px;
+    width: 305px;
 }
 
 ul.nice-menu li.menu-660 a {
-    padding: 1px 0 0 10px;
+    padding: 3px 0 0 10px;
     color: #fff;
 }
 
@@ -500,8 +505,8 @@ ul.nice-menu li.menu-660 a:active {
 
 .menu-path-templateaboutus-35 {
     position: relative;
-    right: -139px;
-    top: -62px;
+    left: 139px;
+    top: -61px;
 }
 
 ul.nice-menu li.menu-661,
@@ -511,12 +516,13 @@ ul.nice-menu li.menu-661 a:visited {
      background-repeat: no-repeat;
      background-position: 5px 5px;
      /*padding: 20px 0 0 10px;*/
+    float: left;
     height: 32px;
-    width: 526px;
+    width: 305px;
 }
 
 ul.nice-menu li.menu-661 a {
-    padding: 3px 0 0 9px;
+    padding: 4px 0 0 9px;
     color: #fff;
 }
 
@@ -527,8 +533,8 @@ ul.nice-menu li.menu-661 a:active {
 
 .menu-path-templateaboutus-36 {
     position: relative;
-    right: -140px;
-    top: -62px;
+    left: 139px;
+    top: -63px;
 }
 
 ul.nice-menu li.menu-662,
@@ -538,8 +544,9 @@ ul.nice-menu li.menu-662 a:visited {
      background-repeat: no-repeat;
      background-position: 5px 5px;
      /*padding: 20px 0 0 10px;*/
+    float: left;
     height: 31px;
-    width: 384px;
+    width: 163px;
 }
 
 ul.nice-menu li.menu-662 a {
@@ -554,7 +561,7 @@ ul.nice-menu li.menu-662 a:active {
 
 .menu-path-templateaboutus-37 {
     position: relative;
-    right: -139px;
+    left: 281px;
     top: -140px;
 }
 /* end */
@@ -569,11 +576,11 @@ ul.nice-menu li.menu-680 a:visited {
      background-position: 5px 5px;
      /*padding: 20px 0 0 10px;*/
     height: 31px;
-    width: 665px;
+    width: 222px;
 }
 
 ul.nice-menu li.menu-680 a {
-    padding: 15px 0 0 343px;
+    padding: 15px 0 0 10px;
     color: #fff;
 }
 
@@ -584,7 +591,7 @@ ul.nice-menu li.menu-680 a:active {
 
 .menu-path-templatebalt-43 {
     position: relative;
-    right: 333px;
+    right: 0px;
     top: 2px;
 }
 
@@ -596,11 +603,11 @@ ul.nice-menu li.menu-685 a:visited {
      background-position: 5px 5px;
      /*padding: 20px 0 0 10px;*/
     height: 47px;
-    width: 665px;
+    width: 222px;
 }
 
 ul.nice-menu li.menu-685 a {
-    padding: 2px 0 0 343px;
+    padding: 2px 0 0 10px;
     color: #fff;
 }
 
@@ -611,7 +618,7 @@ ul.nice-menu li.menu-685 a:active {
 
 .menu-path-templatebalt-44 {
     position: relative;
-    right: 333px;
+    right: 0px;
     top: 2px;
 }
 /*end*/
@@ -707,11 +714,11 @@ ul.nice-menu li.menu-674,
 ul.nice-menu li.menu-674 a:link,
 ul.nice-menu li.menu-674 a:visited {
     height: 31px;
-    width: 665px;
+    width: 110px;
 }
 
 ul.nice-menu li.menu-674 a {
-    padding: 15px 0 0 565px;
+    padding: 15px 0 0 10px;
     color: #fff;
 }
 
@@ -722,7 +729,7 @@ ul.nice-menu li.menu-674 a:active {
 
 .menu-path-newscomm-47 {
     position: relative;
-    right: 555px;
+    right: 0px;
     top: 2px;
 }
 
@@ -730,11 +737,11 @@ ul.nice-menu li.menu-675,
 ul.nice-menu li.menu-675 a:link,
 ul.nice-menu li.menu-675 a:visited {
     height: 17px;
-    width: 665px;
+    width: 110px;
 }
 
 ul.nice-menu li.menu-675 a {
-    padding: 2px 0 0 565px;
+    padding: 2px 0 0 10px;
     color: #fff;
 }
 
@@ -745,7 +752,7 @@ ul.nice-menu li.menu-675 a:active {
 
 .menu-path-newscomm-48 {
     position: relative;
-    right: 555px;
+    right: 0px;
     top: 2px;
 }
 
@@ -757,11 +764,11 @@ ul.nice-menu li.menu-676 a:visited {
      background-position: 5px 5px;
      /*padding: 20px 0 0 10px;*/
     height: 30px;
-    width: 665px;
+    width: 110px;
 }
 
 ul.nice-menu li.menu-676 a {
-    padding: 3px 0 0 565px;
+    padding: 3px 0 0 10px;
     color: #fff;
 }
 
@@ -772,7 +779,7 @@ ul.nice-menu li.menu-676 a:active {
 
 .menu-path-newscomm-49 {
     position: relative;
-    right: 555px;
+    right: 0px;
     top: 2px;
 }
 
@@ -887,36 +894,43 @@ ul.nice-menu li.menu-676 a:active {
 }
 
 #block-nice-menus-2 {
-    position: relative;
-    left: 0px;
-    top: 0px;
+
     height: 23px;
     font-size: 1.2em;
     font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
-    z-index: 0;
+   /* z-index: 10 !important;*/
 }
 
 #block-nice-menus-1 a:hover {
     color: #fff;
 }
 
+#nice-menu-1 {
+    position: relative;
+    z-index: 5;
+}
+
+#nice-menu-2 {
+    position: relative;
+    z-index: 0;
+}
+
 
 .menu-624 {
     width: 110px;
     height: 23px;
-    position: relative;
+    position: absolute;
+    left: 665px;
     top: 52px;
-    right: 223px;
     font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
     border-left: 1px solid #d5d3ce;
-    
 }
 
 .menu-625 {
     width: 110px;
-    position: relative;
+    position: absolute;
+    left: 666px;
     top: 52px;
-    right: 223px;
     color: #fff;
     font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
     background: url(../images/donorbutton.png);    
@@ -980,7 +994,7 @@ ul.nice-menu li.menu-676 a:active {
 }
 
 #secondary-menu {
-  float: left;
+  float: right;
 }
 
 /*

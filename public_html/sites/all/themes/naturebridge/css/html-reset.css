@@ -137,7 +137,6 @@ hr, table, fieldset {
 }
 
 h4, h5 {
-    
 }
 
 /* Headings */
@@ -156,7 +155,7 @@ h1 {
 h2 {
     font-size: 2.4em;
     line-height: 1.2em;
-    margin: 0 0 0 0; /* Equivalent to 1.5em in the page's base font: 1.5 / 1.5 = 1em */
+    margin: 0 0 .5em 0; /* Equivalent to 1.5em in the page's base font: 1.5 / 1.5 = 1em */
     font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
     color: #746d5d;
     font-weight: normal;    
@@ -166,20 +165,22 @@ h2 {
 h3 {
   
     font-size: 1.8em;
-    margin: 1em 0 -1em 0; /*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
+    line-height: 1.2em;
+    margin: 0em 0 .5em 0; /*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
     color: #746d5d;
-    weight: strong;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
     font-weight: normal;
 }
 
 
 h4 {
     font-size: 1.6em;
+    margin: 0 0 0 0;
     line-height: 1.2em;
-    margin: 0;
     font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
     color: #746d5d;
     font-weight: normal;
+
 }
 
 h5 {
@@ -193,8 +194,8 @@ h5 {
 
 h6 {
     font-size: 1.2em;
-    margin: 0; /* Equivalent to 1.5em in the page's base font: 1.5 / 1.1 = 1.364 */
-    color: #6da838;
+    margin: 0 0 20px 0;; /* Equivalent to 1.5em in the page's base font: 1.5 / 1.1 = 1.364 */
+    color: #746d5d;
     font-weight: normal;
 }
 
@@ -356,6 +357,14 @@ dd {
     top: 0px;
 }
 
+.panels-flexible-region-contenta {
+    vertical-align: top;
+    position: relative;
+    left: 20px;
+    top: 0px;
+}
+
+
 .panels-flexible-region-centerpics {
     vertical-align: top;
     position: relative;
@@ -388,11 +397,16 @@ dd {
 }
 
 #partnerspotlight {
-
+    width: 180px;
 }
 
 #bottomcornerspotlight {
     width: 220;
+}
+
+#rightnav {
+    position: relative;
+    left: 20px;
 }
 
 .removepadding {
@@ -439,7 +453,7 @@ dd {
     position: absolute;
     top: 10px;
     left: 60px;
-    width: 200px;
+    width: 180px;
 }
 
 #beneathtitleb {
@@ -456,7 +470,7 @@ dd {
 #headerimage {
     position: relative;
     top: 30px;
-    right: 24px;
+    right: 25px;
     width: 560px;
     height: 190px;
 }
@@ -500,6 +514,7 @@ dd {
     padding: 4px;
 }
 
+
 .panels-flexible-region-middle:hover img
 .views-row:hover img {
     outline: 3px solid #6da838;
@@ -508,6 +523,91 @@ dd {
 .pane-template-b-content-panel-pane-12 {
     padding-bottom: 15px;
     border-bottom: 1px solid #c8c5be;
+}
+
+.pane-template-b-content-panel-pane-14 {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #c8c5be;
+}
+
+.pane-template-b-content-panel-pane-16 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c8c5be;
+}
+
+.panels-flexible-region-20-right {
+    position: relative;
+    left: 20px;
+}
+
+.view-social-media-links {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c8c5be;
+}
+
+.view-social-media-links img {
+    border: none;
+    padding: 0 !important;
+}
+
+.panels-flexible-region-19-right,
+.panels-flexible-region-21-right {
+    position: relative;
+    left: 40px;
+
+}
+.panels-flexible-region-19-right-inside,
+.panels-flexible-region-21-right-inside {
+    height: 550px;
+    border-left: 1px solid #c8c5be;
+}
+
+/* Home Page */
+
+.pane-menu-menu-1-0-home-page-left-menu {
+    padding-top: 20px;
+}
+
+.views-field-field-videoinformation {
+    padding: 10px 0 0 10px;
+}
+
+/* Newscomm */
+
+.views-field-field-spotlightimage img,
+.view-display-id-panel_pane_19 img{
+    border: none !important;
+}
+
+.view-display-id-panel_pane_19 {
+    position: relative;
+    border-left: 1px solid #c8c5be;
+    padding: 0 0 0 10px;
+}
+
+#communityspotlight {
+    background: url(../images/Community-Spotlight.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.view-display-id-panel_pane_18 {
+    height: 286px;
+    padding: 60px 20px 0 0;
+}
+
+.panels-flexible-row-12-1 {
+    width: 940px;
+    border-bottom: 1px solid #007239;
+}
+
+.panels-flexible-region-12-right_rail {
+    background: url(../images/naturebridge-blog.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    top: 20px;
+    padding: 60px 0 0 0;
 }
 
 /*.view-display-id-panel_pane_9 img:hover
@@ -579,11 +679,11 @@ tr {
 
 td {
     /*vertical-align: top;*/
-    width: 220px;
+    /*width: 220px;*/
 }
 
 .col-1 {
-    padding: 0px 10px 0 0;
+    padding: 0px 10px 10px 0;
 }
 
 .col-2 {
@@ -687,7 +787,7 @@ img {
    
 }
 
-.border {
+/*.border {
     border: 1px solid #c8c5be;
     padding: 2px;
 }
@@ -695,7 +795,7 @@ img {
 .border:hover,
 .border:focus {
     outline: 3px solid #6da838;
-}
+}*/
 
 
 

@@ -946,41 +946,67 @@ ul.nice-menu li.menu-676 a:active {
     right:1px;
 }
 
+/* Sub Menu for NewsComm */
+
 .menu-673 {
     width: 110px;
     height: 40px;
     font-size: 1.2em;
-    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
-    color: #007239;
-    background-color: grey;
-    border-left: 1px solid #d5d3ce;
+    /*font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;*/
+    color: #fff;
+    border-right: 1px solid #746d5d;
+    border-left: 1px solid #746d5d;
+}
+
+.menu-673 a {
+    color: #fff !important;
+    padding: 12px 0 0 35px !important;
+    height: 28px;
 }
 
 .menu-671 {
-    width: 110px;
+    width: 130px;
     height: 40px;
     font-size: 1.2em;
-    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
-    color: #007239;
-    border-left: 1px solid #d5d3ce;
+    /*font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;*/
+    color: #fff;
+    border-left: 1px solid #746d5d;
+}
+
+.menu-671 a {
+    color: #fff !important;
+    padding: 12px 0 0 19px !important;
+    height: 28px;
 }
 
 .menu-672 {
     width: 110px;
     height: 40px;
     font-size: 1.2em;
-    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
-    color: #007239;
-    border-left: 1px solid #d5d3ce;
+    /*font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;*/
+    color: #fff;
+    border-left: 1px solid #746d5d;
+}
+
+.menu-672 a {
+    color: #fff !important;
+    padding: 12px 0 0 35px !important;
+    height: 28px;
 }
 
 .menu-670 {
     width: 110px;
     height: 40px;
     font-size: 1.2em;
-    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
-    color: #007239;
-    border-left: 1px solid #d5d3ce;
+    /*font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;*/
+    color: #fff;
+    border-left: 1px solid #746d5d;
+}
+
+.menu-670 a {
+    color: #fff !important;
+    padding: 12px 0 0 45px !important;
+    height: 28px;
 }
 
 #nice-menu-3 {
@@ -989,9 +1015,15 @@ ul.nice-menu li.menu-676 a:active {
     position: absolute;
     height: 40px;
     top: 0px;
-    right: 516px;
+    right: 495px;
     color: #fff;
 }
+
+#nice-menu-3 a:hover{
+     background-color: #6da838 !important;
+}
+
+
 
 #secondary-menu {
   float: right;

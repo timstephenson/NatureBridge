@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Defines schema for YouTube field
+ */
+
+/**
+ * Implements hook_field_schema().
+ */
+function fieldyoutube_field_schema($field) {
+  return array(
+    'columns' => array(
+      'youtube' => array(
+        'type' => 'varchar',
+         'length' => 150,
+         'not null' => FALSE,
+      ),
+    ),
+  );
+}

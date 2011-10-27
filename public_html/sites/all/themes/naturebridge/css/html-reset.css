@@ -229,11 +229,11 @@ address {
 ul,
 ol {
   margin-left: 0; /* LTR */
-  padding-left: 0; /* LTR */
+  /*padding-left: 0; /* LTR */
 }
 
 .item-list ul /* Drupal overrides */ {
-  margin: 1.5em 0;
+  /*margin: 1.5em 0;
   padding: 0 0 0 2em; /* LTR */
 }
 
@@ -255,8 +255,8 @@ li.expanded,
 li.collapsed,
 li.leaf /* Drupal override */ {
     margin: 0;
-    padding: 10px 0 12px 0px;
-    border-top: 1px solid #d5d3ce;
+    /*padding: 10px 0 12px 0px;
+    border-top: 1px solid #d5d3ce;*/
 
 }
 
@@ -293,6 +293,12 @@ dd {
     font-size: 1.6em;
     line-height: 1em;
     vertical-align: top;
+    left: -40px;
+}
+
+#tempcmenu li {
+    padding: 10px 0 10px 0;
+    border-top: 1px solid #c8c5be;
 }
 
 .panels-flexible-region-middle {
@@ -562,6 +568,36 @@ dd {
     border-left: 1px solid #c8c5be;
 }
 
+/* Blog Structure */
+
+.panels-flexible-region-25-center {
+    position: relative;
+    left: 30px;
+    top: 20px;
+    width: 540px;
+}
+
+.panels-flexible-region-25-center .user-picture {
+    position: relative;
+    left: 620px;
+    top: 30px;
+    width: 70px;
+}
+
+.panels-flexible-region-25-center .pane-content {
+    position: relative;
+    top: -80px;
+}
+
+.panels-flexible-region-25-right {
+    position: relative;
+    left: 280px;
+    top: 20px;
+}
+
+
+
+
 /* Home Page */
 
 .pane-menu-menu-1-0-home-page-left-menu {
@@ -607,7 +643,88 @@ dd {
     background-position: top left;
     position: relative;
     top: 20px;
+    left: 48px;
     padding: 60px 0 0 0;
+
+}
+
+.panels-flexible-region-12-right_rail img {
+    border: none;
+}
+
+.blogroll-title a {
+
+}
+
+.blogroll-title {
+    position: relative;
+}
+
+.panels-flexible-region-12-center img {
+    border: none;
+}
+
+.panels-flexible-region-12-center {
+    border-bottom: 1px solid #c8c5be;
+    padding-bottom: 15px;
+}
+
+#twitterblock {
+    background: url(../images/latesttweet.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    padding: 40px 0 0 0;
+}
+
+#facebookblock {
+    background: url(../images/latestpost.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    top: 20px;
+    padding: 40px 0 0 0;
+}
+
+#videoblock {
+    background: url(../images/youtube.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    top: 20px;
+    padding: 40px 0 0 0;
+}
+
+#newsblock {
+    background: url(../images/newsheader2.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    padding: 40px 0 0 0;
+}
+
+#featuredblog {
+    background: url(../images/featuredposts.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    padding: 40px 0 0 0;
+}
+
+#recentpostsblog {
+    background: url(../images/recentpostsblog.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    padding: 40px 0 0 0;
+}
+
+.panels-flexible-24 img {
+    border: none;
 }
 
 /*.view-display-id-panel_pane_9 img:hover

@@ -1,0 +1,14 @@
+name = Field YouTube
+description = Defines a YouTube field type.
+core = 7.x
+package = Fields
+dependencies[] = field
+
+files[] = fieldyoutube.module
+files[] = fieldyoutube.class.inc
+
+; REMOVE THIS BEFORE COMMIT
+version = 7.x-1.x-dev-pasq
+project = fieldyoutube
+project status url = "http://windmill.sk/updates"
+datestamp = 1309540000

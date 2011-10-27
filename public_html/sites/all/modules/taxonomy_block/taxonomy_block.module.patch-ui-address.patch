@@ -1,0 +1,19 @@
+diff --git a/taxonomy_block.module b/taxonomy_block.module
+index ec7e82f..3bb99cd 100755
+--- a/taxonomy_block.module
++++ b/taxonomy_block.module
+@@ -50,13 +50,13 @@ function taxonomy_block_permission() {
+ function taxonomy_block_menu() {
+   $items = array();
+ 
+-  $items['admin/config/taxonomy_block'] = array(
++  $items['admin/structure/taxonomy/taxonomy_block'] = array(
+     'title'             => 'Taxonomy Block',
+     'description'       => 'Displays taxonomy hierarchy',
+     'access arguments'  => array(TAXONOMY_BLOCK_PERM_ADMIN),
+     'page callback'     => 'drupal_get_form',
+     'page arguments'    => array('taxonomy_block_admin_settings'),
+-    'type'              => MENU_NORMAL_ITEM,
++    'type'              => MENU_LOCAL_TASK,
+     'file'              => 'taxonomy_block.settings.inc',
+   );

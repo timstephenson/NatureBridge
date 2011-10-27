@@ -1,0 +1,140 @@
+<?php
+
+/**
+ * @file
+ * Youtube field hooks, and functionalities.
+ */
+
+/**
+ * Implements hook_field_info().
+ */
+function fieldyoutube_field_info() {
+  return array(
+    'youtube' => array(
+      'label' => 'YouTube',
+      'description' => t('This field stores and renderes YouTube videos.'),
+      'default_widget' => 'text_textfield',
+      'default_formatter' => 'default',
+      'property_type' => 'text',
+    ),
+  );
+}
+
+/**
+ * Implements hook_content_is_empty().
+ */
+function fieldyoutube_field_is_empty($item, $field) {
+  if (empty($item['youtube'])) {
+    return TRUE;
+  }
+  return FALSE;
+}
+
+/**
+ * Implements hook_field_formatter_info().
+ *
+ */
+function fieldyoutube_field_formatter_info() {
+  $formats = array(
+    'fieldyoutube_embed' => array(
+      'label' => t('Default - embeded video'),
+      'description' => t('Will show embeded YouTube on your node'),
+      'field types' => array('youtube'),
+    ),
+    'fieldyoutube_thumblink' => array(
+      'label' => t('Image with link to video'),
+      'description' => t('Will show image thumbnail linked to YouTube video'),
+      'field types' => array('youtube'),
+    ),
+    'fieldyoutube_plain' => array(
+      'label' => t('Text link to video'),
+      'description' => t('Will show plain text link to YouTube video'),
+      'field types' => array('youtube'),
+    ),
+  );
+  return $formats;
+}
+
+/**
+ * Implements hook_field_formatter_view().
+ */
+function fieldyoutube_field_formatter_view($object_type, $object, $field, $instance, $langcode, $items, $display) {
+  $res = explode('x', $instance['widget']['settings']['resolution']);
+  $element = array();
+  switch ($display['type']) {
+    case 'fieldyoutube_embed':
+      foreach ($items as $delta => $item) {
+        $youtube = new YouTube($item['youtube']);
+        $output = $youtube->EmbedVideo($res[0], $res[1]);
+        $element[$delta] = array('#markup' => $output);
+      }
+      break;
+    case 'fieldyoutube_thumblink':
+      foreach ($items as $delta => $item) {
+        $youtube = new YouTube($item['youtube']);
+        $output = l( $youtube->ShowImg(), $item['youtube'], array('html' => TRUE) );
+        $element[$delta] = array('#markup' => $output);
+        break;
+      }
+      break;
+    case 'fieldyoutube_plain':
+      foreach ($items as $delta => $item) {
+        $output = l( t('Click here to watch this video.'), $item['youtube']);
+        $element[$delta] = array('#markup' => $output);
+      }
+      break;
+  }
+  return $element;
+}
+
+/**
+ * Implements hook_field_widget_info().
+ */
+function fieldyoutube_field_widget_info() {
+  return array(
+    'fieldyoutube_textfield' => array(
+      'label' => t('Text field'),
+      'field types' => array('youtube'),
+      'settings' => array('size' => 60),
+    ),
+  );
+}
+
+/**
+ * Implements hook_field_widget_settings_form().
+ */
+function fieldyoutube_field_widget_settings_form($field, $instance) {
+  $widget = $instance['widget'];
+  $settings = $widget['settings'];
+
+  $form['size'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Size of textfield'),
+    '#default_value' => $settings['size'],
+    '#required' => TRUE,
+    '#element_validate' => array('_element_validate_integer_positive'),
+  );
+  $form['resolution'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Resolution of rendered video'),
+    '#default_value' => (isset($settings['resolution'])) ? $settings['resolution'] : '425x344',
+    '#required' => FALSE,
+  );
+  // TODO: Quality switcher
+  return $form;
+}
+
+/**
+ * Implements hook_field_widget_form().
+ */
+function fieldyoutube_field_widget_form(&$form, &$form_state, $field, $instance, $langcode, $items, $delta, $base) {
+  $element = $base;
+  $element['youtube'] = $base + array(
+    '#type' => 'textfield',
+    '#default_value' => isset($items[$delta]['youtube']) ? $items[$delta]['youtube'] : NULL,
+    '#size' => $instance['widget']['settings']['size'],
+    '#prefix' => '<div class="text-full-wrapper">',
+    '#suffix' => '</div>',
+  );
+  return $element;
+}

@@ -264,7 +264,7 @@ li.last {
     /*border-bottom: 1px solid #d5d3ce !important;*/
 }
 
-ul          { list-style-type: disc; margin: 0px;}
+ul          { list-style-type: none margin: 0px;}
 ul ul       { list-style-type: circle; }
 ul ul ul    { list-style-type: square; }
 ul ul ul ul { list-style-type: circle; }
@@ -285,6 +285,14 @@ dd {
   padding: 0;
 }
 
+#main .active-trail {
+    background-color: #f1f0ee;
+}
+
+#nice-menu-3 .active {
+    background-color: #6da838;
+}
+
 #tempcmenu {
     font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
     width: 180px;
@@ -293,12 +301,21 @@ dd {
     font-size: 1.6em;
     line-height: 1em;
     vertical-align: top;
-    left: -40px;
+    position: relative;
+
 }
 
 #tempcmenu li {
-    padding: 10px 0 10px 0;
+    padding: 10px 0 10px 5px;
     border-top: 1px solid #c8c5be;
+}
+
+#tempcmenu li:hover{
+    background-color: #f1f0ee !important;
+}
+
+#taxonomymenu .expanded {
+    padding-top: 20px;
 }
 
 .panels-flexible-region-middle {
@@ -348,6 +365,22 @@ dd {
     width: 940px;
 }
 
+.panels-flexible-region-mediabannerphotos {
+    background: url(../images/mediabannerphotos.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 60px;
+    width: 940px;
+}
+
+.panels-flexible-region-topblog {
+    background: url(../images/Naturebridge-blog-header.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 60px;
+    width: 940px;
+}
+
 .panels-flexible-region-topnewsgreybar {
     background: url(../images/greynewsbar.png);
     background-repeat: no-repeat;
@@ -355,6 +388,18 @@ dd {
     height: 40px;
     width: 940px;
 }
+
+.panels-flexible-region-newsitembanner {
+    background: url(../images/newsitembanner.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    top: 20px;
+    left: 30px;
+    height: 60px;
+    width: 940px;
+}
+
 
 .panels-flexible-region-contentb {
     vertical-align: top;
@@ -367,7 +412,7 @@ dd {
     vertical-align: top;
     position: relative;
     left: 20px;
-    top: 0px;
+    top: -20px;
 }
 
 
@@ -514,25 +559,13 @@ dd {
     width: auto;
 }
 
-.panels-flexible-region-middle img {
-    padding-top: 20px;
-    border: 1px solid #c8c5be;
-    padding: 4px;
-}
-
-
-.panels-flexible-region-middle:hover img
-.views-row:hover img {
-    outline: 3px solid #6da838;
-}
-
 .pane-template-b-content-panel-pane-12 {
     padding-bottom: 15px;
     border-bottom: 1px solid #c8c5be;
 }
 
-.pane-template-b-content-panel-pane-14 {
-    padding-bottom: 15px;
+.pane-template-b-content-panel-pane-18 {
+    padding-bottom: 65px;
     border-bottom: 1px solid #c8c5be;
 }
 
@@ -568,35 +601,235 @@ dd {
     border-left: 1px solid #c8c5be;
 }
 
+.panels-flexible-region-23-center .pane-content {
+    position: relative;
+    top: 10px;
+}
+
+
 /* Blog Structure */
+
+#taxonomymenu {
+    position: relative;
+    left: 20px;
+}
 
 .panels-flexible-region-25-center {
     position: relative;
     left: 30px;
-    top: 20px;
+    top: -70px;
     width: 540px;
 }
 
 .panels-flexible-region-25-center .user-picture {
     position: relative;
-    left: 620px;
-    top: 30px;
+    left: 560px;
+    top: 70px;
     width: 70px;
 }
 
-.panels-flexible-region-25-center .pane-content {
-    position: relative;
-    top: -80px;
+.panels-flexible-region-25-center .pane-node-title {
+    width: 460px;
 }
 
 .panels-flexible-region-25-right {
     position: relative;
-    left: 280px;
+    left: 180px;
     top: 20px;
+    height: 550px;
+    width: 240px;
+    border-left: 1px solid #c8c5be;
 }
 
+.panels-flexible-region-24-right_regiona {
+    position: relative;
+    height: 850px;
+    width: 240px;
+    border-left: 1px solid #c8c5be;
+}
 
+.panels-flexible-region-25-center .pane-node-title {
+    font-size: 2.4em;
+    line-height: 1.2em;
+    margin: 0 0 .5em 0; /* Equivalent to 1.5em in the page's base font: 1.5 / 1.5 = 1em */
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    color: #746d5d;
+    font-weight: normal;   
+}
 
+.panels-flexible-region-25-right .pane-title {
+    font-size: 1.8em;
+    line-height: 1.2em;
+    margin: 0em 0 .5em 0; /*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
+    color: #746d5d;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    font-weight: normal;
+}
+
+.panels-flexible-region-24-right_regiona .pane-title {
+    font-size: 1.8em;
+    line-height: 1.2em;
+    margin: 0em 0 .5em 0; /*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
+    color: #746d5d;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    font-weight: normal;
+}
+
+.panels-flexible-region-28-header .pane-node-title .pane-content {
+    font-size: 2.4em;
+    line-height: 1.2em;
+    margin: 0.75em 0;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    /* 0.75em is equivalent to 1.5em in the page's base font. font. Remember, a
+     margin specified in ems is relative to the element's font-size, not to the
+     pages' base font size. So, for example, if we want a 1.5em margin (relative
+     to the base font), we have to divide that length by the element's
+     font-size:  1.5em / 2em = 0.5em  */
+    font-weight: normal;
+    position: relative;
+    top: 0px;
+    left: 50px;
+    color: #fff;
+}
+
+.panels-flexible-region-28-main-row {
+    position: relative;
+    left: 30px;
+    top: -300px;
+}
+
+.panels-flexible-region-28-right {
+    padding: 0 0 0 20px;
+}
+
+.panels-flexible-region-28-center .pane-node-field-partners {
+    border-top: 1px solid #c8c5be;
+    padding-top: 20px;
+}
+
+.panels-flexible-region-28-center-inside {
+    padding: 0 20px 0 0;
+    border-right: 1px solid #c8c5be;
+}
+
+.panels-flexible-row-28-2 {
+    padding: 0 30px 0px 30px;
+}
+
+.panels-flexible-row-28-2-inside {
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #c8c5be;
+}
+
+.panels-flexible-row-28-2 .pane-node-field-eventintro {
+    width: 460px;
+}
+
+.panels-flexible-region-28-header_images_left {
+    position: relative;
+    top: 0px;
+    left: 30px;
+}
+
+.panels-flexible-region-28-events_right_top {
+    position: relative;
+    left: -30px;
+}
+
+.panels-flexible-region-28-header_images_right {
+    position: relative;
+    top: 0px;
+    left: 30px;
+}
+
+.panels-flexible-region-25-right .pane-content {
+    position: relative;
+    top: -10px;
+}
+
+.panels-flexible-region-24-right_regiona .pane-content {
+    position: relative;
+    top: -10px;
+}
+
+.panels-flexible-row-28-main-row {
+    padding: 20px 30px 0 30px;
+}
+
+.panels-flexible-row-28-main-row .views-field-field-righttextcolumn {
+    padding: 0 0 0 20px;
+}
+
+.view-id-recentblogs .views-label-name {
+    line-height: 1.1em !important;
+    margin: 0 !important;
+}
+
+.pane-recentblogs {
+    position: relative;
+    top: 30px;
+}
+
+/*.st_facebook_hcount {
+    position: relative;
+    top: -355px;
+}
+
+.st_twitter_hcount {
+    position: relative;
+    top: -355px;
+}
+
+.st_email_hcount {
+    position: relative;
+    top: -355px;
+}
+
+.st_plusone_hcount {
+    position: relative;
+    top: -355px;
+}
+
+.st_sharethis_hcount {
+    position: relative;
+    top: -355px;
+}*/
+/* National Parks Pages */
+
+.panels-flexible-region-7-content_right {
+    position: relative;
+    top: -15px
+}
+
+.panels-flexible-region-7-left {
+    position: relative;
+    top: -20px;
+}
+
+.panels-flexible-region-7-content_right-inside .field-content {
+    width: 160px;
+    height: 42px;
+}
+
+.panels-flexible-region-7-content_right-inside .row-1 {
+    border-bottom: 1px solid #c8c5be;
+}
+
+.panels-flexible-region-7-content_right-inside .row-2 {
+    border-bottom: 1px solid #c8c5be;
+    margin: 15px 0 30px 0;
+}
+
+.panels-flexible-row-25-main-row .content {
+    position: relative;
+    top: 40px
+}
+
+.panels-flexible-region-6-content_right-inside
+
+.pane-taxonomy-term-panel-pane-24 .pane-title {
+    font-size: 1.8em;
+}
 
 /* Home Page */
 
@@ -628,6 +861,11 @@ dd {
 }
 
 .view-display-id-panel_pane_18 {
+    height: 286px;
+    padding: 0px 20px 0 0;
+}
+
+.pane-taxonomy-term-panel-pane-18 .view-display-id-panel_pane_18 {
     height: 286px;
     padding: 60px 20px 0 0;
 }
@@ -666,7 +904,7 @@ dd {
 
 .panels-flexible-region-12-center {
     border-bottom: 1px solid #c8c5be;
-    padding-bottom: 15px;
+    padding-bottom: 40px;
 }
 
 #twitterblock {
@@ -723,31 +961,133 @@ dd {
     padding: 40px 0 0 0;
 }
 
-.panels-flexible-24 img {
-    border: none;
+#recentevents {
+    background: url(../images/upcoming-events.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    padding: 40px 0 0 0;
 }
 
-/*.view-display-id-panel_pane_9 img:hover
-.view-display-id-panel_pane_9 img:focus {
-    outline: 3px solid #6da838;
-}*/
-
-/*.border {
-    border: 1px solid #c8c5be;
-    padding: 2px;
+#featuredevents {
+    background: url(../images/featurednewsevents.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    padding: 40px 0 0 0;
 }
 
-.border:hover,
-.border:focus {
-    outline: 3px solid #6da838;
-}*/
+#recentnewsandevents {
+    background: url(../images/recentnewsevents.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    padding: 40px 0 0 0;
+}
 
-/*.field-type-image {
+#recentphotos {
+    background: url(../images/photoalbums.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    padding: 40px 0 0 0;
+}
+
+#photoslong {
+    background: url(../images/photoalbums2.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    padding: 40px 0 0 0;
+}
+
+#videoslong {
+    background: url(../images/videos.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    padding: 40px 0 0 0;
+}
+
+#longevents {
+    background: url(../images/eventssmallheader.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    padding: 40px 0 0 0;
+}
+
+#longnews {
+    background: url(../images/newssmallheader.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    padding: 40px 0 0 0;
+}
+
+
+.panels-flexible-24 img,
+.panels-flexible-row-29-1 img {
+    border: none !important;
+}
+
+#featuredblog .pane-content {
+    position: relative;
+    top: 20px;
+}
+
+#recentpostsblog {
+    position: relative;
+    top: 30px;
+}
+
+#recentpostsblog .pane-content {
+    position: relative;
+    top: 20px;
+}
+
+.panels-flexible-row-30-2 {
+    padding: 0 30px 30px 30px;
+    position: relative;
+    top: 50px;
+}
+
+.panels-flexible-region-30-center__-inside .pane-node-title {
+    font-size: 1.8em;
+    line-height: 1.2em;
+    margin: 0em 0 .5em 0; /*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
+    color: #746d5d;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    font-weight: normal;
+}
+
+.panels-flexible-region-12-right_rail-inside .views-field-titlefi {
+    position: relative;
+    vertical-align: top;
+}
+
+/* borders for images */
+
+.panels-flexible-region-middle img,
+.pane-event-photo-column img, 
+.panels-flexible-region-28-right-inside img {
+    /*padding-top: 20px;*/
     border: 1px solid #c8c5be;
-    padding: 2px;
-}*/
-    
+    padding: 4px;
+}
 
+.panels-flexible-region-6-content_right-inside img:hover,
+.panels-flexible-region-6-content_right-inside img:focus,
+.panels-flexible-region-13-far_right_region img:hover,
+.panels-flexible-region-13-far_right_region img:focus {
+    outline: 3px solid #6da838;
+}
+
+.field-slideshow-0-pager li {
+    padding-right: 10px;
+}
 /*
  * Tables
  *
@@ -800,15 +1140,15 @@ td {
 }
 
 .col-1 {
-    padding: 0px 10px 10px 0;
+    padding: 15px 10px 20px 0;
 }
 
 .col-2 {
-    padding: 0px 10px 0 10px;
+    padding: 15px 10px 20px 10px;
 }
 
 .col-3 {
-    padding: 0px 0px 0 10px;
+    padding: 15px 0px 20px 10px;
 }
 
 

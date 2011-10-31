@@ -1012,10 +1012,10 @@ ul.nice-menu li.menu-676 a:active {
 #nice-menu-3 {
     float: left;
     background-color: #aca79e;
-    position: absolute;
+    position: relative;
     height: 40px;
     top: 0px;
-    right: 495px;
+    left: 30px;
     color: #fff;
 }
 

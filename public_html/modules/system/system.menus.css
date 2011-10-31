@@ -11,14 +11,19 @@ ul.menu {
   border: none;
   list-style: none;
   text-align: left;
-    padding-top: 0;/* LTR */
+  padding: 0 0 0 0 !important;/* LTR */
 }
+
+.menu ul {
+    margin: 0;
+}
+
 ul.menu li {
   margin: 0 0 0 0.5em; /* LTR */
 }
 ul li.expanded {
-  list-style-image: url(../../misc/menu-expanded.png);
-  list-style-type: circle;
+  /*list-style-image: url(../../misc/menu-expanded.png);
+  list-style-type: circle;*/
 }
 ul li.collapsed {
   list-style-image: url(../../misc/menu-collapsed.png); /* LTR */

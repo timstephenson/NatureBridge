@@ -109,9 +109,9 @@ ul.nice-menu-left a, ul.nice-menu-left ul a {
 ******************************/
 
 ul.nice-menu-down {
-    float: right; /* LTR */
+   /* float: right; /* LTR */
   /*border: 0;*/
-    top:-50px;
+    /*top:-50px;*/
     
 }
 

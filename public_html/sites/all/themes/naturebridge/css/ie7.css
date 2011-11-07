@@ -36,3 +36,18 @@ tr.odd th,
 tr.odd td {
   border-bottom: 1px solid #ccc; /* IE doesn't display borders on table rows */
 }
+
+#headerimageb {
+    position: relative;
+    left: 270px;
+}
+
+.panels-flexible-region-21-leftmost a {
+    text-decoration: none !important;
+}
+
+#header,
+#main {
+    overflow: hidden;
+}
+

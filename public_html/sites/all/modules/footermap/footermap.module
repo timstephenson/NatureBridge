@@ -1,5 +1,4 @@
 <?php
-/* $Id: footermap.module,v 1.11.2.16.2.14 2011/01/26 18:56:37 mradcliffe Exp $ */
 
 /*
  * @file
@@ -44,6 +43,27 @@ function footermap_menu()
   );
 
   return $items;
+}
+
+/**
+ * Implementation of hook_theme
+ */
+function footermap_theme($existing, $type, $theme, $path) {
+  return array(
+    'footermap' => array(
+      'variables' => array('footermap' => NULL, 'title' => NULL, 'cached' => NULL),
+      'file' => 'footermap.theme.inc',
+      'template' => 'footermap',
+    ),
+    'footermap_item' => array(
+      'variables' => array('href' => NULL, 'title' => NULL, 'level' => NULL, 'children' => NULL, 'attributes' => NULL),
+      'file' => 'footermap.theme.inc',
+    ),
+    'footermap_header' => array(
+      'variables' => array('title' => NULL, 'items' => NULL, 'attributes' => NULL),
+      'file' => 'footermap.theme.inc',
+    ),
+  );
 }
 
 /*
@@ -113,7 +133,7 @@ function footermap_block_info()
     'weight' => 5,
     'status' => 1,
     'region' => 'footer',
-    'cache' => DRUPAL_CACHE_PER_ROLE,
+    'cache' => DRUPAL_CACHE_CUSTOM,
   );
 
   return $blocks;
@@ -123,10 +143,12 @@ function footermap_block_info()
  * Implementation of hook_block_view
  */
 function footermap_block_view($delta = '')
-{
+{  
   if ($delta == 'footermap')
   {
     drupal_add_css(drupal_get_path('module', 'footermap') . '/footermap.css');
+    
+    
     $block = array(
       'subject' => t(''),
       'content' => footermap_render(),
@@ -138,30 +160,62 @@ function footermap_block_view($delta = '')
 
 /*
  * footermap_render
- * @return HTML output
+ * @return Render array
  */
 function footermap_render()
 {
+  global $user;
+  global $language;
+
   $recurse = variable_get('recurse_limit', 0);
   $base = variable_get('top_menu', 0);
   $menus = menu_get_menus(TRUE);
   $mapref = array();
-  $disp_heading = variable_get('footermap_heading', 0);
+  $avail_menus = variable_get('avail_menus', array());
   $o = '';
 
-  footermap_get_menu($base, $mapref, $recurse, 0);
+  $i = 1;
+  foreach ($menus as $key => $menu) {
+    if (isset($avail_menus[$key]) && $avail_menus[$key] === $key) {
+      $mapref[$key] = array(
+        '#theme' => 'footermap_header',
+        '#title' => $menu, // Need to check_plain() or t() during render.
+        '#attributes' => array(
+          'class' => array('footermap-col', 'footermap-header'),
+          'id' => 'footermap-col-' . $i,
+        ),
+      );
 
-  $n = 0;
-  foreach ($mapref as $key => $block)
-  {
-    $heading = ($disp_heading == 1) ? $menus[$key] : '';
-    $o .= '<div class="footermap-col" id="footermap-col-'.$n.'-footermap-col-'.$key.'">'.theme('links', array('links' => $block, 'heading' => array('text' => t($heading), 'level' => 'h3'), 'attributes' => array('class' => 'footermap-item links'))) . '</div>';
-    $n++;
+      $i++;
+    }
   }
   
-  $o = '<div class="footermap">'.$o.'</div>';
 
-  return $o;
+  // Setup the render array first without any map reference set.
+  $content = array(
+    '#theme' => 'footermap',
+    '#footermap' => '',
+    '#title' => '',
+    '#cached' => FALSE,
+  );
+
+  // Custom block cache per language
+  $lang = !empty($user->language) ? $user->language : (!empty($language->language) ? $language->language : LANGUAGE_NONE);
+  $cached = cache_get('footermap-' . $lang, 'cache');  
+
+  // Set cached to true if we're cached and overwrite our map reference.
+  if (isset($cached->data)) {
+    $mapref = $cached->data;
+    $content['#cached'] = TRUE;
+  }
+  else {
+    footermap_get_menu($base, $mapref, $recurse, 0);
+  }
+
+  // Finally set the map reference in the render array.
+  $content['#footermap'] = $mapref;
+
+  return $content;
 }
 
 /*
@@ -176,44 +230,53 @@ function footermap_get_menu($mlid, &$mapref, $recurse, $level)
 {
   global $user;
 
-  if ($recurse <> 0 && $level > $recurse)
+  if ($recurse <> 0 && $level >= $recurse)
     return;
 
   $avail_menus = variable_get('avail_menus', array());
 
-  if (variable_get('sys_menus', 0) == 0) 
-    $system_menu = " AND ml.module <> 'system' ";
-  else
-    $system_menu = ' ';
+  $query = db_select('menu_links', 'ml');
+  $query
+    ->fields('ml')
+    ->condition('ml.plid', $mlid, '=')
+    ->condition('ml.hidden', 0, '=')
+    ->orderBy('ml.plid')
+    ->orderBy('ml.weight')
+    ->orderBy('ml.link_title');
+  $query->leftJoin('menu_router', 'mr', 'ml.router_path = mr.path');
+  $query
+    ->fields('mr')
+    ->orderBy('mr.title');
 
-  $sql = 'SELECT * FROM {menu_links} ml LEFT OUTER JOIN {menu_router} mr ON (ml.router_path = mr.path) WHERE ml.plid = :mlid AND ml.hidden = 0' . $system_menu . 'ORDER BY ml.plid, ml.weight, ml.link_title, mr.title';
+  if (variable_get('sys_menus', 0) == 0)
+    $query->condition('ml.module', 'system', '<>');
 
-  $res = db_query($sql, array('mlid' => $mlid));
+  $res = $query->execute();
 
-  while ($h = $res->fetchObject())
+  foreach ($res as $item)
   {
     // available menus check 
-    if (!_footermap_check_menu_item($avail_menus, $h))
+    if (!_footermap_check_menu_item($avail_menus, $item))
       continue;
 
     // access check for menu router items
-    if (isset($h->path))
+    if (isset($item->path))
     {
-      if (empty($h->access_callback)) // automatic fail
+      if (empty($item->access_callback)) // automatic fail
         continue;
 
       $map = array();
       $args = array();
-      $map = explode('/', $h->link_path);
-      if (!empty($h->to_arg_functions))
-        _menu_link_map_translate($map, $h->to_arg_functions);
+      $map = explode('/', $item->link_path);
+      if (!empty($item->to_arg_functions))
+        _menu_link_map_translate($map, $item->to_arg_functions);
 
-      $args = menu_unserialize($h->access_arguments, $map);
+      $args = menu_unserialize($item->access_arguments, $map);
 
       // There's no way that I can do access callback stuff for every 
       // custom access callback with custom arguments under the sun. 
       // It's out of scope of this module, and a non-issue.
-      if ($h->access_callback == 'user_access')
+      if ($item->access_callback == 'user_access')
       {
         if (!empty($args[0])) {
           if (! user_access($args[0], $user)) {
@@ -221,7 +284,7 @@ function footermap_get_menu($mlid, &$mapref, $recurse, $level)
           }
         }
       }
-      else if ($h->access_callback == 'node_access')
+      else if ($item->access_callback == 'node_access')
       {
         if (is_numeric($args[1]))
         {
@@ -237,15 +300,28 @@ function footermap_get_menu($mlid, &$mapref, $recurse, $level)
       }
     }
 
-    $h->link_path = preg_replace("/\/%$/", '', $h->link_path);
-    $mapref[$h->menu_name]['menu-'.$h->mlid] = array(
-      'href' => $h->link_path,
-      'title' => $h->link_title,
+    // Mapref reference becomes child.
+    if (isset($mapref[$item->menu_name]))
+      $child = &$mapref[$item->menu_name]['#items'];
+    else
+      $child = &$mapref;
+
+    $item->link_path = preg_replace("/\/%$/", '', $item->link_path);
+    $child['menu-' . $item->mlid] = array(
+      '#theme' => 'footermap_item',
+      '#href' => $item->link_path,
+      '#title' => $item->link_title,
+      '#attributes' => array(
+        'class' => array('footermap-item', 'footermap-item-' . $level),
+        'id' => 'footermap-item-' . $item->mlid,
+      ),
+      '#level' => $level,
+      '#language' => isset($item->language) ? $item->language: LANGUAGE_NONE,
     );
 
-    if ($h->has_children == 1)
+    if ($item->has_children == 1)
     {
-      footermap_get_menu($h->mlid, $mapref, $recurse, $level+1);
+      footermap_get_menu($item->mlid, $child['menu-' . $item->mlid]['#children'], $recurse, $level+1);
     }
   }
 }
@@ -262,9 +338,17 @@ function footermap_get_primary_menus($top_menu)
   if (!is_numeric($top_menu))
     return $ret;
 
-  $res = db_query("SELECT * FROM {menu_links} ml INNER JOIN {menu_custom} mc ON (ml.menu_name = mc.menu_name) WHERE ml.plid = :top_menu AND ml.hidden = 0", array(':top_menu' => $top_menu));
+  $query = db_select('menu_links', 'ml');
+  $query
+    ->fields('ml')
+    ->condition('ml.plid', $top_menu, '=')
+    ->condition('ml.hidden', 0, '=');
+  $query->join('menu_custom', 'mc', 'ml.menu_name = mc.menu_name');
+  $query->fields('mc');
 
-  while ($menu = $res->fetchObject())
+  $res = $query->execute();
+
+  foreach ($res as $menu)
     $ret[$menu->menu_name] = t($menu->title);
 
   return $ret;

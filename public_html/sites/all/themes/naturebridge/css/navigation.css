@@ -899,29 +899,28 @@ ul.nice-menu li.menu-676 a:active {
     font-size: 1.2em;
     font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
    /* z-index: 10 !important;*/
+    position: relative;
+    z-index: 19;
+    top: -40px;
+    left: 270px;
 }
 
 #block-nice-menus-1 a:hover {
     color: #fff;
+    z-index: 20;
 }
 
-#nice-menu-1 {
+#block-nice-menus-1 {
     position: relative;
-    z-index: 5;
+    z-index: 20;
+    top: -50px;
+    left: 270px;
 }
-
-#nice-menu-2 {
-    position: relative;
-    z-index: 0;
-}
-
 
 .menu-624 {
     width: 110px;
     height: 23px;
     position: absolute;
-    left: 665px;
-    top: 52px;
     font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
     border-left: 1px solid #d5d3ce;
 }
@@ -929,8 +928,6 @@ ul.nice-menu li.menu-676 a:active {
 .menu-625 {
     width: 110px;
     position: absolute;
-    left: 666px;
-    top: 52px;
     color: #fff;
     font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
     background: url(../images/donorbutton.png);    

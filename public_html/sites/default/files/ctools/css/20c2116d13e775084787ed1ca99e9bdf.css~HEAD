@@ -41,83 +41,71 @@
   padding-bottom: 0;
 }
 
-.panels-flexible-column-9-main {
+.panels-flexible-column-18-main {
   float: left;
   width: 99.0000%;
 }
 
-.panels-flexible-9-inside {
+.panels-flexible-18-inside {
   padding-right: 0px;
 }
 
-.panels-flexible-9 {
+.panels-flexible-18 {
   width: auto;
 }
 
-.panels-flexible-region-9-right_column {
+.panels-flexible-region-18-right_column {
   float: left;
-  width: 700px;
+  width: 561px;
 }
 
-.panels-flexible-region-9-title_column {
-  float: left;
-  width: 99.0000%;
-}
-
-.panels-flexible-row-9-1-middle {
-  margin-right: 700px;
-}
-
-.panels-flexible-row-9-1-inside {
-  padding-right: 0px;
-}
-
-.panels-flexible-region-9-left_column {
-  position: relative;
-  float: left;
-  background-color: transparent;
-  width: 220px;
-}
-
-.panels-flexible-region-9-center {
-  position: relative;
-  float: left;
-  background-color: transparent;
-  width: 540px;
-}
-
-.panels-flexible-region-9-right_rail {
-  position: relative;
-  float: left;
-  background-color: transparent;
-  width: 140px;
-}
-
-.panels-flexible-row-9-main-row-inside {
-  padding-left: 900px;
-  margin-left: -900px;
-  padding-right: 0px;
-}
-
-* html .panels-flexible-row-9-main-row-inside {
-  left: 900px;
-}
-
-.panels-flexible-region-9-bottom_content {
+.panels-flexible-region-18-title_column {
   float: left;
   width: 99.0000%;
 }
 
-.panels-flexible-row-9-2-inside {
+.panels-flexible-row-18-1-middle {
+  margin-right: 561px;
+}
+
+.panels-flexible-row-18-1-inside {
   padding-right: 0px;
 }
 
-.panels-flexible-region-9-footer {
+.panels-flexible-region-18-leftmost {
+  float: left;
+  width: 23.5160%;
+}
+
+.panels-flexible-region-18-centermost {
+  float: left;
+  width: 60.5359%;
+}
+
+.panels-flexible-region-18-rightmost {
+  float: left;
+  width: 14.9481%;
+}
+
+.panels-flexible-row-18-main-row-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-region-18-bottom_content {
   float: left;
   width: 99.0000%;
 }
 
-.panels-flexible-row-9-3-inside {
+.panels-flexible-row-18-2-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-region-18-footer {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-18-3-inside {
   padding-right: 0px;
 }
 

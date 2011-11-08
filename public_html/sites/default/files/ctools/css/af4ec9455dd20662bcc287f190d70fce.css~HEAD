@@ -72,28 +72,18 @@
   padding-right: 0px;
 }
 
-.panels-flexible-region-24-left_region {
-  position: relative;
+.panels-flexible-region-24-leftmost {
   float: left;
-  background-color: transparent;
-  width: 703px;
+  width: 73.4095%;
 }
 
-.panels-flexible-region-24-right_regiona {
-  position: relative;
+.panels-flexible-region-24-rightmost {
   float: left;
-  background-color: transparent;
-  width: 221px;
+  width: 25.5905%;
 }
 
 .panels-flexible-row-24-1-inside {
-  padding-left: 924px;
-  margin-left: -924px;
   padding-right: 0px;
-}
-
-* html .panels-flexible-row-24-1-inside {
-  left: 924px;
 }
 
 .panels-flexible-region-24-center {

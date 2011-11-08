@@ -41,40 +41,72 @@
   padding-bottom: 0;
 }
 
-.panels-flexible-column-20-main {
+.panels-flexible-column-7-main {
   float: left;
   width: 99.0000%;
 }
 
-.panels-flexible-20-inside {
+.panels-flexible-7-inside {
   padding-right: 0px;
 }
 
-.panels-flexible-20 {
+.panels-flexible-7 {
   width: auto;
 }
 
-.panels-flexible-region-20-left {
+.panels-flexible-region-7-left_column {
   position: relative;
   float: left;
   background-color: transparent;
-  width: 220px;
+  width: 182px;
 }
 
-.panels-flexible-region-20-right {
+.panels-flexible-region-7-right_column {
   position: relative;
   float: left;
   background-color: transparent;
-  width: 220px;
+  width: 700px;
 }
 
-.panels-flexible-row-20-main-row-inside {
-  padding-left: 440px;
-  margin-left: -440px;
+.panels-flexible-row-7-1-inside {
+  padding-left: 882px;
+  margin-left: -882px;
   padding-right: 0px;
 }
 
-* html .panels-flexible-row-20-main-row-inside {
-  left: 440px;
+* html .panels-flexible-row-7-1-inside {
+  left: 882px;
+}
+
+.panels-flexible-region-7-leftmost {
+  float: left;
+  width: 25.3058%;
+}
+
+.panels-flexible-region-7-centermost {
+  float: left;
+  width: 73.6942%;
+}
+
+.panels-flexible-row-7-2-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-region-7-footer {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-7-3-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-region-7-footer2 {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-7-4-inside {
+  padding-right: 0px;
 }
 

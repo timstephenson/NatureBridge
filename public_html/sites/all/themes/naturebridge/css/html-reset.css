@@ -2131,12 +2131,12 @@ button {
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
 a:link {
-    color: #007239;
+    color: #ccc;
     text-decoration: none !important;
 }
 
 a:visited {
-    color: #007239;
+    color: #ccc;
 
 }
 

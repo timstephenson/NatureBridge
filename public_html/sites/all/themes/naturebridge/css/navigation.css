@@ -61,6 +61,7 @@ ul.nice-menu li.menu-629 a:visited {
     /*padding: 20px 0 0 10px;*/
     height: 78px;
     width: 221px;
+    top: -10px
 }
 
 ul.nice-menu li.menu-629 a {
@@ -88,6 +89,7 @@ ul.nice-menu li.menu-631 a:visited {
     /*padding: 20px 0 0 10px;*/
     height: 78px;
     width: 112px;
+    top: -10px;
 }
 
 ul.nice-menu li.menu-631 a {
@@ -115,6 +117,7 @@ ul.nice-menu li.menu-632 a:visited {
     /*padding: 20px 0 0 10px;*/
     height: 78px;
     width: 112px;
+    top: -10px;
 }
 
 ul.nice-menu li.menu-632 a {
@@ -141,6 +144,7 @@ ul.nice-menu li.menu-633 a:visited {
     background-position: 5px 5px;
      height: 78px;
     width: 112px;
+    top: -10px;
 }
 
 ul.nice-menu li.menu-633 a {
@@ -167,6 +171,7 @@ ul.nice-menu li.menu-634 a:visited {
     background-position: 5px 5px;
     height: 78px;
     width: 112px;
+    top: -10px;
 }
 
 ul.nice-menu li.menu-634 a {
@@ -219,6 +224,7 @@ ul.nice-menu li.menu-653 a:visited {
     /*padding: 20px 0 0 10px;*/
     height: 78px;
     width: 222px;
+    top: -10px;
 }
 
 ul.nice-menu li.menu-653 a {
@@ -246,6 +252,7 @@ ul.nice-menu li.menu-654 a:visited {
     /*padding: 20px 0 0 10px;*/
     height: 78px;
     width: 112px;
+    top: -88px;
 }
 
 ul.nice-menu li.menu-654 a {
@@ -273,6 +280,7 @@ ul.nice-menu li.menu-655 a:visited {
     /*padding: 20px 0 0 10px;*/
     height: 78px;
     width: 112px;
+    top: -166px;
 }
 
 ul.nice-menu li.menu-655 a {
@@ -299,6 +307,7 @@ ul.nice-menu li.menu-656 a:visited {
     background-position: 5px 5px;
     height: 78px;
     width: 112px;
+    top: -244px;
 }
 
 ul.nice-menu li.menu-656 a {
@@ -325,6 +334,7 @@ ul.nice-menu li.menu-657 a:visited {
     background-position: 5px 5px;
     height: 78px;
     width: 112px;
+    top: -322px;
 }
 
 ul.nice-menu li.menu-657 a {
@@ -339,7 +349,7 @@ ul.nice-menu li.menu-657 a:active {
 
 .menu-path-templatecachannel-31 {
     position: relative;
-    right: -332px;
+    right: -330px;
     top: -310px;
 }
 
@@ -379,6 +389,7 @@ ul.nice-menu li.menu-627 a:visited {
     float: left;
     height: 30px;
     width: 141px;
+    top: -10px;
 }
 
 ul.nice-menu li.menu-627 a {
@@ -407,6 +418,7 @@ ul.nice-menu li.menu-628 a:visited {
     float: left:
     height: 16px;
     width: 141px;
+    top: -10px;
 }
 
 ul.nice-menu li.menu-628 a {
@@ -435,6 +447,7 @@ ul.nice-menu li.menu-658 a:visited {
     float: left;
     height: 31px;
     width: 141px;
+    top: -10px;
 }
 
 ul.nice-menu li.menu-658 a {
@@ -463,6 +476,7 @@ ul.nice-menu li.menu-659 a:visited {
     float: left;
     height: 30px;
     width: 142px;
+    top: -10px;
 }
 
 ul.nice-menu li.menu-659 a {
@@ -491,6 +505,7 @@ ul.nice-menu li.menu-660 a:visited {
     float: left;
     height: 17px;
     width: 305px;
+    top: -10px;
 }
 
 ul.nice-menu li.menu-660 a {
@@ -519,6 +534,7 @@ ul.nice-menu li.menu-661 a:visited {
     float: left;
     height: 32px;
     width: 305px;
+    top: -10px;
 }
 
 ul.nice-menu li.menu-661 a {
@@ -547,6 +563,7 @@ ul.nice-menu li.menu-662 a:visited {
     float: left;
     height: 31px;
     width: 163px;
+    top: -10px;
 }
 
 ul.nice-menu li.menu-662 a {
@@ -577,6 +594,7 @@ ul.nice-menu li.menu-680 a:visited {
      /*padding: 20px 0 0 10px;*/
     height: 31px;
     width: 222px;
+    top: -10px;
 }
 
 ul.nice-menu li.menu-680 a {
@@ -604,6 +622,7 @@ ul.nice-menu li.menu-685 a:visited {
      /*padding: 20px 0 0 10px;*/
     height: 47px;
     width: 222px;
+    top: -10px;
 }
 
 ul.nice-menu li.menu-685 a {
@@ -634,6 +653,7 @@ ul.nice-menu li.menu-686 a:visited {
     /*padding: 20px 0 0 10px;*/
     height: 78px;
     width: 221px;
+    top: -10px;
 }
 
 ul.nice-menu li.menu-686 a {
@@ -644,6 +664,20 @@ ul.nice-menu li.menu-686 a {
 ul.nice-menu li.menu-686 a:hover,
 ul.nice-menu li.menu-686 a:active {
     background-image: url(../images/yosemiteonwordsnew.png);
+}
+
+.menu-686 {
+    right: 330px;
+}
+
+.menu-687 {
+    right: 220px;
+    top: -78px;
+}
+
+.menu-688 {
+    left: 110px;
+    top: -156px;
 }
 
 .menu-path-templateb-39 {
@@ -661,6 +695,7 @@ ul.nice-menu li.menu-687 a:visited {
     /*padding: 20px 0 0 10px;*/
     height: 78px;
     width: 112px;
+    top: -10px;
 }
 
 ul.nice-menu li.menu-687 a {
@@ -688,6 +723,7 @@ ul.nice-menu li.menu-688 a:visited {
     /*padding: 20px 0 0 10px;*/
     height: 78px;
     width: 333px;
+    top: -10px;
 }
 
 ul.nice-menu li.menu-688 a {
@@ -715,6 +751,7 @@ ul.nice-menu li.menu-674 a:link,
 ul.nice-menu li.menu-674 a:visited {
     height: 31px;
     width: 110px;
+    top: -10px;
 }
 
 ul.nice-menu li.menu-674 a {
@@ -738,6 +775,7 @@ ul.nice-menu li.menu-675 a:link,
 ul.nice-menu li.menu-675 a:visited {
     height: 17px;
     width: 110px;
+    top: -10px;
 }
 
 ul.nice-menu li.menu-675 a {
@@ -765,6 +803,7 @@ ul.nice-menu li.menu-676 a:visited {
      /*padding: 20px 0 0 10px;*/
     height: 30px;
     width: 110px;
+    top: -10px;
 }
 
 ul.nice-menu li.menu-676 a {
@@ -811,6 +850,14 @@ ul.nice-menu li.menu-676 a:active {
     color: #007239;
     border-left: 1px solid #d5d3ce;}
 
+.menu-669 a,
+.menu-599 a,
+.menu-598 a,
+.menu-597 a,
+.menu-227 a,
+.menu-613 a {
+    height: 42px;
+}
 
 .menu-598 {
     width: 110px;
@@ -899,10 +946,10 @@ ul.nice-menu li.menu-676 a:active {
     font-size: 1.2em;
     font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
    /* z-index: 10 !important;*/
-    position: relative;
+    position: absolute;
     z-index: 19;
-    top: -40px;
-    left: 270px;
+    top: 50px;
+    right: 0px;
 }
 
 #block-nice-menus-1 a:hover {
@@ -911,10 +958,10 @@ ul.nice-menu li.menu-676 a:active {
 }
 
 #block-nice-menus-1 {
-    position: relative;
+    position: absolute;
     z-index: 20;
-    top: -50px;
-    left: 270px;
+    top: 0px;
+    right: 0px;
 }
 
 .menu-624 {

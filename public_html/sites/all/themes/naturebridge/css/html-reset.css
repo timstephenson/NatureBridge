@@ -106,7 +106,7 @@ body {
 
 #header .section {
     position: relative;
-    float: left;
+    /*float: left;*/
     height: 65px;
 }
 
@@ -913,8 +913,16 @@ h2 a {
     left: 30px;
 }
 
-.panels-flexible-region-9-leftmost {
+.panels-flexible-region-9-leftmost,
+.panels-flexible-region-42-leftmost,
+.panels-flexible-region-41-leftmost,
+.panels-flexible-region-43-leftmost
+{
     min-height: 450px;
+}
+
+.panels-flexible-region-44-leftmost {
+    min-height: 500px;
 }
 
 .panels-flexible-region-14-leftmost,
@@ -1075,17 +1083,60 @@ h2 a {
 /* Parks Pages       */
 
 .panels-flexible-row-7-2,
-.panels-flexible-row-39-2 {
+.panels-flexible-row-39-2,
+.panels-flexible-row-13-2,
+.panels-flexible-row-41-2,
+.panels-flexible-row-43-2,
+.panels-flexible-row-44-2 {
     padding: 25px 30px 25px 30px !important;
 }
 
-.panels-flexible-row-7-2 .nphead {
+.panels-flexible-row-7-2 .nphead,
+.panels-flexible-row-39-2 .nphead,
+.panels-flexible-row-41-2 .nphead,
+.panels-flexible-row-43-2 .nphead,
+.panels-flexible-row-44-2 .nphead {
     height: 50px;
 }
 
 #mini-panel-top_row_national_parks {
     border-bottom: 1px solid #c8c5be;
 }
+
+.panels-flexible-region-13-leftmost {
+    width: 220px;
+    padding-right: 20px;
+}
+
+.view-display-id-panel_pane_31 {
+    border-bottom: 1px solid #c8c5be;
+}
+
+.view-display-id-panel_pane_30 {
+    border-bottom: 1px solid #c8c5be;
+    margin-right: 20px;
+}
+
+.view-display-id-panel_pane_30 .spothead {
+    padding-bottom: 15px;
+}
+
+.panels-flexible-region-44-leftmost {
+    width: 220px;
+    margin-right: 20px;
+}
+
+/*********************/
+/* Training and Tools*/
+
+.panels-flexible-region-13-rightmost-inside .nphead {
+    padding-top: 5px;
+}
+
+.view-display-id-panel_pane_32.view-dom-id-8 .nphead {
+    padding-top: 15px;
+}
+
 
 /*********************/
 /* Table Theming     */
@@ -1217,6 +1268,9 @@ h2 a {
     padding: 10px 0 0 10px;
 }
 
+/*********************/
+/* General Tables    */
+
 
 
 /*********************/
@@ -1227,7 +1281,12 @@ h2 a {
 .panels-flexible-region-7-centermost img,
 .pane-event-photo-column img, 
 .panels-flexible-region-28-right-inside img,
-.view-display-id-panel_pane_23 img {
+.view-display-id-panel_pane_23 img,
+.panels-flexible-row-39-2 img,
+.panels-flexible-row-13-2 img,
+.panels-flexible-row-41-2 img,
+.panels-flexible-row-43-2 img,
+.panels-flexible-row-44-2 img {
     /*padding-top: 20px;*/
     border: 1px solid #c8c5be;
     padding: 4px;
@@ -1735,6 +1794,10 @@ h2 a {
 
 .blogroll-title {
     position: relative;
+}
+
+.blog-title-label {
+    padding-bottom: 10px;
 }
 
 .panels-flexible-region-12-center {
@@ -2699,6 +2762,7 @@ div.messages ul {
 }
 
 div.status /* Normal priority messages */ {
+    z-index: -50;
 }
 
 div.warning,

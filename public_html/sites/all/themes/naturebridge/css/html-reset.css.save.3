@@ -1,0 +1,3086 @@
+/**
+ * @file
+ * HTML Element Styling
+ *
+ * Ok, I admit it. I fooled you. This isn't a "reset" stylesheet. Instead this
+ * is the place where you should set (not reset) the default styling for all
+ * HTML elements.
+ *
+ * @see http://meiert.com/en/blog/20080419/reset-style-sheets-are-bad/
+ * @see http://snook.ca/archives/html_and_css/no_css_reset/
+ */
+
+/**
+ * @file
+ * Page Background Styling
+ *
+ * The default layout method of Zen doesn't give themers equal-height columns.
+ * However, equal-height columns are difficult to achieve and totally
+ * unnecessary. Instead, use the Faux Columns method described in the following
+ * ALA article:
+ *   http://www.alistapart.com/articles/fauxcolumns/
+ */
+
+
+body {
+    background: #c8c5bf url(../images/backgroundgradient.png) repeat-x;
+    
+}
+
+#page-wrapper {
+    background: #ffffff;
+}
+
+#page {
+
+    
+}
+
+#header {
+    
+}
+
+#main-wrapper {
+    
+}
+
+#main {
+    
+}
+
+.region-footer {
+    
+}
+
+/**
+ * @file
+ * Layout Styling (DIV Positioning)
+ *
+ * Define CSS classes to create a table-free, 3-column, 2-column, or single
+ * column layout depending on whether blocks are enabled in the left or right
+ * columns.
+ *
+ * This layout is based on the Zen Columns layout method.
+ *   http://drupal.org/node/201428
+ *
+ * Only CSS that affects the layout (positioning) of major elements should be
+ * listed here.  Such as:
+ *   display, position, float, clear, width, height, min-width, min-height
+ *   margin, border, padding, overflow
+ */
+
+
+/*
+ * Body
+ */
+body {
+
+    
+}
+
+#page-wrapper,
+.region-bottom {
+    /*
+     * If you want to make the page a fixed width and centered in the viewport,
+     * this is the standards-compliant way to do that. See also the ie6.css file
+     * for the necessary IE5/IE6quirks hack to center a div.
+     */
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    
+}
+
+#page {
+    padding: 0;
+}
+
+/*
+ * Header
+ */
+#header {
+    padding: 30px 30px 0 30px;
+    /*height: 45px;*/
+
+}
+
+#header .section {
+    position: relative;
+    float: left;
+    height: 65px;
+}
+
+.region-header {
+
+}
+
+/*
+ * Main (container for everything else)
+ */
+#main-wrapper {
+    position: relative;
+    
+}
+
+#main {
+    position: relative;
+}
+
+/*
+ * Content
+ */
+#content,
+.no-sidebars #content {
+    float: left; /* LTR */
+    width:   1000px;
+    margin-left: 0; /* LTR */
+    margin-right: 0px; /* LTR */ /* Negative value of #content's width + left margin. */
+    padding: 0; /* DO NOT CHANGE. Add padding or margin to #content .section. */
+}
+
+.sidebar-first #content {
+    width: 760px;
+    margin-left: 200px; /* LTR */ /* The width of .region-sidebar-first. */
+    margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+.sidebar-second #content {
+    width: 760px;
+    margin-left: 0; /* LTR */
+    margin-right: -760px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+.two-sidebars #content {
+    width: 560px;
+    margin-left: 200px; /* LTR */ /* The width of .region-sidebar-first */
+    margin-right: -760px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+#content .section {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Navigation
+ */
+#navigation {
+    float: left; /* LTR */
+    width: 100%;
+    margin-left: 0; /* LTR */
+    margin-right: -100%; /* LTR */ /* Negative value of #navigation's width + left margin. */
+    padding: 0; /* DO NOT CHANGE. Add padding or margin to #navigation .section. */
+    height: 3em; /* The navigation can have any arbritrary height. We picked one
+                  that is the line-height plus 1em: 1.3 + 1 = 2.3
+                  Set this to the same value as the margin-top below. */
+}
+
+.with-navigation #content,
+.with-navigation .region-sidebar-first,
+.with-navigation .region-sidebar-second {
+    margin-top: 3em; /* Set this to the same value as the navigation height above. */
+}
+
+#navigation .section {
+}
+
+/*
+ * First sidebar
+ */
+.region-sidebar-first {
+    float: left; /* LTR */
+    width: 200px;
+    margin-left: 0; /* LTR */
+    margin-right: -200px; /* LTR */ /* Negative value of .region-sidebar-first's width + left margin. */
+    padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-first .section. */
+}
+
+.region-sidebar-first .section {
+    margin: 0 20px 0 0; /* LTR */
+    padding: 0;
+}
+
+/*
+ * Second sidebar
+ */
+.region-sidebar-second {
+    float: left; /* LTR */
+    width: 200px;
+    margin-left: 760px; /* LTR */ /* Width of content + sidebar-first. */
+    margin-right: -960px; /* LTR */ /* Negative value of .region-sidebar-second's width + left margin. */
+    padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-second .section. */
+}
+
+.region-sidebar-second .section {
+    margin: 0 0 0 20px; /* LTR */
+    padding: 0;
+}
+
+/*
+ * Footer
+ */
+.region-footer {
+}
+
+/*
+ * Page bottom
+ */
+.region-bottom /* See also the #page-wrapper declaration above that this div shares. */ {
+}
+
+/*
+ * Prevent overflowing content
+ */
+#header,
+#content,
+#navigation,
+.region-sidebar-first,
+.region-sidebar-second,
+.region-footer,
+.region-bottom {
+    overflow: visible;
+    word-wrap: break-word; /* A very nice CSS3 property */
+    
+}
+
+/*
+ * If a div.clearfix doesn't have any content after it and its bottom edge
+ * touches the bottom of the viewport, Firefox and Safari will mistakenly
+ * place several pixels worth of space between the bottom of the div and the
+ * bottom of the viewport. Uncomment this CSS property to fix this.
+ * Note: with some over-large content, this property might cause scrollbars
+ * to appear on the #page-wrapper div.
+ */
+/*
+ #page-wrapper {
+ overflow-y: hidden;
+ }
+ */
+
+
+/*
+ * Fonts
+ *
+ * Our font size and line height declarations are based on the following
+ * articles:
+ * - http://www.alistapart.com/articles/howtosizetextincss
+ * - http://24ways.org/2006/compose-to-a-vertical-rhythm
+ *
+ * All modern browsers use a 16px default font size. Specifying the font-size
+ * and line-height in ems (relative to the 16px default font) allows the user
+ * to resize the font in the browser and produces the most consistent results
+ * across different browsers.
+ */
+body {
+  font-size: 100%; /* Fixes exaggerated text resizing in IE6 and IE7 */
+}
+
+#skip-to-nav,
+#page {
+  /*
+   * To use a 12px font size on the page, delete the 14px declarations.
+   * to use a 14px font size on the page, delete the 12px declarations.
+   */
+
+  /* Use a 10px base font size with a 18px line height */
+  font-size: 0.625em; /* 16px x .625 = 10px */
+  line-height: 1.3em; /* 10px x 1.3 = 13px */
+
+}
+
+/*
+ * Instead of relying on the fonts that are available on a user's computer, you
+ * can use web fonts which, like images, are resources downloaded to the user's
+ * browser. Because of the bandwidth and rendering resources required, web fonts
+ * should be used with care.
+ *
+ * Numerous resources for web fonts can be found on Google. Here are a few
+ * websites where you can find Open Source fonts to download:
+ * - http://www.fontsquirrel.com/fontface
+ * - http://www.theleagueofmoveabletype.com
+ *
+ * In order to use these fonts, you will need to convert them into formats
+ * suitable for web fonts. We recommend the free-to-use Font Squirrel's
+ * Font-Face Generator:
+ *   http://www.fontsquirrel.com/fontface/generator
+ *
+ * The following is an example @font-face declaration. This font can then be
+ * used in any ruleset using a property like this:  font-family: Example, serif;
+
+@font-face {
+  font-family: 'Example';
+  src: url('../fonts/example.eot');
+  src: url('../fonts/example.eot?iefix') format('eot'),
+    url('../fonts/example.woff') format('woff'),
+    url('../fonts/example.ttf') format('truetype'),
+    url('../fonts/example.svg#webfontOkOndcij') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ */
+
+body,
+caption,
+th,
+td,
+input,
+textarea,
+select,
+option,
+legend,
+fieldset {
+  /* The following font family declarations are based on the Microsoft core web
+   * fonts which are common fonts available on most computer systems. The DejaVu
+   * and Nimbus Sans fonts are commonly available on Linux systems where the MS
+   * fonts are less common. Tahoma and Helvetica are also widely available.
+   *
+   * A user's web browser will look at the comma-separated list and will
+   * attempt to use each font in turn until it finds one that is available
+   * on the user's computer. The final "generic" font (sans-serif, serif or
+   * monospace) hints at what type of font to use if the web browser doesn't
+   * find any of the fonts in the list.
+
+  font-family: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
+  font-family: Times, "Times New Roman", Georgia, "DejaVu Serif", serif;
+  font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-family: Tahoma, Verdana, "DejaVu Sans", sans-serif;
+  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+
+  font-family: "Courier New", "DejaVu Sans Mono", monospace;
+
+   */
+
+    font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+    color: #746d5d;
+}
+
+pre,
+code,
+kbd,
+samp,
+tt,
+var {
+  font-family: "Courier New", "DejaVu Sans Mono", monospace;
+}
+
+/*
+ * Block-level elements
+ *
+ * To achieve a pleasant vertical rhythm, we use the 1.5em line height of our
+ * base font as the top and bottom margins for our block level elements and make
+ * the line heights of any larger fonts be a multiple of 1.5 ems. For more
+ * information, see http://24ways.org/2006/compose-to-a-vertical-rhythm
+ */
+h1, h2, h3, h6,
+p, blockquote, pre,
+ul, ol, dl,
+hr, table, fieldset {
+  /*margin: 1.5em 0;*/
+        
+}
+
+h4, h5 {
+}
+
+/* Headings */
+h1 {
+    font-size: 2.4em;
+    line-height: 1.2em;
+    margin: 0.75em 0;
+  /* 0.75em is equivalent to 1.5em in the page's base font. font. Remember, a
+     margin specified in ems is relative to the element's font-size, not to the
+     pages' base font size. So, for example, if we want a 1.5em margin (relative
+     to the base font), we have to divide that length by the element's
+     font-size:  1.5em / 2em = 0.5em  */
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 2.4em;
+    line-height: 1.1em;
+    margin: 0 0 0 0; /* Equivalent to 1.5em in the page's base font: 1.5 / 1.5 = 1em */
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    color: #746d5d;
+    font-weight: normal;    
+    
+}
+
+h3 {
+  
+    font-size: 1.8em;
+    line-height: 1.2em;
+    margin: 0em 0 .5em 0; /*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
+    color: #746d5d;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    font-weight: normal;
+}
+
+
+h4 {
+    font-size: 1.6em;
+    margin: 0 0 0 0;
+    line-height: 1.2em;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    color: #746d5d;
+    font-weight: normal;
+
+}
+
+h5 {
+    font-size: 1.4em;
+    line-height: 1.4em;
+    margin: 0 0 20px 0;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+
+h6 {
+    font-size: 1.2em;
+    line-height: 1.3em;
+    margin: 0 0 20px 0;; /* Equivalent to 1.5em in the page's base font: 1.5 / 1.1 = 1.364 */
+    color: #746d5d;
+    font-weight: normal;
+}
+
+/* Other block-level elements */
+p {
+}
+
+blockquote {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+pre {
+  font-size: 1.1em; /* Monospace fonts can be hard to read */
+  margin: 1.364em 0; /* Equivalent to 1.5em in the page's base font: 1.5 / 1.1 = 1.364 */
+}
+
+hr {
+  height: 1px;
+  border: 1px solid #666;
+}
+
+address {
+}
+
+/*
+ * Lists
+ *
+ * We need to standardize the list item indentation.
+ */
+ul,
+ol {
+  margin-left: 0; /* LTR */
+  /*padding-left: 0; /* LTR */
+}
+
+.item-list ul /* Drupal overrides */ {
+  /*margin: 1.5em 0;
+  padding: 0 0 0 2em; /* LTR */
+}
+
+ul ul, ul ol,
+ol ol, ol ul,
+.item-list ul ul, .item-list ul ol,
+.item-list ol ol, .item-list ol ul {
+  margin: 0;
+}
+
+li {
+  margin: 0;
+  padding: 2px, 0, 0, 5px;
+}
+
+.item-list ul li,
+ul.menu li,
+li.expanded,
+li.collapsed,
+li.leaf /* Drupal override */ {
+    margin: 0;
+    /*padding: 10px 0 12px 0px;
+    border-top: 1px solid #d5d3ce;*/
+
+}
+
+li.last {
+    /*border-bottom: 1px solid #d5d3ce !important;*/
+}
+
+ul          { list-style-type: none; margin: 0px;}
+ul ul       { list-style-type: circle; }
+ul ul ul    { list-style-type: square; }
+ul ul ul ul { list-style-type: circle; }
+ol          { list-style-type: decimal; }
+ol ol       { list-style-type: lower-alpha; }
+ol ol ol    { list-style-type: decimal; }
+
+dl {
+}
+
+dt {
+  margin: 0;
+  padding: 0;
+}
+
+dd {
+  margin: 0 0 0 2em; /* LTR */
+  padding: 0;
+}
+
+#main .active-trail,
+#tempcmenu .active {
+    background-color: #f1f0ee;
+}
+
+#nice-menu-3 .active {
+    background-color: #6da838;
+}
+
+#tempcmenu {
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    width: 180px;
+    margin: 0;
+    color: #007239;
+    font-size: 1.6em;
+    line-height: 1em;
+    vertical-align: top;
+    position: relative;
+
+}
+
+#tempcmenu a {
+    color: #007239    
+}
+
+#tempcmenu li {
+    padding: 10px 0 10px 5px;
+    border-bottom: 1px solid #c8c5be;
+}
+
+#tempcmenu li:hover{
+    background-color: #f1f0ee !important;
+}
+
+#taxonomymenu .expanded {
+    padding-top: 20px;
+}
+
+/* About Us Theming */
+
+.panels-flexible-row-21-main-row {
+    position: relative;
+    top: 25px;
+}
+
+
+
+.col-1.col-first {
+    
+}
+
+.pane-template-b-content-panel-pane-17 {
+    position: relative;
+    top: 5px;
+}
+
+.pane-template-b-content-panel-pane-16 h6 {
+    width: 160px;
+}
+
+.panels-flexible-region-leftc {
+    position: relative;
+    left: 20px;
+}
+
+.panels-flexible-region-centerc {
+    position: relative;
+    left: 20px;
+}
+
+.panels-flexible-region-rightc {
+    position: relative;
+    left: 40px;
+}
+
+.panels-flexible-region-top {
+    background: url(../images/smallbackground.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1000px;
+    height: 220px;
+    padding-left: 0px;
+}
+
+.panels-flexible-region-topb {
+    background: url(../images/tallbackground.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 378px;
+    width: 1000px;
+}
+
+.panels-flexible-region-topnews {
+    background: url(../images/newsheader.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 60px;
+    width: 940px;
+}
+
+.panels-flexible-region-mediabannerphotos {
+    background: url(../images/mediabannerphotos.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 60px;
+    width: 940px;
+}
+
+.panels-flexible-region-topblog {
+    background: url(../images/Naturebridge-blog-header.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 60px;
+    width: 940px;
+}
+
+.panels-flexible-region-topnewsgreybar {
+    background: url(../images/greynewsbar.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 40px;
+    width: 940px;
+}
+
+.panels-flexible-region-newsitembanner {
+    background: url(../images/newsitembanner.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    top: 20px;
+    left: 30px;
+    height: 60px;
+    width: 940px;
+}
+
+
+.panels-flexible-region-contentb {
+    vertical-align: top;
+    position: relative;
+    left: 50px;
+    top: 0px;
+}
+
+.panels-flexible-region-contenta {
+    vertical-align: top;
+    position: relative;
+    left: 20px;
+    top: 0px;
+}
+
+
+.panels-flexible-region-centerpics {
+    vertical-align: top;
+    position: relative;
+    left: 53px;
+    top: 0px;
+
+}
+
+/*.panels-flexible-region-middle {
+    width: 940px;
+    position: relative;
+    top: 30px;
+}*/
+
+.panels-flexible-region-bottomcontent {
+    background: url(../images/bottomcontent.png);
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 85px;
+    margin-top: 40px;
+
+}
+
+
+
+#partnerspotlight {
+    width: 180px;
+}
+
+#bottomcornerspotlight {
+    width: 220;
+}
+
+.removepadding {
+    padding: 0;
+}
+
+#titletemplatec {
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    margin: 0;
+    color: #ffffff;
+    position: absolute;
+    top: 10px;
+    left: 45px;
+    width: 350px;
+    height: 110px;
+}
+
+#titlenews {
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    margin: 0;
+    color: #ffffff;
+    position: absolute;
+    top: 0px;
+    left: 45px;
+    width: 350px;
+    height: 110px;
+}
+
+#beneathtitle {
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    margin: 0;
+    color: #ffffff;
+    position: absolute;
+    top: 125px;
+    left: 45px;
+    width: 350px;
+    height: 110px;
+}
+
+#titletemplateb {
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    margin: 0;
+    color: #ffffff;
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    width: 180px;
+}
+
+#beneathtitleb {
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    margin: 0;
+    color: #ffffff;
+    position: absolute;
+    top: 140px;
+    left: 60px;
+    width: 190px;
+    
+}
+
+#headerimage {
+    position: relative;
+    top: 30px;
+    right: 25px;
+    width: 560px;
+    height: 190px;
+}
+
+#headerimageb {
+    position: relative;
+    top: 30px;
+    left: 73px
+}
+
+#headerimagelarge {
+    position: relative;
+    top: 30px;
+    left: -27px
+}
+
+
+#headerimageba {
+    position: relative;
+    top: 30px;
+    left: 88px
+}
+
+#bottomrow {
+    padding: 20px 0 0 0;
+}
+
+.panels-flexible-region-inside {
+    padding: 0;
+}
+
+/*********************/
+
+/* Home Page Theming */
+
+.panels-flexible-row-21-2 {
+    padding: 25px 30px 0 30px !important;
+}
+
+.panels-flexible-region-21-leftmost-inside {
+    width: 200px;
+}
+
+.pane-template-b-content-panel-pane-18 .view-content {
+    border-bottom: 1px solid #c8c5be;
+}
+
+.panels-flexible-region-21-centermost {
+    border-right: 1px solid #c8c5be;
+}
+
+.panels-flexible-region-21-centermost img {
+    margin-top: 20px;
+}
+
+.pane-menu-menu-1-0-home-page-left-menu {
+    padding-top: 5px;
+}
+
+.views-field-field-videoinformation {
+    padding: 10px 0 0 10px;
+}
+
+.view-social-media-links {
+    padding-bottom: 10px;
+}
+
+.view-display-id-panel_pane_17 .views-field.views-field-body,
+.view-display-id-panel_pane_17 .views-field.views-field-field-videoinformation {
+    border: none !important;
+}
+
+.panels-flexible-row panels-flexible-row-21-3.clearfix.panels-flexible-region-bottomcontent {
+    padding: 0 0 0;
+}
+
+/*******************/
+
+/* About Us Theming */
+
+.panels-flexible-region-9-centermost .view-display-id-panel_pane_4 {
+    width: 520px;
+}
+
+.panels-flexible-region-middle {
+    position: relative;
+    top: 25px;
+    padding: 0px 30px 0 30px !important;
+}
+
+#rightnav {
+    position: relative;
+    left: 20px;
+    border-bottom: 1px solid #c8c5be;
+}
+
+#rightnav a {
+    color: #007239;
+}
+
+.pane-taxonomy-term-panel-pane-24 .pane-title {
+    padding-bottom: 15px;
+}
+
+.panels-flexible-region.panels-flexible-region-37-center.panels-flexible-region-last {
+    border-left: 1px #8ab960 solid;
+    height: 300px;
+}
+
+.panels-flexible-region-inside.panels-flexible-region-37-center-inside.panels-flexible-region-inside-last {
+    padding-left: 25px;
+}
+
+h2 a {
+    color: #007239;
+}
+
+
+/*******************/
+/*  National Parks */
+
+.view-id-national_park_service .views-field-title {
+    position: absolute;
+    bottom: 3px;
+    left: 66px;
+    width: 120px;
+}
+
+.panel-pane.pane-views.pane-national-park-service {
+    position: absolute;
+    bottom: 105px;
+    left: 30px;
+}
+
+.panels-flexible-region-9-leftmost {
+    min-height: 450px;
+}
+
+.panels-flexible-region-14-leftmost,
+.panels-flexible-region-15-leftmost,
+.panels-flexible-region-16-leftmost,
+.panels-flexible-region-17-leftmost,
+.panels-flexible-region-18-leftmost {
+    min-height: 700px;
+}
+
+/*********************/
+/* Taxonomy Results  */
+
+.panels-flexible-region-36-center .view-header {
+    position: relative;    
+    font-size: 2.4em;
+    margin: 0em 0 .5em 0;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;/*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
+    color: #fff;
+    top: -60px;
+    left: 10px;
+    
+}
+
+.panels-flexible-row-36-main-row-inside {
+    padding: 0 30px 0 30px;
+}
+
+.panels-flexible-region-36-center th.views-field.views-field-title {
+    background: #8ab960;
+    height: 40px;
+    border-bottom: 1px solid #fff;
+    font-size: 1.8em;
+    line-height: 1.2em;
+    margin: 0em 0 .5em 0;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;/*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
+    color: #fff;
+    padding: 10px 0 0 10px;
+}
+
+.view-id-taxonomy_term.view-display-id-page .views-table {
+    width: 940px; 
+    position: relative;
+    top: -40px;
+}
+
+.panels-flexible-region-36-center th.views-field.views-field-title a {
+    color: #fff !important;
+}
+
+
+.panels-flexible-region-36-center td.views-field.views-field-title {
+    background: #f1f0ee;
+    height: 20px;
+    border-bottom: 1px solid #fff;
+    padding: 10px 30px 0 10px;
+}
+
+.panels-flexible-region-36-center td.views-field.views-field-title a {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin: 0em 0 .5em 0;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;/*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
+}
+
+.panels-flexible-region-36-center th.views-field.views-field-created,
+.panels-flexible-region-36-center th.views-field.views-field-type,
+.panels-flexible-region-36-center th.views-field.views-field-name {
+    background: #aca79e;
+    border-left: 1px solid #fff;
+    font-size: 1.8em;
+    line-height: 1.2em;
+    margin: 0em 0 .5em 0;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;/*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
+    color: #fff;
+    padding: 10px 0 0 10px;
+}
+
+.panels-flexible-region-36-center th.views-field.views-field-created a,
+.panels-flexible-region-36-center th.views-field.views-field-type a,
+.panels-flexible-region-36-center th.views-field.views-field-name a {
+    color: #fff !important;
+}
+
+.panels-flexible-region-36-center td.views-field.views-field-created,
+.panels-flexible-region-36-center td.views-field.views-field-type,
+.panels-flexible-region-36-center td.views-field.views-field-name {
+    background: #f1f0ee;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 10px 0 0 10px;
+}
+
+
+/*********************/
+/* Footer Info       */
+
+.view-footer-info .views-field-field-contactinfo,
+.view-footer-info .views-field-body,
+.view-footer-info .views-field-field-newdirections,
+.view-footer-info a {
+    color: #f1f0ee !important;
+}
+
+.view-footer-info .views-field-body {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
+.view-footer-info .views-field-field-newdirections {
+    position: absolute;
+    left: 320px;
+    top: 20px;
+}
+
+.view-footer-info .views-field-field-contactinfo {
+    position: absolute;
+    left: 480px;
+    top: 20px;
+}
+
+.view-footer-info .views-field-field-inlineimage img {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+.view-id-footer_rules .view-display-id-block view-dom-id-7 {
+    position: absolute;
+    z-index: 40;
+}
+
+/*********************/
+/* SFG Pages         */
+
+.panels-flexible-region-14-rightmost,
+.panels-flexible-region-15-rightmost,
+.panels-flexible-region-16-rightmost,
+.panels-flexible-region-17-rightmost,
+.panels-flexible-region-18-rightmost {
+    float: right;
+}
+
+.panels-flexible-region-14-centermost-inside,
+.panels-flexible-region-15-centermost-inside,
+.panels-flexible-region-16-centermost-inside,
+.panels-flexible-region-17-centermost-inside,
+.panels-flexible-region-18-centermost-inside {
+    padding-right: 15px !important;
+}
+
+.panels-flexible-row.panels-flexible-row-17-2.clearfix.panels-flexible-region-bottomcontent {
+    
+}
+
+/*********************/
+/* Parks Pages       */
+
+.panels-flexible-row-7-2,
+.panels-flexible-row-39-2 {
+    padding: 25px 30px 25px 30px !important;
+}
+
+.panels-flexible-row-7-2 .nphead {
+    height: 50px;
+}
+
+#mini-panel-top_row_national_parks {
+    border-bottom: 1px solid #c8c5be;
+}
+
+/*********************/
+/* Table Theming     */
+
+/*********************/
+/* Accordion Theming */
+
+.pane-taxonomy-term-panel-pane-29 .field-content {
+  
+}
+
+/*********************/
+/* Spotlight CSS     */
+
+.panels-flexible-region-9-rightmost {
+    position: relative;
+}
+
+
+.view-display-id-panel_pane_27 img {
+    position: absolute;
+    bottom: 12px;
+    right: -10px;
+}
+
+
+/*******************************/
+/*   Search Form & Results     */
+
+#block-search-form {
+    position: relative;
+    top: 32px;
+    z-index: 1;
+    left: 750px;
+    width: 230px;
+}
+
+#edit-search-block-form--2 {
+    background: #19804c;
+    outline: 1px solid #8ab960;
+    border: none;
+    width: 180px;
+    height: 18px;
+    color: #fff;
+}
+
+.form-submit /* The submit button */ {
+    background: url(../images/searchbutton.png);
+    border: none;
+    font-size:0px;
+    width: 25px;
+    height: 22px;
+    position: relative;
+    top: -6px;
+    left: -5px;
+}
+
+.pane-searchresults-panel-pane-1 {
+    padding: 0px 30px 0px 30px;
+}
+
+.pane-searchresults-panel-pane-1 .pane-title {
+    position: relative;
+    top: -45px;
+    color: #fff;
+    left: 10px;
+}
+
+.view-id-searchresults .views-table {
+    width: 930px; 
+}
+
+.panels-flexible-region-34-center th.views-field.views-field-title {
+    background: #8ab960;
+    height: 40px;
+    border-bottom: 1px solid #fff;
+    font-size: 1.8em;
+    line-height: 1.2em;
+    margin: 0em 0 .5em 0;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;/*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
+    color: #fff;
+    padding: 10px 0 0 10px;
+}
+
+.panels-flexible-region-34-center th.views-field.views-field-title a {
+    color: #fff !important;
+}
+
+
+.panels-flexible-region-34-center td.views-field.views-field-title {
+    background: #f1f0ee;
+    height: 20px;
+    border-bottom: 1px solid #fff;
+    padding: 10px 30px 0 10px;
+}
+
+.panels-flexible-region-34-center td.views-field.views-field-title a {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin: 0em 0 .5em 0;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;/*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
+}
+
+.panels-flexible-region-34-center th.views-field.views-field-created,
+.panels-flexible-region-34-center th.views-field.views-field-type,
+.panels-flexible-region-34-center th.views-field.views-field-name {
+    background: #aca79e;
+    border-left: 1px solid #fff;
+    font-size: 1.8em;
+    line-height: 1.2em;
+    margin: 0em 0 .5em 0;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;/*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
+    color: #fff;
+    padding: 10px 0 0 10px;
+}
+
+.panels-flexible-region-34-center th.views-field.views-field-created a,
+.panels-flexible-region-34-center th.views-field.views-field-type a,
+.panels-flexible-region-34-center th.views-field.views-field-name a {
+    color: #fff !important;
+}
+
+.panels-flexible-region-34-center td.views-field.views-field-created,
+.panels-flexible-region-34-center td.views-field.views-field-type,
+.panels-flexible-region-34-center td.views-field.views-field-name {
+    background: #f1f0ee;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 10px 0 0 10px;
+}
+
+
+
+/*********************/
+/* borders for images */
+
+.panels-flexible-region-middle img,
+.panels-flexible-region-21-centermost img,
+.panels-flexible-region-7-centermost img,
+.pane-event-photo-column img, 
+.panels-flexible-region-28-right-inside img,
+.view-display-id-panel_pane_23 img {
+    /*padding-top: 20px;*/
+    border: 1px solid #c8c5be;
+    padding: 4px;
+}
+
+.panels-flexible-24 img,
+.panels-flexible-row-29-1 img,
+.panels-flexible-region-12-right_rail img,
+.panels-flexible-region-12-center img,
+.view-social-media-links img,
+.views-field-field-spotlightimage img,
+.view-display-id-panel_pane_19 img,
+.panels-flexible-region-12-right_rail-inside img,
+.panels-flexible-region-9-right_rail img,
+.view-id-national_park_service img,
+.view-display-id-panel_pane_27 img,
+.view-display-id-panel_pane_28 img {
+    border: none !important;
+    padding: 0 !important;
+}
+
+.panels-flexible-row {
+    float: none;
+    padding: 0;
+    width: auto;
+    position: relative;
+}
+
+.panels-flexible-region-6-content_right-inside img:hover,
+.panels-flexible-region-6-content_right-inside img:focus,
+.panels-flexible-region-13-far_right_region img:hover,
+.panels-flexible-region-13-far_right_region img:focus {
+    outline: 3px solid #6da838;
+}
+
+
+
+/**********************/
+/*    Footers         */
+
+.panels-flexible-region-footer {
+    background: url(../images/backgroundfooter.png);
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 252px;
+}
+
+.panels-flexible-region-footerc {
+    background: url(../images/rockfooter.jpg);
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 252px;
+}
+
+.pane-template-b-content-panel-pane-12 {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #c8c5be;
+}
+
+.panels-flexible-region-21-content_right-inside img {
+    position: relative;
+    top: 20px;
+}
+
+.panels-flexible-region-20-right {
+    position: relative;
+    left: 20px;
+}
+
+
+
+.panels-flexible-region-19-right,
+.panels-flexible-region-21-right {
+    position: relative;
+    left: 40px;
+
+}
+.panels-flexible-region-19-right-inside,
+.panels-flexible-region-21-right-inside {
+    height: 550px;
+    border-left: 1px solid #c8c5be;
+}
+
+.panels-flexible-region-23-center .pane-content {
+    position: relative;
+    top: 10px;
+}
+
+
+/* Blog Structure */
+
+#taxonomymenu {
+    position: relative;
+    left: 20px;
+}
+
+.panels-flexible-region-25-center {
+    position: relative;
+    left: 30px;
+    top: -70px;
+    width: 540px;
+}
+
+.panels-flexible-region-25-center .user-picture {
+    position: relative;
+    left: 560px;
+    top: 70px;
+    width: 70px;
+}
+
+.panels-flexible-region-25-center .pane-node-title {
+    width: 460px;
+}
+
+.panels-flexible-region-25-right {
+    position: relative;
+    left: 180px;
+    top: 20px;
+    height: 550px;
+    width: 240px;
+    border-left: 1px solid #c8c5be;
+}
+
+.panels-flexible-region-24-right_regiona {
+    position: relative;
+    height: 850px;
+    width: 240px;
+    border-left: 1px solid #c8c5be;
+}
+
+.panels-flexible-region-25-center .pane-node-title {
+    font-size: 2.4em;
+    line-height: 1.2em;
+    margin: 0 0 .5em 0; /* Equivalent to 1.5em in the page's base font: 1.5 / 1.5 = 1em */
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    color: #746d5d;
+    font-weight: normal;   
+}
+
+.panels-flexible-region-25-right .pane-title {
+    font-size: 1.8em;
+    line-height: 1.2em;
+    margin: 0em 0 .5em 0; /*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
+    color: #746d5d;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    font-weight: normal;
+}
+
+.panels-flexible-region-24-right_regiona .pane-title {
+    font-size: 1.8em;
+    line-height: 1.2em;
+    margin: 0em 0 .5em 0; /*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
+    color: #746d5d;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    font-weight: normal;
+}
+
+.panels-flexible-region-28-header .pane-node-title .pane-content {
+    font-size: 2.4em;
+    line-height: 1.2em;
+    margin: 0.75em 0;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    /* 0.75em is equivalent to 1.5em in the page's base font. font. Remember, a
+     margin specified in ems is relative to the element's font-size, not to the
+     pages' base font size. So, for example, if we want a 1.5em margin (relative
+     to the base font), we have to divide that length by the element's
+     font-size:  1.5em / 2em = 0.5em  */
+    font-weight: normal;
+    position: relative;
+    top: 0px;
+    left: 50px;
+    color: #fff;
+}
+
+.panels-flexible-region-28-main-row {
+    position: relative;
+    left: 30px;
+    top: -300px;
+}
+
+.panels-flexible-region-28-right {
+    padding: 0 0 0 20px;
+}
+
+.panels-flexible-region-28-center .pane-node-field-partners {
+    border-top: 1px solid #c8c5be;
+    padding-top: 20px;
+}
+
+.panels-flexible-region-28-center-inside {
+    padding: 0 20px 0 0;
+    border-right: 1px solid #c8c5be;
+}
+
+.panels-flexible-row-28-2 {
+    padding: 0 30px 0px 30px;
+}
+
+.panels-flexible-row-28-2-inside {
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #c8c5be;
+}
+
+.panels-flexible-row-28-2 .pane-node-field-eventintro {
+    width: 460px;
+}
+
+.panels-flexible-region-28-header_images_left {
+    position: relative;
+    top: 0px;
+    left: 30px;
+}
+
+.panels-flexible-region-28-events_right_top {
+    position: relative;
+    left: -30px;
+}
+
+.panels-flexible-region-28-header_images_right {
+    position: relative;
+    top: 0px;
+    left: 30px;
+}
+
+.panels-flexible-region-25-right .pane-content {
+    position: relative;
+    top: -10px;
+}
+
+.panels-flexible-region-24-right_regiona .pane-content {
+    position: relative;
+    top: -10px;
+}
+
+.panels-flexible-row-28-main-row {
+    padding: 20px 30px 0 30px;
+}
+
+.panels-flexible-row-28-main-row .views-field-field-righttextcolumn {
+    padding: 0 0 0 20px;
+}
+
+.view-id-recentblogs .views-label-name {
+    line-height: 1.1em !important;
+    margin: 0 !important;
+}
+
+.pane-recentblogs {
+    position: relative;
+    top: 30px;
+}
+
+/*.st_facebook_hcount {
+    position: relative;
+    top: -355px;
+}
+
+.st_twitter_hcount {
+    position: relative;
+    top: -355px;
+}
+
+.st_email_hcount {
+    position: relative;
+    top: -355px;
+}
+
+.st_plusone_hcount {
+    position: relative;
+    top: -355px;
+}
+
+.st_sharethis_hcount {
+    position: relative;
+    top: -355px;
+}*/
+/* National Parks Pages */
+
+.panels-flexible-region-7-content_right {
+    position: relative;
+    top: -15px
+}
+
+.panels-flexible-region-7-left {
+    position: relative;
+    top: -20px;
+}
+
+.panels-flexible-region-7-content_right-inside .view-taxonomy-term .field-content {
+    width: 160px;
+    height: 42px;
+}
+
+.panels-flexible-region-7-content_right-inside .row-1 {
+    border-bottom: 1px solid #c8c5be;
+}
+
+.panels-flexible-region-7-content_right-inside .row-2 {
+    border-bottom: 1px solid #c8c5be;
+    margin: 15px 0 30px 0;
+}
+
+.panels-flexible-row-25-main-row .content {
+    position: relative;
+    top: 40px
+}
+
+.panels-flexible-region-6-content_right-inside
+
+.pane-taxonomy-term-panel-pane-24 .pane-title {
+    font-size: 1.8em;
+}
+
+/* Home Page */
+
+
+/*.panels-flexible-region-21-content_right-inside .view-template-b-content p {
+    position: relative;
+    top: 20px;
+}
+
+/*.views-field.views-field-body {
+    position: relative;
+    top: -20px;
+}*/
+
+
+/**************/
+/* Promotions */
+
+.view-promotions.view-display-id-block,
+.panels-flexible-region-7-centermost .view-display-id-panel_pane_3,
+.panels-flexible-region-7-centermost .view-display-id-panel_pane_8 {
+    background: #8ab960;
+    padding: 10px 10px 10px 10px !important;
+    border: 4px solid #fff;
+    outline: 1px solid #8ab960;
+    color: #fff !important;
+}
+
+.view-promotions.view-display-id-block .col-1,
+.panels-flexible-region-7-centermost .view-display-id-panel_pane_3 .col-1,
+.panels-flexible-region-7-centermost .view-display-id-panel_pane_8 .col-1 {
+    color: #fff !important;
+    padding: 0;
+}
+
+.view-promotions.view-display-id-block h3,
+.panels-flexible-region-7-centermost .view-display-id-panel_pane_3 h3,
+.panels-flexible-region-7-centermost .view-display-id-panel_pane_8 h3 {
+    color: #fff !important;
+}
+
+.view-promotions.view-display-id-block a
+.panels-flexible-region-7-centermost .view-display-id-panel_pane_3 a 
+.panels-flexible-region-7-centermost .view-display-id-panel_pane_8 a {
+    color: #fff !important;
+}
+
+.panels-flexible-region-7-centermost .pane-promotions-panel-pane-3,
+.panels-flexible-region-7-centermost .pane-promotions-panel-pane-4,
+.panels-flexible-region-7-centermost .pane-promotions-panel-pane-7,
+.panels-flexible-region-7-centermost .pane-promotions-panel-pane-8 {
+    position: relative;
+    top: 0px;
+    left: 20px;
+}
+
+/* Grey with Green Border */
+
+.view-promotions.view-display-id-block_1 {
+    background: #f0f6eb;
+    padding: 10px 10px 10px 10px !important;
+    border: 4px solid #fff;
+    outline: 1px solid #8ab960;
+}
+
+.panels-flexible-region-7-centermost .view-display-id-panel_pane_4,
+.panels-flexible-region-7-centermost .pane-promotions-panel-pane-7 {
+    background: #f0f6eb;
+    padding: 10px 10px 10px 10px !important;
+    border: 4px solid #fff;
+    outline: 1px solid #8ab960;
+}
+
+.view-promotions.view-display-id-block_1 .col-1,
+.view-display-id-panel_pane_4 {
+
+}
+
+.view-promotions.view-display-id-block_1 h3 {
+
+}
+
+.view-promotions.view-display-id-block_1 a {
+
+}
+
+/*************************/*
+
+.views-label-field-requestinformation {
+    text-align: center;
+    background: #8ab960;
+    padding: 10px 0 10px 0;
+    color: #fff !important;
+}
+
+
+/*.panels-flexible-region-32-center .view-promotions {
+    position: relative;
+    left: 20px;
+    top: 60px;
+}*/
+
+/* Newscomm */
+
+.panels-flexible-region-12-rightmost-inside {
+    padding-left: 25px;
+    position: relative;
+    float: right;
+}
+
+.panels-flexible-region-12-right_regiona-inside .view-promotions {
+    position: relative;
+    left: 20px;
+    width: 190px;
+}
+
+.panels-flexible-region-29-leftmost {
+    border-right: 1px solid #c8c5be;
+}
+
+.panels-flexible-region-29-centermost-inside {
+    padding-left: 30px;
+}
+
+#communityspotlight .views-field-title {
+    position: relative;
+    left: 20px;
+    width: 280px;
+}
+
+.view-display-id-panel_pane_19 {
+    position: relative;
+    border-left: 1px solid #c8c5be;
+    padding: 0 0 0 10px;
+}
+
+.panels-flexible-region-12-right_rail .view-id-dom-8 img {
+    border:none !important;
+}
+
+.panels-flexible-region-12-right_rail .views-field-title {
+    
+}
+
+#communityspotlight {
+    background: url(../images/Community-Spotlight.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.view-display-id-panel_pane_18 {
+    /*height: 286px;*/
+    padding: 0px 20px 0 0;
+}
+
+.pane-taxonomy-term-panel-pane-18 .view-display-id-panel_pane_18 {
+    /*height: 286px;*/
+    padding: 49px 20px 0 0;
+    border-right: 1px solid #c8c5be;
+}
+
+.pane-taxonomy-term-panel-pane-18 .view-display-id-panel_pane_18 .view-content {
+    
+ 
+}
+
+.panels-flexible-row-12-1-inside {
+    width: 940px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #007239;
+}
+
+.panels-flexible-region-12-leftmost_-inside {
+    position: relative;
+    top: 25px;
+}
+
+.panels-flexible-region-12-rightmost_-inside {
+    background: url(../images/naturebridge-blog.png);
+    background-repeat: no-repeat;
+    background-position: 15px 0;
+    position: relative;
+    top: 25px;
+    left: 8px;
+    padding: 60px 0 0 15px;
+    border-left: 1px solid #c8c5be;
+
+}
+
+.blogroll-title a {
+
+}
+
+.blogroll-title {
+    position: relative;
+}
+
+.panels-flexible-region-12-center {
+    border-bottom: 1px solid #c8c5be;
+    padding-bottom: 40px;
+    top: 10px;
+}
+
+#twitterblock {
+    background: url(../images/latesttweet.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    left: 20px;
+    padding: 40px 0 0 0;
+}
+
+#facebookblock {
+    background: url(../images/latestpost.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    padding: 40px 0 0 0;
+}
+
+#videoblock {
+    background: url(../images/youtube.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    top: 20px;
+    padding: 40px 0 0 0;
+}
+
+#newsblock {
+    background: url(../images/newsheader2.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    padding: 25px 0 0 0;
+}
+
+#featuredblog {
+    background: url(../images/featuredposts.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    padding: 40px 0 0 0;
+}
+
+#recentpostsblog {
+    background: url(../images/recentpostsblog.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    padding: 40px 0 0 0;
+}
+
+#recentevents {
+    background: url(../images/upcoming-events.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    padding: 25px 0 0 0;
+}
+
+#featuredevents {
+    background: url(../images/featurednewsevents.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    padding: 40px 0 0 0;
+}
+
+#recentnewsandevents {
+    background: url(../images/recentnewsevents.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    padding: 40px 0 0 0;
+}
+
+#recentphotos {
+    background: url(../images/photoalbums.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    padding: 40px 0 0 0;
+    top: 60px;
+}
+
+#photoslong {
+    background: url(../images/photoalbums2.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    padding: 40px 0 0 0;
+}
+
+#videoslong {
+    background: url(../images/videos.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    padding: 40px 0 0 0;
+}
+
+#longevents {
+    background: url(../images/eventssmallheader.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    padding: 25px 0 0 0;
+}
+
+#longnews {
+    background: url(../images/newssmallheader.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    padding: 25px 0 30px 0;
+}
+
+.view-id-news_roll .views-row,
+.view-id-recent_events .views-row {
+    position: relative;
+    top: 20px;
+}
+
+.panels-flexible-region-29-left-inside {
+    border-right: 1px solid #c8c5be;
+}
+
+.panels-flexible-region-29-left_region {
+    padding-left: 25px;
+}
+
+.panels-flexible-region-29-left {
+    width: 325px;
+}
+
+.view-id-news_roll .views-field-title {
+    position: relative;
+    width: 300px;
+}
+
+/*.view-id-news_roll div.field-content {
+    position: relative;
+    top: 20px;
+}*/
+
+.view-id-news_roll .views-field-body {
+    position: relative;
+    width: 300px;
+}
+
+/*.pane-promotions-panel-pane-2 {
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
+.pane-promotions-panel-pane-1 {
+    position: relative;
+    top: 40px;
+    left: 15px;
+}*/
+
+.view-news-roll .views-row {
+    width: 300px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    border-bottom: 1px dotted #c8c5be;
+}
+
+div.views-field.views-field-field-blogimage {
+    position: relative;
+    top: 10px;
+}
+
+.view-video tr.odd,
+.view-video tr.even {
+    width: 300px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    border-bottom: 1px dotted #c8c5be;
+}
+
+.view-news-roll .views-row-first {
+    padding: none !important;
+}
+
+.view-id-recent_events .views-row {
+    position: relative;
+    width: 300px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    border-bottom: 1px dotted #c8c5be;
+}
+
+div.views-field views-field-field-newdate {
+    position: relative;
+    top: 10px;
+}
+
+.view-blog tr.row-1,
+.view-blog tr.row-2,
+.view-blog tr.row-3,
+.view-blog tr.row-4,
+.view-blog tr.row-5 {
+    width: 300px;
+    position: relative;
+    top: 15px;
+    border-bottom: 1px dotted #c8c5be;
+}
+
+/*div.field-content {
+    position: relative;
+    top: 20px;
+}*/
+
+
+.panels-flexible-region-9-right_rail .view-dom-id-4 img {
+    position: relative;
+    top: 68px;
+    left: 30px;
+}
+
+#featuredblog .pane-content {
+    position: relative;
+    top: 20px;
+}
+
+#recentpostsblog {
+    position: relative;
+    top: 30px;
+}
+
+#recentpostsblog .pane-content {
+    position: relative;
+    top: 20px;
+}
+
+.panels-flexible-row-30-2 {
+    padding: 0 30px 30px 30px;
+    position: relative;
+    top: 50px;
+}
+
+.panels-flexible-region-30-center__-inside .pane-node-title {
+    font-size: 1.8em;
+    line-height: 1.2em;
+    margin: 0em 0 .5em 0; /*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
+    color: #746d5d;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    font-weight: normal;
+}
+
+.panels-flexible-region-12-right_rail-inside .views-field-title {
+    position: relative;
+    vertical-align: top;
+}
+
+/* borders for images */
+
+
+
+.field-slideshow-0-pager li {
+    padding-right: 10px;
+}
+/*
+ * Tables
+ *
+ * Drupal provides table styling which is only useful for its admin section
+ * forms, so we override this default CSS. (We set it back in forms.css.)
+ */
+table {
+  border-collapse: collapse;
+  /* width: 100%; */ /* Prevent cramped-looking tables */
+}
+
+th {
+  text-align: left; /* LTR */
+  padding: 0;
+  border-bottom: none;
+}
+
+tbody {
+  border-top: none;
+}
+
+thead {
+}
+
+tfoot {
+}
+
+caption {
+}
+
+colgroup {
+}
+
+col {
+}
+
+tr {
+    vertical-align: top;
+
+}
+
+.row-2 {
+    padding: 20px 0 0 0;
+}
+
+
+td {
+    /*vertical-align: top;*/
+    /*width: 220px;*/
+}
+
+.col-1 {
+    padding: 0px 10px 15px 0;
+}
+
+.col-2 {
+    padding: 0px 10px 15px 10px;
+}
+
+.col-3 {
+    padding: 0px 0px 15px 10px;
+}
+
+
+
+
+
+
+/*.panels-flexible-region-columnleft {
+    padding-left: 40px;
+}
+
+.panels-flexible-region-columnmiddle {
+    padding-left: 0px;
+}
+
+.panels-flexible-region-columnright {
+    padding-left: 0px;
+}*/
+
+/*
+ * Forms
+ */
+form {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  padding: 0.5em;
+}
+
+legend {
+}
+
+label {
+}
+
+input {
+}
+
+select {
+}
+
+optgroup {
+}
+
+option {
+}
+
+textarea {
+}
+
+button {
+}
+
+/*
+ * Links
+ *
+ * The order of link states are based on Eric Meyer's article:
+ * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
+ */
+a:link {
+    color: #007239;
+    text-decoration: none !important;
+}
+
+a:visited {
+    color: #007239;
+
+}
+
+a:hover,
+a:focus {
+
+}
+
+img:hover,
+img:focus {
+    
+}
+
+a:active {
+}
+
+
+
+/*
+ * Other inline elements
+ */
+img {
+  border: 0;
+  /* vertical-align: bottom; */ /* Suppress the space beneath the baseline */
+   
+}
+
+/*.border {
+    border: 1px solid #c8c5be;
+    padding: 2px;
+}
+
+.border:hover,
+.border:focus {
+    outline: 3px solid #6da838;
+}*/
+
+/***************** File Aggregation********************/
+
+/**
+ * @file
+ * Wireframes Styling
+ *
+ * Add wireframes to the basic layout elements.
+ */
+
+
+.with-wireframes #header .section,
+.with-wireframes #content .section,
+.with-wireframes #navigation .section,
+.with-wireframes .region-sidebar-first .section,
+.with-wireframes .region-sidebar-second .section,
+.with-wireframes .region-footer,
+.with-wireframes .region-bottom {
+    outline: 1px solid #ccc;
+}
+
+/**
+ * @file
+ * Comment Styling
+ */
+
+
+#comments /* Wrapper for the list of comments and its title */ {
+    margin: 1.5em 0;
+}
+
+#comments h2.title /* Heading for the list of comments */ {
+}
+
+#comments h2.comment-form /* Heading for the comment form */ {
+}
+
+.comment /* Wrapper for a single comment */ {
+}
+
+.comment-preview /* Preview of the comment before submitting new or updated comment */ {
+    background-color: #ffffea; /* Drupal core will use a #ffffea background. See #1110842 */
+}
+
+.comment.new /* A new comment since the user last viewed the page. */ {
+}
+
+.comment.first /* The first comment in the list of comments */ {
+}
+
+.comment.last /* The last comment in the list of comments */ {
+}
+
+.comment.odd /* An odd-numbered comment in the list of comments */ {
+}
+
+.comment.even /* An even-numbered comment in the list of comments */ {
+}
+
+.comment-unpublished /* Unpublished comments */ {
+    /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+}
+
+.comment-unpublished div.unpublished /* The word "Unpublished" displayed underneath the content. See also the div.unpublished declaration in the nodes.css. */ {
+}
+
+.comment-by-anonymous /* A comment created by an anonymous user */ {
+}
+
+.comment-by-node-author /* A comment created by the node's author */ {
+}
+
+.comment-by-viewer /* A comment created by the current user */ {
+}
+
+h3.comment-title /* Comment title */ {
+}
+
+.new /* "New" marker for comments that are new for the current user */ {
+    color: #c00;
+}
+
+.comment .user-picture /* The picture of the comment author */ {
+}
+
+.comment .submitted /* The "posted by" information */ {
+}
+
+.comment .content /* Comment's content wrapper */ {
+}
+
+.comment .user-signature /* The user's signature */ {
+}
+
+.comment ul.links /* Comment links. See also the ul.links declaration in the pages.css. */ {
+}
+
+.indented /* Nested comments are indented */ {
+    /* margin-left: 25px; */ /* Drupal core uses a 25px left margin */
+}
+
+/**
+ * @file
+ * Block Styling
+ */
+
+
+.block /* Block wrapper */ {
+    /*margin-bottom: 1.5em;*/
+}
+
+.block.first /* The first block in the region */ {
+}
+
+.block.last /* The last block in the region */ {
+}
+
+.block.odd /* Zebra striping for each block in the region */ {
+}
+
+.block.even /* Zebra striping for each block in the region */ {
+}
+
+h2.block-title /* Block title */ {
+}
+
+.block .content /* Block's content wrapper */ {
+}
+
+#block-aggregator-category-1 /* Block for the latest news items in the first category */ {
+}
+
+#block-aggregator-feed-1 /* Block for the latest news items in the first feed */ {
+}
+
+#block-block-1 /* First block created with "Add block" link */ {
+}
+
+#block-blog-recent /* "Recent blog posts" block */ {
+}
+
+#block-book-navigation /* "Book navigation" block for the current book's table of contents */ {
+}
+
+#block-comment-recent /* "Recent comments" block */ {
+}
+
+#block-forum-active /* "Active forum topics" block */ {
+}
+
+#block-forum-new /* "New forum topics" block */ {
+}
+
+#block-locale-language /* Language switcher block */ {
+}
+
+#block-menu-menu-NAME /* Custom menu block  */ {
+}
+
+#block-node-recent /* "Recent content" block */ {
+}
+
+#block-node-syndicate /* "Syndicate" block for primary RSS feed; see also page.css's .feed-icon */ {
+}
+
+#block-poll-recent /* "Most recent poll" block */ {
+}
+
+#block-profile-author-information /* "Author information" block for the profile of the page's author */ {
+}
+
+#block-search-form /* "Search form" block */ {
+}
+
+#block-shortcut-shortcuts /* "Shortcuts" block */ {
+}
+
+#block-statistics-popular /* "Popular content" block */ {
+}
+
+#block-system-main-menu /* "Main menu" block */ {
+}
+
+#block-system-management /* "Management" block for Drupal management menu */ {
+}
+
+#block-system-navigation /* "Navigation" block for Drupal navigation menu */ {
+}
+
+#block-system-user-menu /* "User menu" block for Drupal user menu */ {
+}
+
+#block-system-help /* "System help" block */ {
+}
+
+#block-system-main /* "Main page content" block */ {
+}
+
+#block-system-powered-by /* "Powered by Drupal" block */ {
+}
+
+#block-user-login /* "User login form" block */ {
+}
+
+#block-user-new /* "Who's new" block for a list of the newest users */ {
+}
+
+#block-user-online /* "Who's online" block for a list of the online users */ {
+}
+
+/**
+ * @file
+ * Views Styling
+ */
+
+
+spotlightimg {
+    position: absolute;
+    top: 50px;
+}
+
+abbr, /* Abbreviations */
+acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+  white-space: nowrap;
+}
+
+/**
+ * @file
+ * Field Styling
+ */
+
+
+.field /* Wrapper for any field. */ {
+}
+
+/*
+ * Field types (Core)
+ */
+.field-type-text {
+}
+
+.field-type-text-long {
+}
+
+.field-type-text-with-summary {
+}
+
+.field-type-image {
+}
+
+.field-type-file {
+}
+
+.field-type-taxonomy-term-reference {
+}
+
+.field-type-number-integer {
+}
+
+.field-type-number-decimal {
+}
+
+.field-type-number-float {
+}
+
+.field-type-list-text {
+}
+
+.field-type-list-boolean {
+}
+
+.field-type-list-integer {
+}
+
+.field-type-list-float {
+}
+
+/*
+ * Field types (Contrib)
+ */
+.field-type-datetime /* Always use "datetime" when creating new CCK date fields. "date" and "datestamp" are legacy types. */ {
+}
+
+.field-type-node-reference {
+}
+
+.field-type-user-reference {
+}
+
+.field-type-image-smallimage {
+    position: absolute;
+    top: 30;
+}
+
+/*
+ * Named fields
+ */
+.field-name-body {
+}
+
+.field-name-field-image {
+}
+
+.field-name-field-tags {
+}
+
+.field-name-field-FIELDNAME /* Underscores in field name are replaced with dashes. */ {
+}
+
+/**
+ * @file
+ * Node Styling
+ *
+ * Style anything that isn't in the $content variable.
+ */
+
+
+.node /* Node wrapper */ {
+}
+
+.preview .node /* Preview of the content before submitting new or updated content */ {
+    /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
+}
+
+.node-promoted /* A node that has been promoted to the front page */ {
+}
+
+.node-sticky /* A sticky node (displayed before others in a list) */ {
+}
+
+.node-unpublished /* Unpublished nodes */ {
+    /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+}
+
+.node-unpublished div.unpublished,
+.comment-unpublished div.unpublished /* The word "Unpublished" displayed underneath the content. */ {
+    height: 0;
+    overflow: visible;
+    color: #d8d8d8;
+    font-size: 75px;
+    line-height: 1;
+    font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    word-wrap: break-word; /* A very nice CSS3 property */
+}
+
+.node-by-viewer /* A node created by the current user */ {
+}
+
+.node-teaser /* A node displayed as teaser */ {
+}
+
+/* All nodes are given a node-FOO class that describes the type of content that
+ * it is. If you create a new content type called "my-custom-type", it will
+ * receive a "node-my-custom-type" class.
+ */
+.node-page /* Page content node */ {
+}
+
+.node-article /* Article content node */ {
+}
+
+h2.node-title /* Node title */ {
+}
+
+.node .user-picture /* The picture of the node author */ {
+}
+
+.node .submitted /* The "posted by" information */ {
+}
+
+.node .content /* Node's content wrapper */ {
+}
+
+.node ul.links /* Node links. See also the ul.links declaration in the pages.css. */ {
+}
+
+/**
+ * @file
+ * Page Styling
+ *
+ * Style the markup found in page.tpl.php. Also includes some styling of
+ * miscellaneous Drupal elements that appear in the $content variable, such as
+ * ul.links, .pager, .more-link, etc.
+ */
+
+
+/*
+ * Body
+ */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#page-wrapper {
+}
+
+#page {
+}
+
+/*
+ * The skip-link link will be completely hidden until a user tabs to the link.
+ * See the element-focusable rule in system.base.css.
+ */
+#skip-link a,
+#skip-link a:visited {
+    display: block;
+    width: 100%;
+    padding: 2px 0 3px 0;
+    text-align: center;
+    background-color: #666;
+    color: #fff;
+}
+
+/*
+ * Header
+ */
+#header {
+    
+}
+
+#header,
+#main {
+   
+}
+
+#header .section {
+}
+
+#logo /* Wrapping link for logo */ {
+    /*float: left; /* LTR */
+    margin: 0;
+    padding: 0;
+}
+
+#logo img {
+    vertical-align: bottom;
+}
+
+#name-and-slogan /* Wrapper for website name and slogan */ {
+    float: left;
+}
+
+h1#site-name,
+div#site-name /* The name of the website */ {
+    margin: 0;
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+#site-name a:link,
+#site-name a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+#site-name a:hover,
+#site-name a:focus {
+    text-decoration: underline;
+}
+
+#site-slogan /* The slogan (or tagline) of a website */ {
+}
+
+.region-header /* Wrapper for any blocks placed in the header region */ {
+    clear: both; /* Clear the logo */
+}
+
+/*
+ * Main (container for everything else)
+ */
+#main-wrapper {
+}
+
+#main {
+}
+
+/*
+ * Content
+ */
+#content {
+}
+
+#content .section {
+}
+
+.region-highlighted {
+}
+
+.breadcrumb /* The path to the current page in the form of a list of links */ {
+    padding-bottom: 0; /* Undo system.css */
+}
+
+h1.title, /* The title of the page */
+h2.node-title, /* Title of a piece of content when it is given in a list of content */
+h2.block-title, /* Block title */
+h2.title, /* Comment section heading */
+h2.comment-form, /* Comment form heading */
+h3.title /* Comment title */ {
+    margin: 0;
+}
+
+tr.even /* Some tables have rows marked even or odd. */ {
+    /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
+
+tr.odd {
+    /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
+
+div.messages /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */ {
+    margin: 1.5em 0; /* Drupal core uses "6px 0" margin */
+}
+
+div.messages ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+div.status /* Normal priority messages */ {
+}
+
+div.warning,
+tr.warning /* Medium priority messages */ {
+    /* border: 1px solid #f0c020; */ /* Drupal core uses: 1px solid #f0c020 */
+}
+
+div.error,
+tr.error /* High priority messages. See also the .error declaration below. */ {
+}
+
+.error /* Errors that are separate from div.messages status messages. */ {
+    /* color: #e55; */ /* Drupal core uses a #e55 background */
+}
+
+.warning /* Warnings that are separate from div.messages status messages. */ {
+    /* color: #e09010; */ /* Drupal core uses a #e09010 background */
+}
+
+div.tabs /* See also the tabs.css file. */ {
+}
+
+.region-help /* Help text on a page */ {
+}
+
+.more-help-link /* Link to more help */ {
+}
+
+.region-content /* Wrapper for the actual page content */ {
+    
+}
+
+ul.links /* List of links */ {
+}
+
+ul.links.inline {
+    display: block; /* Let the links be inline, but the container be a block. */
+}
+
+ul.links li {
+    padding: 0 1em 0 0; /* LTR */
+}
+
+.item-list .pager /* A list of page numbers when more than 1 page of content is available */ {
+    padding: 0;
+}
+
+.item-list .pager li /* Each page number in the pager list */ {
+    padding: 0 0.5em;
+}
+
+.feed-icon /* The link to the RSS or Atom feed for the current list of content */ {
+}
+
+.more-link /* Aggregator, blog, and forum more link */ {
+}
+
+/*
+ * First sidebar (on left in LTR languages, on right in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-first
+ * (see the layout.css file.)
+ */
+.region-sidebar-first {
+}
+
+.region-sidebar-first .section {
+}
+
+/*
+ * Second sidebar (on right in LTR languages, on left in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-second
+ * (see the layout.css file.)
+ */
+.region-sidebar-second {
+}
+
+.region-sidebar-second .section {
+}
+
+/*
+ * Footer
+ */
+.region-footer {
+}
+
+/*
+ * Page bottom
+ */
+.region-bottom /* Wrapper for any blocks placed in the page bottom region */ {
+}
+
+/**
+ * @file
+ * Form Styling
+ */
+
+
+.form-item /* Wrapper for a form element (or group of form elements) and its label */ {
+    margin: 1.5em 0;
+}
+
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error /* Highlight the form elements that caused a form submission error */ {
+    border: 1px solid #c00;
+}
+
+.form-item label /* The label for a form element */ {
+    display: block;
+    font-weight: bold;
+}
+
+.form-item label.option /* The label for a radio button or checkbox */ {
+    display: inline;
+    font-weight: normal;
+}
+
+.form-required /* The part of the label that indicates a required field */ {
+    color: #c00;
+}
+
+.form-item .description /* The descriptive help text (separate from the label) */ {
+    font-size: 0.85em;
+}
+
+.form-checkboxes .form-item,
+.form-radios .form-item /* Pack groups of checkboxes and radio buttons closer together */ {
+    margin: 0; /* Drupal core uses "0.4em 0" */
+}
+
+
+
+.container-inline div,
+.container-inline label /* Inline labels and form divs */ {
+    display: inline;
+}
+
+.tips /* Tips for Drupal's input formats */ {
+}
+
+
+/*
+ * Password confirmation
+ */
+.password-parent,
+.confirm-parent {
+    margin: 0;
+}
+
+
+/*
+ * Search (search-block-form.tpl.php)
+ */
+#block-search-form /* Wrapper for the search form */ {
+}
+
+
+/*
+ * Drupal's default login form block
+ */
+#user-login-form {
+    text-align: left; /* LTR */
+}
+
+
+/*
+ * OpenID
+ *
+ * The default styling for the OpenID login link seems to assume Garland's
+ * styling of list items.
+ */
+
+#user-login-form ul /* OpenID creates a new ul above the login form's links. */ {
+    margin-bottom: 0; /* Position OpenID's ul next to the rest of the links. */
+}
+
+html.js #user-login-form li.openid-link,
+#user-login-form li.openid-link /* The "Log in using OpenID" link. */ {
+    margin-top: 1.5em;
+    margin-left: -20px; /* LTR */ /* Un-do some of the padding on the ul list. */
+}
+
+#user-login-form li.user-link /* The "Cancel OpenID login" link. */ {
+    margin-top: 1.5em;
+}
+
+#user-login ul {
+    margin: 1.5em 0;
+}
+
+
+/*
+ * Drupal admin tables
+ *
+ * We overrode these styles in html-reset.css, but restore them for the admin
+ * section of the site.
+ */
+
+form th {
+    text-align: left; /* LTR */
+    padding-right: 1em; /* LTR */
+    border-bottom: 3px solid #ccc;
+}
+
+form tbody {
+    border-top: 1px solid #ccc;
+}
+
+form tr.even {
+    background-color: #fff;
+}
+
+form table .item-list ul {
+    margin: 0;
+}
+
+/**
+ * @file
+ * Tabs Styling
+ *
+ * Adds styles for the primary and secondary tabs.
+ *
+ * Compare this with default CSS found in the system module's stylesheet (a copy
+ * of which is in drupal6-reference.css, line 510.)
+ */
+
+
+div.tabs {
+    margin: 0 0 5px 0;
+}
+
+ul.primary {
+    margin: 0;
+    padding: 0 0 0 10px; /* LTR */
+    border-width: 0;
+    list-style: none;
+    white-space: nowrap;
+    line-height: normal;
+    background: url(../images/tab-bar.png) repeat-x left bottom;
+}
+
+ul.primary li {
+    float: left; /* LTR */
+    margin: 0;
+    padding: 0;
+}
+
+ul.primary li a {
+    display: block;
+    height: 24px;
+    margin: 0;
+    padding: 0 0 0 5px; /* width of tab-left.png */
+    border-width: 0;
+    font-weight: bold;
+    text-decoration: none;
+    color: #777;
+    background-color: transparent;
+    background: url(../images/tab-left.png) no-repeat left -38px;
+}
+
+ul.primary li a .tab {
+    display: block;
+    height: 20px; /* 24px (parent) - 4px (padding) */
+    margin: 0;
+    padding: 4px 13px 0 6px;
+    border-width: 0;
+    line-height: 20px;
+    background: url(../images/tab-right.png) no-repeat right -38px;
+}
+
+ul.primary li a:hover,
+ul.primary li a:focus {
+    border-width: 0;
+    background-color: transparent;
+    background: url(../images/tab-left.png) no-repeat left -76px;
+}
+
+ul.primary li a:hover .tab,
+ul.primary li a:focus .tab {
+    background: url(../images/tab-right.png) no-repeat right -76px;
+}
+
+ul.primary li.active a,
+ul.primary li.active a:hover,
+ul.primary li.active a:focus {
+    border-width: 0;
+    color: #000;
+    background-color: transparent;
+    background: url(../images/tab-left.png) no-repeat left 0;
+}
+
+ul.primary li.active a .tab,
+ul.primary li.active a:hover .tab,
+ul.primary li.active a:focus .tab {
+    background: url(../images/tab-right.png) no-repeat right 0;
+}
+
+ul.secondary {
+    margin: 0;
+    padding: 0 0 0 5px; /* LTR */
+    border-bottom: 1px solid #c0c0c0;
+    list-style: none;
+    white-space: nowrap;
+    background: url(../images/tab-secondary-bg.png) repeat-x left bottom;
+}
+
+ul.secondary li {
+    float: left; /* LTR */
+    margin: 0 5px 0 0;
+    padding: 5px 0;
+    border-right: none; /* LTR */
+}
+
+ul.secondary a {
+    display: block;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #c0c0c0;
+    text-decoration: none;
+    color: #777;
+    background: url(../images/tab-secondary.png) repeat-x left -56px;
+}
+
+ul.secondary a .tab {
+    display: block;
+    height: 18px; /* 24px (parent) - 6px (padding) */
+    margin: 0;
+    padding: 3px 8px;
+    line-height: 18px;
+}
+
+ul.secondary a:hover,
+ul.secondary a:focus {
+    background: url(../images/tab-secondary.png) repeat-x left bottom;
+}
+
+ul.secondary a.active,
+ul.secondary a.active:hover,
+ul.secondary a.active:focus {
+    border: 1px solid #c0c0c0;
+    color: #000;
+    background: url(../images/tab-secondary.png) repeat-x left top;
+}
+
+
+
+q {
+}
+
+cite {
+}
+
+strong, b {
+}
+
+em, i {
+}
+
+code,
+kbd,
+samp,
+tt,
+var /* Code, keyboard input, sample output, teletype, variable */ {
+}
+
+del {
+}
+
+ins {
+}
+
+big {
+}
+
+small {
+}
+
+sub {
+}
+
+sup {
+}

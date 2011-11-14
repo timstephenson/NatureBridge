@@ -3245,3 +3245,6 @@ sup {
   position: absolute;
   left: -60px;
 }
+#twitter-feed .tweet_avatar img {
+  border: none;
+}

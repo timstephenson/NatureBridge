@@ -3238,8 +3238,7 @@ sup {
 }
 #twitter-feed ul li {
   position: relative;
-  margin-left: 60px;
-  margin-right: 20px;
+  margin: 10px 20px 10px 60px;
 }
 #twitter-feed .tweet_avatar {
   display: block;

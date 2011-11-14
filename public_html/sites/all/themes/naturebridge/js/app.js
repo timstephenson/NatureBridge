@@ -3,7 +3,7 @@ jQuery(document).ready(function() {
     join_text: "auto",
     username: "NatureBridge",
     avatar_size: 48,
-    count: 1,
+    count: 2,
     auto_join_text_default: "I said,", 
     auto_join_text_ed: "I",
     auto_join_text_ing: "I was",

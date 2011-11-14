@@ -1306,7 +1306,8 @@ h2 a {
 .panels-flexible-region-9-right_rail img,
 .view-id-national_park_service img,
 .view-display-id-panel_pane_27 img,
-.view-display-id-panel_pane_28 img {
+.view-display-id-panel_pane_28 img,
+.panels-flexible-region-12-leftmost_ img {
     border: none !important;
     padding: 0 !important;
 }
@@ -1826,9 +1827,13 @@ tr.panels-flexible-region-23-center {
 	top: 10px;
 }
 
-.panels-flexible-region-12-leftmost_-inside {
-    position: relative;
-    top: 10px;
+
+
+.panels-flexible-region-12-leftmost_ {
+	position: relative;
+	border-right: 1px solid #c8c5be;	
+	padding-right: 10px;
+	top: 10px;
 }
 
 .panels-flexible-region-12-rightmost_-inside {
@@ -1839,8 +1844,6 @@ tr.panels-flexible-region-23-center {
     top: 10px;
     left: 8px;
     padding: 35px 0 0 11px;
-    border-left: 1px solid #c8c5be;
-
 }
 
 .greytext {
@@ -1912,6 +1915,11 @@ tr.panels-flexible-region-23-center {
 	border-bottom: 1px solid #c8c5be;
 }
 
+#mini-panel-news_video_and_events {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #c8c5be;
+}	
+
 #featuredblog {
     background: url(../images/featuredposts.png);
     background-repeat: no-repeat;
@@ -1958,7 +1966,19 @@ tr.panels-flexible-region-23-center {
     background-position: top left;
     position: relative;
     padding: 40px 0 0 0;
-    top: 60px;
+}
+
+#recentphotos img {
+	float:left;
+	padding: 0 10px 0 0 !important;
+}
+
+.photocontent {
+	vertical-align: top;
+}
+
+.phototitle {
+	font-weight: bolder;
 }
 
 #photoslong {
@@ -2059,14 +2079,6 @@ div.views-field.views-field-field-blogimage {
     margin-top: 30px;
     border-bottom: 1px dotted #c8c5be;
 }*/
-
-.view-id-recent_events .views-row {
-    position: relative;
-    width: 300px;
-    padding-bottom: 10px;
-    padding-top: 15px;
-    border-bottom: 1px dotted #c8c5be;
-}
 
 div.views-field views-field-field-newdate {
     position: relative;

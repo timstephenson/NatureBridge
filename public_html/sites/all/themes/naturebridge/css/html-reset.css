@@ -3228,3 +3228,29 @@ sub {
 
 sup {
 }
+/* Twitter Feed Styles */
+#twitter-feed {
+  position: relative;
+}
+#twitter-feed ul.tweet_list {
+  margin: 0;
+  padding:0;
+}
+#twitter-feed ul li {
+  position: relative;
+  margin-left: 60px;
+  margin-right: 20px;
+}
+#twitter-feed .tweet_avatar {
+  display: block;
+  position: absolute;
+  left: -60px;
+  top: -5px;
+}
+#twitter-feed .tweet_avatar img {
+  border: none;
+}
+.pane-socialmediafeed .panel-2col .panel-col-last {
+  width: 49%;
+}
+/* End Twitter Feed Styles */

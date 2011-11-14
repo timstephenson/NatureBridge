@@ -3227,3 +3227,19 @@ sub {
 
 sup {
 }
+
+/* Twitter Feed Styles */
+#twitter-feed {
+  position: relative;
+}
+#twitter-feed ul.tweet_list {
+  margin: 0;
+}
+#twitter-feed ul li {
+  position: relative;
+  margin-left: 60px;
+}
+#twitter-feed .tweet_avatar {
+  display: block;
+  position: absolute;
+}

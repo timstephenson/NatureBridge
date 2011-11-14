@@ -1,5 +1,5 @@
-$(document).ready(function() {
-  $("#twitter-feed").tweet({
+jQuery(document).ready(function() {
+  jQuery("#twitter-feed").tweet({
     join_text: "auto",
     username: "NatureBridge",
     avatar_size: 24,

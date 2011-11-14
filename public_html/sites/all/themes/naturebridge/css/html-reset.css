@@ -1993,12 +1993,12 @@ tr.panels-flexible-region-23-center {
 }
 
 .panels-flexible-region-23-center {
-	border-right: 1px solid #c8c5be;
 	padding-right: 2px;
 }
 
 .panels-flexible-region-23-right-inside {
-	padding-left: 10px;
+	padding-left: 7px;
+    border-left: 1px solid #c8c5be;
 }
 
 .panels-flexible-region-23-right-inside p {

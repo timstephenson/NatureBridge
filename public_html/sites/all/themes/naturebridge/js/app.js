@@ -1,9 +1,9 @@
 $(document).ready(function() {
   $("#twitter-feed").tweet({
     join_text: "auto",
-    username: "naturebridge",
+    username: "NatureBridge",
     avatar_size: 24,
-    count: 3,
+    count: 1,
     auto_join_text_default: "I said,", 
     auto_join_text_ed: "I",
     auto_join_text_ing: "I was",

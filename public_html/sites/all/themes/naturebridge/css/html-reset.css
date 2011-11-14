@@ -3234,6 +3234,7 @@ sup {
 }
 #twitter-feed ul.tweet_list {
   margin: 0;
+  padding:0;
 }
 #twitter-feed ul li {
   position: relative;

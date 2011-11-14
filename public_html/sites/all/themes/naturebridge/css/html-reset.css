@@ -3243,4 +3243,5 @@ sup {
 #twitter-feed .tweet_avatar {
   display: block;
   position: absolute;
+  left: -60px;
 }

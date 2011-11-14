@@ -89,7 +89,7 @@ ul.nice-menu li.menu-631 a:visited {
     /*padding: 20px 0 0 10px;*/
     height: 78px;
     width: 112px;
-    top: -10px;
+    top: -88px;
 }
 
 ul.nice-menu li.menu-631 a {
@@ -117,7 +117,7 @@ ul.nice-menu li.menu-632 a:visited {
     /*padding: 20px 0 0 10px;*/
     height: 78px;
     width: 112px;
-    top: -10px;
+    top: -166px;
 }
 
 ul.nice-menu li.menu-632 a {
@@ -144,7 +144,7 @@ ul.nice-menu li.menu-633 a:visited {
     background-position: 5px 5px;
      height: 78px;
     width: 112px;
-    top: -10px;
+    top: -244px;
 }
 
 ul.nice-menu li.menu-633 a {
@@ -171,7 +171,7 @@ ul.nice-menu li.menu-634 a:visited {
     background-position: 5px 5px;
     height: 78px;
     width: 112px;
-    top: -10px;
+    top: -322px;
 }
 
 ul.nice-menu li.menu-634 a {
@@ -338,8 +338,9 @@ ul.nice-menu li.menu-657 a:visited {
 }
 
 ul.nice-menu li.menu-657 a {
-    padding: 55px 0 0 10px;
+    padding: 40px 0 0 10px;
     color: #fff;
+    width: 95px !important;
 }
 
 ul.nice-menu li.menu-657 a:hover,
@@ -447,7 +448,7 @@ ul.nice-menu li.menu-658 a:visited {
     float: left;
     height: 31px;
     width: 141px;
-    top: -10px;
+    top: -36px;
 }
 
 ul.nice-menu li.menu-658 a {
@@ -476,7 +477,7 @@ ul.nice-menu li.menu-659 a:visited {
     float: left;
     height: 30px;
     width: 142px;
-    top: -10px;
+    top: -115px;
 }
 
 ul.nice-menu li.menu-659 a {
@@ -505,7 +506,7 @@ ul.nice-menu li.menu-660 a:visited {
     float: left;
     height: 17px;
     width: 305px;
-    top: -10px;
+    top: -115px;
 }
 
 ul.nice-menu li.menu-660 a {
@@ -534,7 +535,7 @@ ul.nice-menu li.menu-661 a:visited {
     float: left;
     height: 32px;
     width: 305px;
-    top: -10px;
+    top: -115px;
 }
 
 ul.nice-menu li.menu-661 a {
@@ -563,7 +564,7 @@ ul.nice-menu li.menu-662 a:visited {
     float: left;
     height: 31px;
     width: 163px;
-    top: -10px;
+    top: -194px;
 }
 
 ul.nice-menu li.menu-662 a {
@@ -654,6 +655,7 @@ ul.nice-menu li.menu-686 a:visited {
     height: 78px;
     width: 221px;
     top: -10px;
+    right: 222px;
 }
 
 ul.nice-menu li.menu-686 a {
@@ -695,7 +697,8 @@ ul.nice-menu li.menu-687 a:visited {
     /*padding: 20px 0 0 10px;*/
     height: 78px;
     width: 112px;
-    top: -10px;
+    top: -88px;
+    right: 110px;
 }
 
 ul.nice-menu li.menu-687 a {
@@ -722,8 +725,9 @@ ul.nice-menu li.menu-688 a:visited {
     background-position: 5px 5px;
     /*padding: 20px 0 0 10px;*/
     height: 78px;
-    width: 333px;
-    top: -10px;
+    width: 111px;
+    top: -166px;
+    left: 0px;
 }
 
 ul.nice-menu li.menu-688 a {
@@ -741,6 +745,35 @@ ul.nice-menu li.menu-688 a:active {
     right: -110px;
     top: -154px;
 }
+
+ul.nice-menu li.menu-898,
+ul.nice-menu li.menu-898 a:link,
+ul.nice-menu li.menu-898 a:visited {
+    background-image: url(../images/santamonicaoff.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    /*padding: 20px 0 0 10px;*/
+    height: 78px;
+    width: 111px;
+    top: -244px;
+    left: 110px;
+}
+
+ul.nice-menu li.menu-898 a {
+    padding: 40px 0 0 10px;
+    color: #fff;
+}
+
+ul.nice-menu li.menu-898 a:hover,
+ul.nice-menu li.menu-898 a:active {
+    background-image: url(../images/santamonicaon.png);
+}
+
+/*.menu-path-templateb-41 {
+    position: relative;
+    right: -110px;
+    top: -154px;
+}*/
 
 /*end*/
 

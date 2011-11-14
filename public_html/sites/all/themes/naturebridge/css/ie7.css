@@ -38,8 +38,9 @@ tr.odd td {
 }
 
 #headerimageb {
-    position: relative;
+    position: absolute;
     left: 270px;
+    top: -223px;
 }
 
 .panels-flexible-region-21-leftmost a {
@@ -51,3 +52,170 @@ tr.odd td {
     overflow: hidden;
 }
 
+#header {
+    z-index: -50;
+}
+
+#main-wrapper {
+
+}
+
+.contextual-links-region {
+    
+}
+
+ul.nice-menu li.menu-627,
+ul.nice-menu li.menu-627 a:link,
+ul.nice-menu li.menu-627 a:visited {
+    top: -10px;
+}
+
+ul.nice-menu li.menu-628,
+ul.nice-menu li.menu-628 a:link,
+ul.nice-menu li.menu-628 a:visited {
+    top: 20px;
+    left: -141px;
+
+}
+
+ul.nice-menu li.menu-658,
+ul.nice-menu li.menu-658 a:link,
+ul.nice-menu li.menu-658 a:visited {
+    top: 7px;
+}
+
+ul.nice-menu li.menu-659,
+ul.nice-menu li.menu-659 a:link,
+ul.nice-menu li.menu-659 a:visited {
+    top: -71px;
+}
+
+ul.nice-menu li.menu-660,
+ul.nice-menu li.menu-660 a:link,
+ul.nice-menu li.menu-660 a:visited {
+    top: -72px;
+}
+
+ul.nice-menu li.menu-661,
+ul.nice-menu li.menu-661 a:link,
+ul.nice-menu li.menu-661 a:visited {
+    top: -72px;
+}
+
+ul.nice-menu li.menu-662,
+ul.nice-menu li.menu-662 a:link,
+ul.nice-menu li.menu-662 a:visited {
+    top: -150px;
+}
+
+ul.nice-menu li.menu-653,
+ul.nice-menu li.menu-653 a:link,
+ul.nice-menu li.menu-653 a:visited {
+    top: -10px;
+	left: -111px;
+}
+
+ul.nice-menu li.menu-654,
+ul.nice-menu li.menu-654 a:link,
+ul.nice-menu li.menu-654 a:visited {
+    top: -88px;
+	left: 111px;
+}
+
+ul.nice-menu li.menu-655,
+ul.nice-menu li.menu-655 a:link,
+ul.nice-menu li.menu-655 a:visited {
+    top: -166px;
+	left: 222px;
+}
+
+ul.nice-menu li.menu-656,
+ul.nice-menu li.menu-656 a:link,
+ul.nice-menu li.menu-656 a:visited {
+    top: -244px;
+	left: 333px;
+}
+
+ul.nice-menu li.menu-657,
+ul.nice-menu li.menu-657 a:link,
+ul.nice-menu li.menu-657 a:visited {
+    top: -322px;
+	left: 444px;
+}
+
+ul.nice-menu li.menu-686,
+ul.nice-menu li.menu-686 a:link,
+ul.nice-menu li.menu-686 a:visited {
+    top: -10px;
+    right: 222px;
+}
+
+ul.nice-menu li.menu-686 a {
+    padding: 55px 50px 0 120px !important;
+}
+
+
+ul.nice-menu li.menu-687,
+ul.nice-menu li.menu-687 a:link,
+ul.nice-menu li.menu-687 a:visited {
+    top: -88px;
+    right: 0px;
+}
+
+
+ul.nice-menu li.menu-687 a {
+    padding: 55px 50px 0 10px !important;
+}
+
+
+ul.nice-menu li.menu-688,
+ul.nice-menu li.menu-688 a:link,
+ul.nice-menu li.menu-688 a:visited {
+    top: -166px;
+    left: 111px;
+}
+
+
+ul.nice-menu li.menu-629,
+ul.nice-menu li.menu-629 a:link,
+ul.nice-menu li.menu-629 a:visited {
+    top: -10px;
+	left: -444px;
+}
+
+ul.nice-menu li.menu-631,
+ul.nice-menu li.menu-631 a:link,
+ul.nice-menu li.menu-631 a:visited {
+    top: -88px;
+	left: -222px;
+}
+
+ul.nice-menu li.menu-632,
+ul.nice-menu li.menu-632 a:link,
+ul.nice-menu li.menu-632 a:visited {
+    top: -166px;
+	left: -112px;
+}
+
+ul.nice-menu li.menu-633,
+ul.nice-menu li.menu-633 a:link,
+ul.nice-menu li.menu-633 a:visited {
+    top: -244px;
+	left: 0px;
+}
+
+ul.nice-menu li.menu-634,
+ul.nice-menu li.menu-634 a:link,
+ul.nice-menu li.menu-634 a:visited {
+    top: -322px;
+	left: 111px;
+}
+
+
+#block-search-form {
+    z-index: -2;
+}
+
+ul.nice-menu li.menu-657 a {
+	width: 100px !important;
+}

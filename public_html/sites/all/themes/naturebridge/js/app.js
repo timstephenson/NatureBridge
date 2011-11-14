@@ -2,7 +2,7 @@ jQuery(document).ready(function() {
   jQuery("#twitter-feed").tweet({
     join_text: "auto",
     username: "NatureBridge",
-    avatar_size: 36,
+    avatar_size: 48,
     count: 1,
     auto_join_text_default: "I said,", 
     auto_join_text_ed: "I",

@@ -3250,3 +3250,6 @@ sup {
 #twitter-feed .tweet_avatar img {
   border: none;
 }
+.pane-socialmediafeed .panel-2col .panel-col-last {
+  width: 48%;
+}

@@ -1909,6 +1909,7 @@ tr.panels-flexible-region-23-center {
     background-position: top left;
     position: relative;
     padding: 30px 0px 0 0;
+	border-bottom: 1px solid #c8c5be;
 }
 
 #featuredblog {
@@ -3226,30 +3227,4 @@ sub {
 }
 
 sup {
-}
-
-/* Twitter Feed Styles */
-#twitter-feed {
-  position: relative;
-}
-#twitter-feed ul.tweet_list {
-  margin: 0;
-  padding:0;
-}
-#twitter-feed ul li {
-  position: relative;
-  margin-left: 60px;
-  margin-right: 20px;
-}
-#twitter-feed .tweet_avatar {
-  display: block;
-  position: absolute;
-  left: -60px;
-  top: -5px;
-}
-#twitter-feed .tweet_avatar img {
-  border: none;
-}
-.pane-socialmediafeed .panel-2col .panel-col-last {
-  width: 48%;
 }

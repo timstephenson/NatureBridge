@@ -38,9 +38,14 @@ tr.odd td {
 }
 
 #headerimageb {
+<<<<<<< Updated upstream
     position: absolute;
     left: 270px;
     top: -223px;
+=======
+    position: relative;
+    left: 270px;
+>>>>>>> Stashed changes
 }
 
 .panels-flexible-region-21-leftmost a {
@@ -52,6 +57,7 @@ tr.odd td {
     overflow: hidden;
 }
 
+<<<<<<< Updated upstream
 #header {
     z-index: -50;
 }
@@ -219,3 +225,5 @@ ul.nice-menu li.menu-634 a:visited {
 ul.nice-menu li.menu-657 a {
 	width: 100px !important;
 }
+=======
+>>>>>>> Stashed changes

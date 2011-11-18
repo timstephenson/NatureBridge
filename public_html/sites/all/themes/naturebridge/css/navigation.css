@@ -979,10 +979,17 @@ ul.nice-menu li.menu-676 a:active {
     font-size: 1.2em;
     font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
    /* z-index: 10 !important;*/
+<<<<<<< Updated upstream
     position: absolute;
     z-index: 19;
     top: 50px;
     right: 0px;
+=======
+    position: relative;
+    z-index: 19;
+    top: -40px;
+    left: 270px;
+>>>>>>> Stashed changes
 }
 
 #block-nice-menus-1 a:hover {
@@ -991,10 +998,17 @@ ul.nice-menu li.menu-676 a:active {
 }
 
 #block-nice-menus-1 {
+<<<<<<< Updated upstream
     position: absolute;
     z-index: 20;
     top: 0px;
     right: 0px;
+=======
+    position: relative;
+    z-index: 20;
+    top: -50px;
+    left: 270px;
+>>>>>>> Stashed changes
 }
 
 .menu-624 {

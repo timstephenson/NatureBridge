@@ -32,12 +32,7 @@ body {
 }
 
 #page {
-<<<<<<< Updated upstream
     position:relative;
-=======
-
-    
->>>>>>> Stashed changes
 }
 
 #header {
@@ -79,7 +74,6 @@ body {
  */
 body {
 
-    
 }
 
 #page-wrapper,
@@ -103,46 +97,29 @@ body {
  * Header
  */
 #header {
-<<<<<<< Updated upstream
     padding: 30px 30px 26px 30px;
-=======
-    padding: 30px 30px 0 30px;
->>>>>>> Stashed changes
     /*height: 45px;*/
 
 }
 
 #header .section {
     position: relative;
-<<<<<<< Updated upstream
     /*float: left;*/
-=======
-    float: left;
->>>>>>> Stashed changes
     height: 65px;
 }
 
-.region-header {
-
-}
+.region-header {	
+	
+	}
 
 /*
  * Main (container for everything else)
  */
 #main-wrapper {
-<<<<<<< Updated upstream
 }
 
 #main {
 
-=======
-    position: relative;
-    
-}
-
-#main {
-    position: relative;
->>>>>>> Stashed changes
 }
 
 /*
@@ -468,6 +445,8 @@ h6 {
 
 /* Other block-level elements */
 p {
+	font-size: 1.1em;
+	line-height: 1.3em;
 }
 
 blockquote {
@@ -510,6 +489,23 @@ ol ol, ol ul,
 .item-list ol ol, .item-list ol ul {
   margin: 0;
 }
+
+/* add bullets spaced appropriately */
+
+.view-taxonomy-term ul,
+.views-field-field-righttextcolumn ul {
+	list-style-type: disc;
+	left: -25px;
+	position: relative;
+	font-size: 1.1em;
+	line-height: 1.3em;
+}
+
+.view-taxonomy-term ol {
+	left: -25px;
+	position: relative;
+}
+
 
 li {
   margin: 0;
@@ -722,7 +718,7 @@ dd {
     background-repeat: no-repeat;
     width: 1000px;
     height: 85px;
-    margin-top: 40px;
+    margin-top: 90px;
     position: relative;
 }
 
@@ -736,13 +732,10 @@ dd {
 	padding-bottom: 10px;
 }
 
-<<<<<<< Updated upstream
 #bottomcornerspotlight {
     width: 220;
 }
 
-=======
->>>>>>> Stashed changes
 .removepadding {
     padding: 0;
 }
@@ -787,6 +780,28 @@ dd {
     top: 10px;
     left: 60px;
     width: 180px;
+	height: 60px;
+}
+
+.titletemplateb {
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    margin: 0;
+    color: #ffffff;
+    position: relative;
+    top: 30px;
+    left: 60px;
+    width: 180px;
+	height: 60px;
+}
+
+#titletemplateform {
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    margin: 0;
+    color: #ffffff;
+    position: relative;
+    top: 0px;
+    left: 60px;
+    width: 700px;
 }
 
 #beneathtitleb {
@@ -794,10 +809,19 @@ dd {
     margin: 0;
     color: #ffffff;
     position: relative;
-    top: 70px;
+    top: 50px;
+    left: 60px;
+    width: 190px; 
+}
+
+.beneathtitleb {
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    margin: 0;
+    color: #ffffff;
+    position: relative;
+    top: 60px;
     left: 60px;
     width: 190px;
-    
 }
 
 #headerimage {
@@ -808,8 +832,12 @@ dd {
     height: 190px;
 }
 
+#block-block-3 a {
+	color: #746d5d;
+}
+
 #headerimageb {
-    position: relative;
+    position: absolute;
     top: 30px;
     left: 73px
 }
@@ -818,6 +846,12 @@ dd {
     position: relative;
     top: 30px;
     left: -27px
+}
+
+#headerimagedonor {
+position: relative;
+top: 30px;
+left: -164px;
 }
 
 
@@ -851,12 +885,16 @@ dd {
     border-bottom: 1px solid #c8c5be;
 }
 
-.panels-flexible-region-21-centermost {
-    border-right: 1px solid #c8c5be;
+.panels-flexible-region-21-rightmost {
+    border-left: 1px solid #c8c5be;
 }
 
-.panels-flexible-region-21-centermost img {
+/*.panels-flexible-region-21-centermost img {
     margin-top: 20px;
+}*/
+
+.panels-flexible-region-21-centermost .nphead {
+	height: 50px;
 }
 
 .pane-menu-menu-1-0-home-page-left-menu {
@@ -869,7 +907,6 @@ dd {
 
 .view-social-media-links {
     padding-bottom: 10px;
-<<<<<<< Updated upstream
 }
 
 .view-display-id-panel_pane_17 .views-field.views-field-body,
@@ -882,26 +919,17 @@ dd {
 }
 
 /*******************/
+/* Social Media    */
 
+.pane-social-media-links {
+	padding-top: 10px;
+}
+
+
+	
+	
 /* About Us Theming */
 
-=======
-}
-
-.view-display-id-panel_pane_17 .views-field.views-field-body,
-.view-display-id-panel_pane_17 .views-field.views-field-field-videoinformation {
-    border: none !important;
-}
-
-.panels-flexible-row panels-flexible-row-21-3.clearfix.panels-flexible-region-bottomcontent {
-    padding: 0 0 0;
-}
-
-/*******************/
-
-/* About Us Theming */
-
->>>>>>> Stashed changes
 .panels-flexible-region-9-centermost .view-display-id-panel_pane_4 {
     width: 520px;
 }
@@ -918,8 +946,18 @@ dd {
     border-bottom: 1px solid #c8c5be;
 }
 
-#rightnav a {
+#donatebutton {
+    position: relative;
+    left: 10px;
+}
+
+
+#rightnav h3 a {
     color: #007239;
+}
+#rightnav h3 a:hover,
+#rightnav h3 a:focus {
+  color: #6da838;
 }
 
 .pane-taxonomy-term-panel-pane-24 .pane-title {
@@ -928,7 +966,6 @@ dd {
 
 .panels-flexible-region.panels-flexible-region-37-center.panels-flexible-region-last {
     border-left: 1px #8ab960 solid;
-    height: 300px;
 }
 
 .panels-flexible-region-inside.panels-flexible-region-37-center-inside.panels-flexible-region-inside-last {
@@ -946,7 +983,7 @@ h2 a {
 .view-id-national_park_service .views-field-title {
     position: absolute;
     bottom: 3px;
-    left: 66px;
+    left: 75px;
     width: 120px;
 }
 
@@ -956,7 +993,6 @@ h2 a {
     left: 30px;
 }
 
-<<<<<<< Updated upstream
 .panels-flexible-region-9-leftmost,
 .panels-flexible-region-42-leftmost,
 .panels-flexible-region-41-leftmost,
@@ -966,22 +1002,34 @@ h2 a {
     min-height: 450px;
 }
 
-.panels-flexible-region-44-leftmost {
+.panels-flexible-region-44-leftmost,
+.panels-flexible-region-46-leftmost  {
     min-height: 500px;
 }
 
-=======
-.panels-flexible-region-9-leftmost {
-    min-height: 450px;
+.panels-flexible-region-51-leftmost,
+.panels-flexible-region-76-leftmost {
+	min-height: 700px;
 }
 
->>>>>>> Stashed changes
+.panels-flexible-region-50-leftmost {
+	min-height: 650px;
+}
+
 .panels-flexible-region-14-leftmost,
 .panels-flexible-region-15-leftmost,
 .panels-flexible-region-16-leftmost,
 .panels-flexible-region-17-leftmost,
-.panels-flexible-region-18-leftmost {
+.panels-flexible-region-18-leftmost,
+.panels-flexible-region-21-leftmost {
     min-height: 700px;
+}
+
+/* Newsletter Subscription */
+
+#newsletters {
+	position: relative;
+	left: 20px;
 }
 
 /*********************/
@@ -1018,7 +1066,6 @@ h2 a {
     width: 940px; 
     position: relative;
     top: -40px;
-<<<<<<< Updated upstream
 }
 
 .panels-flexible-region-36-center th.views-field.views-field-title a {
@@ -1099,7 +1146,7 @@ h2 a {
 
 .view-footer-info .views-field-field-inlineimage img {
     position: absolute;
-    right: 15px;
+    right: 25px;
     top: 20px;
 }
 
@@ -1141,20 +1188,59 @@ h2 a {
 .panels-flexible-row-13-2,
 .panels-flexible-row-41-2,
 .panels-flexible-row-43-2,
-.panels-flexible-row-44-2 {
+.panels-flexible-row-44-2,
+.panels-flexible-row-55-2 {
     padding: 25px 30px 25px 30px !important;
+}
+
+.panels-flexible-region-33-npbottomleft .col-1,
+.panels-flexible-region-33-npbottomleft .col-2,
+.panels-flexible-region-33-npbottomleft .col-3 {
+	width: 220px;
+}
+
+.panels-flexible-region-33-npbottomleft-inside .cols-3 {
+	width: 700px;
+	border-bottom: 1px solid #c8c5be;
 }
 
 .panels-flexible-row-7-2 .nphead,
 .panels-flexible-row-39-2 .nphead,
 .panels-flexible-row-41-2 .nphead,
 .panels-flexible-row-43-2 .nphead,
-.panels-flexible-row-44-2 .nphead {
+.panels-flexible-row-44-2 .nphead,
+.panels-flexible-row-6-2 .nphead {
     height: 50px;
 }
 
 #mini-panel-top_row_national_parks {
     border-bottom: 1px solid #c8c5be;
+	width: 700px;
+}
+
+#mini-panel-bottom_row_national_parks {
+	position: relative;
+	top: 20px;
+	width: 700px;
+    /*border-bottom: 1px solid #c8c5be;*/
+}
+
+.panels-flexible-region-55-leftmost-inside {
+	width: 200px;
+}
+
+#mini-panel-bottom_row_video_and_spotlight {
+	position: relative;
+	top: 40px;
+	height: 425px;
+}
+
+.panels-flexible-region.panels-flexible-region-37-center.panels-flexible-region-last {
+	position: absolute;
+	left: 483px;
+	top: 0px;
+	height: 500px;
+	width: 200px;
 }
 
 .panels-flexible-region-13-leftmost {
@@ -1211,9 +1297,7 @@ h2 a {
 
 
 .view-display-id-panel_pane_27 img {
-    position: absolute;
-    bottom: 85px;
-    right: 0px;
+
 }
 
 
@@ -1237,7 +1321,7 @@ h2 a {
     color: #fff;
 }
 
-.form-submit /* The submit button */ {
+#block-search-form .form-submit /* The submit button */ {
     background: url(../images/searchbutton.png);
     border: none;
     font-size:0px;
@@ -1258,6 +1342,14 @@ h2 a {
     color: #fff;
     left: 10px;
 }
+
+.pane-search-result .pane-title {
+    position: relative;
+    top: -45px;
+    color: #fff;
+    left: 50px;
+}
+
 
 .view-id-searchresults .views-table {
     width: 930px; 
@@ -1324,11 +1416,38 @@ h2 a {
 
 /*********************/
 /* General Tables    */
+/*********************/
+/* comments          */
+
+.pane-node-comment-form {
+	/*position: relative;
+	top: 50px;*/
+}
 
 
 
 /*********************/
 /* borders for images */
+	
+.bottomrightimage {
+	position: relative;
+	left: 20px;
+}
+
+.panels-flexible-region-6-centermost img:hover,
+.panels-flexible-region-6-centermost img:focus,
+.panels-flexible-region-7-centermost img:hover,
+.panels-flexible-region-7-centermost img:focus,
+.panels-flexible-region-21-centermost img:hover,
+.panels-flexible-region-21-centermost img:focus,
+.panels-flexible-region-71-content_right img:hover,
+.panels-flexible-region-71-content_right img:focus,
+.panels-flexible-region-44-centermost img:hover,
+.panels-flexible-region-44-centermost img:focus,
+.panels-flexible-region-13-rightmost-inside img:hover,
+.panels-flexible-region-13-rightmost-inside img:focus  {
+    background: #6da838;
+}
 
 .panels-flexible-region-middle img,
 .panels-flexible-region-21-centermost img,
@@ -1340,7 +1459,10 @@ h2 a {
 .panels-flexible-row-13-2 img,
 .panels-flexible-row-41-2 img,
 .panels-flexible-row-43-2 img,
-.panels-flexible-row-44-2 img {
+.panels-flexible-row-44-2 img,
+.view-id-template_b_content.view-display-id-panel_pane_1.view-dom-id-1 img,
+.panels-flexible-row-55-2 img,
+.panels-flexible-region-6-centermost img {
     /*padding-top: 20px;*/
     border: 1px solid #c8c5be;
     padding: 4px;
@@ -1358,22 +1480,42 @@ h2 a {
 .view-id-national_park_service img,
 .view-display-id-panel_pane_27 img,
 .view-display-id-panel_pane_28 img,
-.panels-flexible-region-12-leftmost_ img {
+.view-taxonomy-term.view-id-taxonomy_term.view-display-id-panel_pane_4 img,
+.panels-flexible-region-51-rightmost img,
+.pane-taxonomy-term-panel-pane-40 img,
+.pane-promotions img,
+.view-display-id-panel_pane_14 img {
     border: none !important;
     padding: 0 !important;
 }
 
-.view-display-id-block_3 img {
+.view-display-id-block_3 img,
+.view-display-id-block_4 img,
+.view-display-id-panel_pane_1 img {
 	border: none !important;
 	float: left;
 	padding: 0 10px 0 0;
 }
 
-.view-display-id-block_3 .views-row {
+.view-id-video.view-display-id-block_3.view-dom-id-5 .views-row,
+.view-id-video.view-display-id-block_4.view-dom-id-4 .views-row,
+.view-id-video.view-display-id-panel_pane_1 .views-row  {
 	padding: 10px 0 20px 0;
 	border-bottom: 1px dotted #c8c5be;
 	height: 100px;
 	width: 300px;
+}
+
+.view-recent-photos.view-id-recent_photos.view-display-id-block_2 .views-row {
+	padding: 10px 0 20px 0;
+	border-bottom: 1px dotted #c8c5be;
+	height: 70px;
+}
+
+.view-recent-photos.view-id-recent_photos.view-display-id-panel_pane_1 .views-row {
+	padding: 10px 0 20px 0;
+	border-bottom: 1px dotted #c8c5be;
+	height: 70px;
 }
 	
 .panels-flexible-region-12-rightmost_-inside img {
@@ -1403,14 +1545,6 @@ h2 a {
     width: auto;
 
 }
-
-.panels-flexible-region-6-content_right-inside img:hover,
-.panels-flexible-region-6-content_right-inside img:focus,
-.panels-flexible-region-13-far_right_region img:hover,
-.panels-flexible-region-13-far_right_region img:focus {
-    outline: 3px solid #6da838;
-}
-
 
 
 /**********************/
@@ -1469,6 +1603,12 @@ h2 a {
 
 /* Blog Structure */
 
+.node-type-blog .panels-flexible-region-bottomcontent,
+.page-newscomm-46 .panels-flexible-region-bottomcontent,
+.node-type-webform .panels-flexible-region-bottomcontent {
+	margin-top: 40px !important;
+}
+
 #taxonomymenu {
     position: relative;
     left: 20px;
@@ -1477,14 +1617,20 @@ h2 a {
 .panels-flexible-region-25-center {
     position: relative;
     left: 30px;
-    top: -70px;
-    width: 540px;
+    /*top: -70px;*/
+    /*width: 540px;*/
+	top: 20px;
+}
+
+.panels-flexible-region-25-center-inside {
+	padding-right: 160px;
+	border-right: 1px solid #c8c5be;
 }
 
 .panels-flexible-region-25-center .user-picture {
-    position: relative;
+    position: absolute;
     left: 560px;
-    top: 70px;
+    top: 20px;
     width: 70px;
 }
 
@@ -1494,11 +1640,11 @@ h2 a {
 
 .panels-flexible-region-25-right {
     position: relative;
-    left: 180px;
+    left: 60px;
     top: 20px;
     height: 550px;
     width: 240px;
-    border-left: 1px solid #c8c5be;
+
 }
 
 .panels-flexible-region-24-right_regiona {
@@ -1627,7 +1773,15 @@ h2 a {
 
 .pane-recentblogs {
     position: relative;
-    top: 30px;
+    /*top: 30px;*/
+}
+
+.recentblogpane {
+	top: 20px;
+}
+
+.panels-flexible-region-25-center-inside td.col-1 {
+	padding-bottom: 0px;
 }
 
 /*.st_facebook_hcount {
@@ -1656,6 +1810,10 @@ h2 a {
 }*/
 /* National Parks Pages */
 
+.panels-flexible-row-6-2-inside {
+	padding: 20px 30px 0 30px;
+}
+
 .panels-flexible-region-7-content_right {
     position: relative;
     top: -15px
@@ -1682,7 +1840,7 @@ h2 a {
 
 .panels-flexible-row-25-main-row .content {
     position: relative;
-    top: 40px
+    /*top: 40px*/
 }
 
 .panels-flexible-region-6-content_right-inside
@@ -1755,12 +1913,20 @@ h2 a {
     outline: 1px solid #8ab960;
 }
 
+.panels-flexible-region-75-left .view-promotions.view-display-id-block_1 {
+	width: 190px;
+}
+
 .panels-flexible-region-7-centermost .view-display-id-panel_pane_4,
 .panels-flexible-region-7-centermost .pane-promotions-panel-pane-7 {
     background: #f0f6eb;
     padding: 10px 10px 10px 10px !important;
     border: 4px solid #fff;
     outline: 1px solid #8ab960;
+	width: 195px;
+	height: 115px;
+	top: 60px;
+	position: relative;
 }
 
 .view-promotions.view-display-id-block_1 .col-1,
@@ -1794,6 +1960,10 @@ h2 a {
 
 /* Newscomm */
 
+.panels-flexible-region-12-rightmost_ {
+	width: 31.292% !important;
+}
+
 tr.panels-flexible-region-23-center {
 	padding: 20px 0 25px 0;
 	border-bottom: 1px solid #c8c5be;
@@ -1803,6 +1973,7 @@ tr.panels-flexible-region-23-center {
     padding-left: 25px;
     position: relative;
     float: right;
+	border-left: 1px solid #c8c5be;
 }
 
 .panels-flexible-region-12-right_regiona-inside .view-promotions {
@@ -1811,12 +1982,15 @@ tr.panels-flexible-region-23-center {
     width: 190px;
 }
 
-.panels-flexible-region-29-leftmost {
+.panels-flexible-region-29-leftmost,
+.panels-flexible-region-31-leftmost {
     border-right: 1px solid #c8c5be;
 }
 
-.panels-flexible-region-29-centermost-inside {
+.panels-flexible-region-29-centermost-inside,
+.panels-flexible-region-31-center_-inside {
     padding-left: 30px;
+	padding-right: 30px;
 }
 
 #communityspotlight .views-field-title {
@@ -1843,6 +2017,7 @@ tr.panels-flexible-region-23-center {
     background: url(../images/Community-Spotlight.png);
     background-repeat: no-repeat;
     background-position: top left;
+	padding-top: 50px;
 }
 
 .view-display-id-panel_pane_18 {
@@ -1897,8 +2072,31 @@ tr.panels-flexible-region-23-center {
     padding: 35px 0 0 11px;
 }
 
+#recentpostsblog img {
+	float: left;
+	padding: 0 10px 5px 0 !important;
+}
+
+#recentpostsblog div.views-field.views-field-created,
+#recentpostsblog span.views-field.views-field-created {
+	float: left;
+}
+
 .greytext {
 	color: #aca79e;
+}
+
+.greytext2 {
+	color: #aca79e;
+	top: -9px;
+	position: relative;
+}
+
+.blogcomment {
+	height: 30px;
+	position: relative;
+	vertical-align: top;
+	top: -5px;
 }
 
 .blogroll-title a {
@@ -1967,8 +2165,8 @@ tr.panels-flexible-region-23-center {
 }
 
 #mini-panel-news_video_and_events {
-	padding-bottom: 10px;
 	border-bottom: 1px solid #c8c5be;
+	padding-top: 10px;
 }	
 
 #featuredblog {
@@ -1976,7 +2174,11 @@ tr.panels-flexible-region-23-center {
     background-repeat: no-repeat;
     background-position: top left;
     position: relative;
-    padding: 40px 0 0 0;
+    padding: 40px 60px 0 0;
+}
+
+#featuredblog .views-field-body {
+	padding-top: 15px;
 }
 
 #recentpostsblog {
@@ -1984,15 +2186,50 @@ tr.panels-flexible-region-23-center {
     background-repeat: no-repeat;
     background-position: top left;
     position: relative;
-    padding: 40px 0 0 0;
+    padding: 40px 60px 0 0;
+}
+
+.panels-flexible-row-65-1 #recentpostsblog {
+	position: relative;
+	top: 0px;
+}
+
+#recentpostsblog p {
+	margin-bottom: 0 !important;
+}
+
+#recentpostsblog td.col-1 {
+}
+
+#recentpostsblog tr.row-1,
+#recentpostsblog tr.row-2 {
+	float: left;
+	border-bottom: 1px dotted #c8c5be;
+	width: 650px;
+}
+
+#recentpostsblog tr.row-3 {
+	float: left;
+	width: 650px;
+	padding-top: 20px;
+}
+
+.panels-flexible-region-24-leftmost {
+	border-right: 1px solid #c8c5be;
+}
+
+#recentpostsblog td.col-1,
+#recentpostsblog td.col-2 {
+	width: 300px;
+
 }
 
 #recentevents {
     background: url(../images/upcoming-events.png);
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: 0 10px;
     position: relative;
-    padding: 25px 0 0 0;
+    padding: 45px 0 0 0;
 }
 
 #featuredevents {
@@ -2014,14 +2251,17 @@ tr.panels-flexible-region-23-center {
 #recentphotos {
     background: url(../images/photoalbums.png);
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: 0 10px;
     position: relative;
-    padding: 40px 0 0 0;
+    padding: 60px 0 0 0;
 }
 
-#recentphotos img {
+#recentphotos img,
+#photoslong img,
+#videoslong img {
 	float:left;
 	padding: 0 10px 0 0 !important;
+	border: none !important;
 }
 
 .photocontent {
@@ -2053,7 +2293,12 @@ tr.panels-flexible-region-23-center {
     background-repeat: no-repeat;
     background-position: top left;
     position: relative;
-    padding: 25px 0 0 0;
+    padding: 30px 0 0 0;
+}
+
+.panels-flexible-region-29-rightmost-inside,
+.panels-flexible-region-31-rightmost-inside {
+	padding-left: 35px;
 }
 
 #longnews {
@@ -2065,7 +2310,7 @@ tr.panels-flexible-region-23-center {
 }
 
 .panels-flexible-region-23-center {
-	padding-right: 2px;
+	padding-right: 5px;
 }
 
 .panels-flexible-region-23-right-inside {
@@ -2073,9 +2318,20 @@ tr.panels-flexible-region-23-center {
     border-left: 1px solid #c8c5be;
 }
 
-.panels-flexible-region-23-right-inside p {
+.panels-flexible-region-23-right-inside p,
+.panels-flexible-region-29-leftmost-inside p,
+.panels-flexible-region-29-centermost-inside p {
 	margin-top: 0px;
 	margin-bottom: 25px;
+}
+
+.panels-flexible-region-29-centermost,
+.panels-flexible-region-31-center_ {
+    border-right: 1px solid #c8c5be;
+}
+
+.panels-flexible-region-29-leftmost-inside {
+	padding-right: 30px;
 }
 
 .view-id-news_roll .views-row,
@@ -2104,6 +2360,13 @@ tr.panels-flexible-region-23-center {
 .view-id-news_roll .views-field-body {
     position: relative;
     width: 300px;
+}
+
+/***************/
+/* Edit Revise */
+
+.panel-separator {
+	margin: 0 !important;
 }
 
 /*.pane-promotions-panel-pane-2 {
@@ -2136,7 +2399,7 @@ div.views-field views-field-field-newdate {
     top: 10px;
 }
 
-.view-blog tr.row-1,
+/*.view-blog tr.row-1,
 .view-blog tr.row-2,
 .view-blog tr.row-3,
 .view-blog tr.row-4,
@@ -2145,7 +2408,7 @@ div.views-field views-field-field-newdate {
     position: relative;
     top: 15px;
     border-bottom: 1px dotted #c8c5be;
-}
+}*/
 
 /*div.field-content {
     position: relative;
@@ -2323,20 +2586,50 @@ button {
  * The order of link states are based on Eric Meyer's article:
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
-a:link {
-    color: #007239;
-    text-decoration: none !important;
-}
+  h1 a:link,  
+  h2 a:link, 
+  h3 a:link,
+  h4 a:link {
+     color: #007239;
+     text-decoration: none !important;
+ }
 
-a:visited {
-    color: #007239;
+ h2 a:visited, 
+ h2 a:visited, 
+ h3 a:visited,
+ h4 a:visited {
+     color: #007239;
+ }
+ 
+ a:visited {
+	 text-decoration: none !important;
+ }
+ 
+ h1 a:hover,
+ h1 a:focus,
+ h2 a:hover,
+ h2 a:focus,
+ h3 a:hover,
+ h3 a:focus,
+ h4 a:hover,
+ h4 a:focus {
+   color: #6da838;
+ }
 
-}
+ a:link {
+     color: #6da838;
+     text-decoration: none !important;
+ }
 
-a:hover,
-a:focus {
+ a:visited {
+     color: #6da838;
 
-}
+ }
+
+ a:hover,
+ a:focus {
+   color: #007239;
+ }
 
 img:hover,
 img:focus {
@@ -2850,1701 +3143,6 @@ div#site-name /* The name of the website */ {
 #main-wrapper {
 }
 
-=======
-}
-
-.panels-flexible-region-36-center th.views-field.views-field-title a {
-    color: #fff !important;
-}
-
-
-.panels-flexible-region-36-center td.views-field.views-field-title {
-    background: #f1f0ee;
-    height: 20px;
-    border-bottom: 1px solid #fff;
-    padding: 10px 30px 0 10px;
-}
-
-.panels-flexible-region-36-center td.views-field.views-field-title a {
-    font-size: 1.2em;
-    line-height: 1.2em;
-    margin: 0em 0 .5em 0;
-    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;/*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
-}
-
-.panels-flexible-region-36-center th.views-field.views-field-created,
-.panels-flexible-region-36-center th.views-field.views-field-type,
-.panels-flexible-region-36-center th.views-field.views-field-name {
-    background: #aca79e;
-    border-left: 1px solid #fff;
-    font-size: 1.8em;
-    line-height: 1.2em;
-    margin: 0em 0 .5em 0;
-    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;/*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
-    color: #fff;
-    padding: 10px 0 0 10px;
-}
-
-.panels-flexible-region-36-center th.views-field.views-field-created a,
-.panels-flexible-region-36-center th.views-field.views-field-type a,
-.panels-flexible-region-36-center th.views-field.views-field-name a {
-    color: #fff !important;
-}
-
-.panels-flexible-region-36-center td.views-field.views-field-created,
-.panels-flexible-region-36-center td.views-field.views-field-type,
-.panels-flexible-region-36-center td.views-field.views-field-name {
-    background: #f1f0ee;
-    border-left: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    padding: 10px 0 0 10px;
-}
-
-
-/*********************/
-/* Footer Info       */
-
-.view-footer-info .views-field-field-contactinfo,
-.view-footer-info .views-field-body,
-.view-footer-info .views-field-field-newdirections,
-.view-footer-info a {
-    color: #f1f0ee !important;
-}
-
-.view-footer-info .views-field-body {
-    position: absolute;
-    left: 30px;
-    top: 20px;
-}
-
-.view-footer-info .views-field-field-newdirections {
-    position: absolute;
-    left: 320px;
-    top: 20px;
-}
-
-.view-footer-info .views-field-field-contactinfo {
-    position: absolute;
-    left: 480px;
-    top: 20px;
-}
-
-.view-footer-info .views-field-field-inlineimage img {
-    position: absolute;
-    right: 15px;
-    top: 20px;
-}
-
-.view-id-footer_rules .view-display-id-block view-dom-id-7 {
-    position: absolute;
-    z-index: 40;
-}
-
-/*********************/
-/* SFG Pages         */
-
-.panels-flexible-region-14-rightmost,
-.panels-flexible-region-15-rightmost,
-.panels-flexible-region-16-rightmost,
-.panels-flexible-region-17-rightmost,
-.panels-flexible-region-18-rightmost {
-    float: right;
-}
-
-.panels-flexible-region-14-centermost-inside,
-.panels-flexible-region-15-centermost-inside,
-.panels-flexible-region-16-centermost-inside,
-.panels-flexible-region-17-centermost-inside,
-.panels-flexible-region-18-centermost-inside {
-    padding-right: 15px !important;
-}
-
-.panels-flexible-row.panels-flexible-row-17-2.clearfix.panels-flexible-region-bottomcontent {
-    
-}
-
-/*********************/
-/* Parks Pages       */
-
-.panels-flexible-row-7-2 {
-    padding: 25px 30px 25px 30px !important;
-}
-
-.panels-flexible-row-7-2 .nphead {
-    height: 50px;
-}
-
-#mini-panel-top_row_national_parks {
-    border-bottom: 1px solid #c8c5be;
-}
-
-/*********************/
-/* Table Theming     */
-
-/*********************/
-/* Accordion Theming */
-
-.pane-taxonomy-term-panel-pane-29 .field-content {
-  
-}
-
-/*********************/
-/* Spotlight CSS     */
-
-.panels-flexible-region-9-rightmost {
-    position: relative;
-}
-
-
-.view-display-id-panel_pane_27 img {
-    position: absolute;
-    bottom: 85px;
-    right: 0px;
-}
-
-
-/*******************************/
-/*   Search Form & Results     */
-
-#block-search-form {
-    position: relative;
-    top: 32px;
-    z-index: 1;
-    left: 750px;
-    width: 230px;
-}
-
-#edit-search-block-form--2 {
-    background: #19804c;
-    outline: 1px solid #8ab960;
-    border: none;
-    width: 180px;
-    height: 18px;
-    color: #fff;
-}
-
-.form-submit /* The submit button */ {
-    background: url(../images/searchbutton.png);
-    border: none;
-    font-size:0px;
-    width: 25px;
-    height: 22px;
-    position: relative;
-    top: -6px;
-    left: -5px;
-}
-
-.pane-searchresults-panel-pane-1 {
-    padding: 0px 30px 0px 30px;
-}
-
-.pane-searchresults-panel-pane-1 .pane-title {
-    position: relative;
-    top: -45px;
-    color: #fff;
-    left: 10px;
-}
-
-.view-id-searchresults .views-table {
-    width: 930px; 
-}
-
-.panels-flexible-region-34-center th.views-field.views-field-title {
-    background: #8ab960;
-    height: 40px;
-    border-bottom: 1px solid #fff;
-    font-size: 1.8em;
-    line-height: 1.2em;
-    margin: 0em 0 .5em 0;
-    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;/*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
-    color: #fff;
-    padding: 10px 0 0 10px;
-}
-
-.panels-flexible-region-34-center th.views-field.views-field-title a {
-    color: #fff !important;
-}
-
-
-.panels-flexible-region-34-center td.views-field.views-field-title {
-    background: #f1f0ee;
-    height: 20px;
-    border-bottom: 1px solid #fff;
-    padding: 10px 30px 0 10px;
-}
-
-.panels-flexible-region-34-center td.views-field.views-field-title a {
-    font-size: 1.2em;
-    line-height: 1.2em;
-    margin: 0em 0 .5em 0;
-    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;/*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
-}
-
-.panels-flexible-region-34-center th.views-field.views-field-created,
-.panels-flexible-region-34-center th.views-field.views-field-type,
-.panels-flexible-region-34-center th.views-field.views-field-name {
-    background: #aca79e;
-    border-left: 1px solid #fff;
-    font-size: 1.8em;
-    line-height: 1.2em;
-    margin: 0em 0 .5em 0;
-    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;/*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
-    color: #fff;
-    padding: 10px 0 0 10px;
-}
-
-.panels-flexible-region-34-center th.views-field.views-field-created a,
-.panels-flexible-region-34-center th.views-field.views-field-type a,
-.panels-flexible-region-34-center th.views-field.views-field-name a {
-    color: #fff !important;
-}
-
-.panels-flexible-region-34-center td.views-field.views-field-created,
-.panels-flexible-region-34-center td.views-field.views-field-type,
-.panels-flexible-region-34-center td.views-field.views-field-name {
-    background: #f1f0ee;
-    border-left: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    padding: 10px 0 0 10px;
-}
-
-
-
-/*********************/
-/* borders for images */
-
-.panels-flexible-region-middle img,
-.panels-flexible-region-21-centermost img,
-.panels-flexible-region-7-centermost img,
-.pane-event-photo-column img, 
-.panels-flexible-region-28-right-inside img,
-.view-display-id-panel_pane_23 img {
-    /*padding-top: 20px;*/
-    border: 1px solid #c8c5be;
-    padding: 4px;
-}
-
-.panels-flexible-24 img,
-.panels-flexible-row-29-1 img,
-.panels-flexible-region-12-right_rail img,
-.panels-flexible-region-12-center img,
-.view-social-media-links img,
-.views-field-field-spotlightimage img,
-.view-display-id-panel_pane_19 img,
-.panels-flexible-region-12-right_rail-inside img,
-.panels-flexible-region-9-right_rail img,
-.view-id-national_park_service img,
-.view-display-id-panel_pane_27 img,
-.view-display-id-panel_pane_28 img {
-    border: none !important;
-    padding: 0 !important;
-}
-
-.panels-flexible-row {
-    float: none;
-    padding: 0;
-    width: auto;
-    position: relative;
-}
-
-.panels-flexible-region-6-content_right-inside img:hover,
-.panels-flexible-region-6-content_right-inside img:focus,
-.panels-flexible-region-13-far_right_region img:hover,
-.panels-flexible-region-13-far_right_region img:focus {
-    outline: 3px solid #6da838;
-}
-
-
-
-/**********************/
-/*    Footers         */
-
-.panels-flexible-region-footer {
-    background: url(../images/backgroundfooter.png);
-    background-repeat: no-repeat;
-    width: 1000px;
-    height: 252px;
-}
-
-.panels-flexible-region-footerc {
-    background: url(../images/rockfooter.jpg);
-    background-repeat: no-repeat;
-    width: 1000px;
-    height: 252px;
-}
-
-.pane-template-b-content-panel-pane-12 {
-    padding-bottom: 15px;
-    border-bottom: 1px solid #c8c5be;
-}
-
-.panels-flexible-region-21-content_right-inside img {
-    position: relative;
-    top: 20px;
-}
-
-.panels-flexible-region-20-right {
-    position: relative;
-    left: 20px;
-}
-
-
-
-.panels-flexible-region-19-right,
-.panels-flexible-region-21-right {
-    position: relative;
-    left: 40px;
-
-}
-.panels-flexible-region-19-right-inside,
-.panels-flexible-region-21-right-inside {
-    height: 550px;
-    border-left: 1px solid #c8c5be;
-}
-
-.panels-flexible-region-23-center .pane-content {
-    position: relative;
-    top: 10px;
-}
-
-
-/* Blog Structure */
-
-#taxonomymenu {
-    position: relative;
-    left: 20px;
-}
-
-.panels-flexible-region-25-center {
-    position: relative;
-    left: 30px;
-    top: -70px;
-    width: 540px;
-}
-
-.panels-flexible-region-25-center .user-picture {
-    position: relative;
-    left: 560px;
-    top: 70px;
-    width: 70px;
-}
-
-.panels-flexible-region-25-center .pane-node-title {
-    width: 460px;
-}
-
-.panels-flexible-region-25-right {
-    position: relative;
-    left: 180px;
-    top: 20px;
-    height: 550px;
-    width: 240px;
-    border-left: 1px solid #c8c5be;
-}
-
-.panels-flexible-region-24-right_regiona {
-    position: relative;
-    height: 850px;
-    width: 240px;
-    border-left: 1px solid #c8c5be;
-}
-
-.panels-flexible-region-25-center .pane-node-title {
-    font-size: 2.4em;
-    line-height: 1.2em;
-    margin: 0 0 .5em 0; /* Equivalent to 1.5em in the page's base font: 1.5 / 1.5 = 1em */
-    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
-    color: #746d5d;
-    font-weight: normal;   
-}
-
-.panels-flexible-region-25-right .pane-title {
-    font-size: 1.8em;
-    line-height: 1.2em;
-    margin: 0em 0 .5em 0; /*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
-    color: #746d5d;
-    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
-    font-weight: normal;
-}
-
-.panels-flexible-region-24-right_regiona .pane-title {
-    font-size: 1.8em;
-    line-height: 1.2em;
-    margin: 0em 0 .5em 0; /*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
-    color: #746d5d;
-    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
-    font-weight: normal;
-}
-
-.panels-flexible-region-28-header .pane-node-title .pane-content {
-    font-size: 2.4em;
-    line-height: 1.2em;
-    margin: 0.75em 0;
-    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
-    /* 0.75em is equivalent to 1.5em in the page's base font. font. Remember, a
-     margin specified in ems is relative to the element's font-size, not to the
-     pages' base font size. So, for example, if we want a 1.5em margin (relative
-     to the base font), we have to divide that length by the element's
-     font-size:  1.5em / 2em = 0.5em  */
-    font-weight: normal;
-    position: relative;
-    top: 0px;
-    left: 50px;
-    color: #fff;
-}
-
-.panels-flexible-region-28-main-row {
-    position: relative;
-    left: 30px;
-    top: -300px;
-}
-
-.panels-flexible-region-28-right {
-    padding: 0 0 0 20px;
-}
-
-.panels-flexible-region-28-center .pane-node-field-partners {
-    border-top: 1px solid #c8c5be;
-    padding-top: 20px;
-}
-
-.panels-flexible-region-28-center-inside {
-    padding: 0 20px 0 0;
-    border-right: 1px solid #c8c5be;
-}
-
-.panels-flexible-row-28-2 {
-    padding: 0 30px 0px 30px;
-}
-
-.panels-flexible-row-28-2-inside {
-    padding: 0 0 20px 0;
-    border-bottom: 1px solid #c8c5be;
-}
-
-.panels-flexible-row-28-2 .pane-node-field-eventintro {
-    width: 460px;
-}
-
-.panels-flexible-region-28-header_images_left {
-    position: relative;
-    top: 0px;
-    left: 30px;
-}
-
-.panels-flexible-region-28-events_right_top {
-    position: relative;
-    left: -30px;
-}
-
-.panels-flexible-region-28-header_images_right {
-    position: relative;
-    top: 0px;
-    left: 30px;
-}
-
-.panels-flexible-region-25-right .pane-content {
-    position: relative;
-    top: -10px;
-}
-
-.panels-flexible-region-24-right_regiona .pane-content {
-    position: relative;
-    top: -10px;
-}
-
-.panels-flexible-row-28-main-row {
-    padding: 20px 30px 0 30px;
-}
-
-.panels-flexible-row-28-main-row .views-field-field-righttextcolumn {
-    padding: 0 0 0 20px;
-}
-
-.view-id-recentblogs .views-label-name {
-    line-height: 1.1em !important;
-    margin: 0 !important;
-}
-
-.pane-recentblogs {
-    position: relative;
-    top: 30px;
-}
-
-/*.st_facebook_hcount {
-    position: relative;
-    top: -355px;
-}
-
-.st_twitter_hcount {
-    position: relative;
-    top: -355px;
-}
-
-.st_email_hcount {
-    position: relative;
-    top: -355px;
-}
-
-.st_plusone_hcount {
-    position: relative;
-    top: -355px;
-}
-
-.st_sharethis_hcount {
-    position: relative;
-    top: -355px;
-}*/
-/* National Parks Pages */
-
-.panels-flexible-region-7-content_right {
-    position: relative;
-    top: -15px
-}
-
-.panels-flexible-region-7-left {
-    position: relative;
-    top: -20px;
-}
-
-.panels-flexible-region-7-content_right-inside .view-taxonomy-term .field-content {
-    width: 160px;
-    height: 42px;
-}
-
-.panels-flexible-region-7-content_right-inside .row-1 {
-    border-bottom: 1px solid #c8c5be;
-}
-
-.panels-flexible-region-7-content_right-inside .row-2 {
-    border-bottom: 1px solid #c8c5be;
-    margin: 15px 0 30px 0;
-}
-
-.panels-flexible-row-25-main-row .content {
-    position: relative;
-    top: 40px
-}
-
-.panels-flexible-region-6-content_right-inside
-
-.pane-taxonomy-term-panel-pane-24 .pane-title {
-    font-size: 1.8em;
-}
-
-/* Home Page */
-
-
-/*.panels-flexible-region-21-content_right-inside .view-template-b-content p {
-    position: relative;
-    top: 20px;
-}
-
-/*.views-field.views-field-body {
-    position: relative;
-    top: -20px;
-}*/
-
-
-/**************/
-/* Promotions */
-
-.view-promotions.view-display-id-block,
-.panels-flexible-region-7-centermost .view-display-id-panel_pane_3,
-.panels-flexible-region-7-centermost .view-display-id-panel_pane_8 {
-    background: #8ab960;
-    padding: 10px 10px 10px 10px !important;
-    border: 4px solid #fff;
-    outline: 1px solid #8ab960;
-    color: #fff !important;
-}
-
-.view-promotions.view-display-id-block .col-1,
-.panels-flexible-region-7-centermost .view-display-id-panel_pane_3 .col-1,
-.panels-flexible-region-7-centermost .view-display-id-panel_pane_8 .col-1 {
-    color: #fff !important;
-    padding: 0;
-}
-
-.view-promotions.view-display-id-block h3,
-.panels-flexible-region-7-centermost .view-display-id-panel_pane_3 h3,
-.panels-flexible-region-7-centermost .view-display-id-panel_pane_8 h3 {
-    color: #fff !important;
-}
-
-.view-promotions.view-display-id-block a
-.panels-flexible-region-7-centermost .view-display-id-panel_pane_3 a 
-.panels-flexible-region-7-centermost .view-display-id-panel_pane_8 a {
-    color: #fff !important;
-}
-
-.panels-flexible-region-7-centermost .pane-promotions-panel-pane-3,
-.panels-flexible-region-7-centermost .pane-promotions-panel-pane-4,
-.panels-flexible-region-7-centermost .pane-promotions-panel-pane-7,
-.panels-flexible-region-7-centermost .pane-promotions-panel-pane-8 {
-    position: relative;
-    top: 0px;
-    left: 20px;
-}
-
-/* Grey with Green Border */
-
-.view-promotions.view-display-id-block_1 {
-    background: #f0f6eb;
-    padding: 10px 10px 10px 10px !important;
-    border: 4px solid #fff;
-    outline: 1px solid #8ab960;
-}
-
-.panels-flexible-region-7-centermost .view-display-id-panel_pane_4,
-.panels-flexible-region-7-centermost .pane-promotions-panel-pane-7 {
-    background: #f0f6eb;
-    padding: 10px 10px 10px 10px !important;
-    border: 4px solid #fff;
-    outline: 1px solid #8ab960;
-}
-
-.view-promotions.view-display-id-block_1 .col-1,
-.view-display-id-panel_pane_4 {
-
-}
-
-.view-promotions.view-display-id-block_1 h3 {
-
-}
-
-.view-promotions.view-display-id-block_1 a {
-
-}
-
-/*************************/*
-
-.views-label-field-requestinformation {
-    text-align: center;
-    background: #8ab960;
-    padding: 10px 0 10px 0;
-    color: #fff !important;
-}
-
-
-/*.panels-flexible-region-32-center .view-promotions {
-    position: relative;
-    left: 20px;
-    top: 60px;
-}*/
-
-/* Newscomm */
-
-.panels-flexible-region-12-rightmost-inside {
-    padding-left: 25px;
-    position: relative;
-    float: right;
-}
-
-.panels-flexible-region-12-right_regiona-inside .view-promotions {
-    position: relative;
-    left: 20px;
-    width: 190px;
-}
-
-.panels-flexible-region-29-leftmost {
-    border-right: 1px solid #c8c5be;
-}
-
-.panels-flexible-region-29-centermost-inside {
-    padding-left: 30px;
-}
-
-#communityspotlight .views-field-title {
-    position: relative;
-    left: 20px;
-    width: 280px;
-}
-
-.view-display-id-panel_pane_19 {
-    position: relative;
-    border-left: 1px solid #c8c5be;
-    padding: 0 0 0 10px;
-}
-
-.panels-flexible-region-12-right_rail .view-id-dom-8 img {
-    border:none !important;
-}
-
-.panels-flexible-region-12-right_rail .views-field-title {
-    
-}
-
-#communityspotlight {
-    background: url(../images/Community-Spotlight.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-}
-
-.view-display-id-panel_pane_18 {
-    /*height: 286px;*/
-    padding: 0px 20px 0 0;
-}
-
-.pane-taxonomy-term-panel-pane-18 .view-display-id-panel_pane_18 {
-    /*height: 286px;*/
-    padding: 49px 20px 0 0;
-    border-right: 1px solid #c8c5be;
-}
-
-.pane-taxonomy-term-panel-pane-18 .view-display-id-panel_pane_18 .view-content {
-    
- 
-}
-
-.panels-flexible-row-12-1-inside {
-    width: 940px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #007239;
-}
-
-.panels-flexible-region-12-leftmost_-inside {
-    position: relative;
-    top: 25px;
-}
-
-.panels-flexible-region-12-rightmost_-inside {
-    background: url(../images/naturebridge-blog.png);
-    background-repeat: no-repeat;
-    background-position: 15px 0;
-    position: relative;
-    top: 25px;
-    left: 8px;
-    padding: 60px 0 0 15px;
-    border-left: 1px solid #c8c5be;
-
-}
-
-.blogroll-title a {
-
-}
-
-.blogroll-title {
-    position: relative;
-}
-
-.panels-flexible-region-12-center {
-    border-bottom: 1px solid #c8c5be;
-    padding-bottom: 40px;
-    top: 10px;
-}
-
-#twitterblock {
-    background: url(../images/latesttweet.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-    position: relative;
-    left: 20px;
-    padding: 40px 0 0 0;
-}
-
-#facebookblock {
-    background: url(../images/latestpost.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-    position: relative;
-    padding: 40px 0 0 0;
-}
-
-#videoblock {
-    background: url(../images/youtube.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-    position: relative;
-    top: 20px;
-    padding: 40px 0 0 0;
-}
-
-#newsblock {
-    background: url(../images/newsheader2.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-    position: relative;
-    top: 20px;
-    left: 20px;
-    padding: 25px 0 0 0;
-}
-
-#featuredblog {
-    background: url(../images/featuredposts.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-    position: relative;
-    padding: 40px 0 0 0;
-}
-
-#recentpostsblog {
-    background: url(../images/recentpostsblog.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-    position: relative;
-    padding: 40px 0 0 0;
-}
-
-#recentevents {
-    background: url(../images/upcoming-events.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-    position: relative;
-    top: 20px;
-    left: 20px;
-    padding: 25px 0 0 0;
-}
-
-#featuredevents {
-    background: url(../images/featurednewsevents.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-    position: relative;
-    padding: 40px 0 0 0;
-}
-
-#recentnewsandevents {
-    background: url(../images/recentnewsevents.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-    position: relative;
-    padding: 40px 0 0 0;
-}
-
-#recentphotos {
-    background: url(../images/photoalbums.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-    position: relative;
-    padding: 40px 0 0 0;
-    top: 60px;
-}
-
-#photoslong {
-    background: url(../images/photoalbums2.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-    position: relative;
-    padding: 40px 0 0 0;
-}
-
-#videoslong {
-    background: url(../images/videos.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-    position: relative;
-    padding: 40px 0 0 0;
-}
-
-#longevents {
-    background: url(../images/eventssmallheader.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-    position: relative;
-    padding: 25px 0 0 0;
-}
-
-#longnews {
-    background: url(../images/newssmallheader.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-    position: relative;
-    padding: 25px 0 30px 0;
-}
-
-.view-id-news_roll .views-row,
-.view-id-recent_events .views-row {
-    position: relative;
-    top: 20px;
-}
-
-.panels-flexible-region-29-left-inside {
-    border-right: 1px solid #c8c5be;
-}
-
-.panels-flexible-region-29-left_region {
-    padding-left: 25px;
-}
-
-.panels-flexible-region-29-left {
-    width: 325px;
-}
-
-.view-id-news_roll .views-field-title {
-    position: relative;
-    width: 300px;
-}
-
-/*.view-id-news_roll div.field-content {
-    position: relative;
-    top: 20px;
-}*/
-
-.view-id-news_roll .views-field-body {
-    position: relative;
-    width: 300px;
-}
-
-/*.pane-promotions-panel-pane-2 {
-    position: relative;
-    top: 20px;
-    left: 10px;
-}
-
-.pane-promotions-panel-pane-1 {
-    position: relative;
-    top: 40px;
-    left: 15px;
-}*/
-
-.view-news-roll .views-row {
-    width: 300px;
-    padding-bottom: 10px;
-    padding-top: 15px;
-    border-bottom: 1px dotted #c8c5be;
-}
-
-div.views-field.views-field-field-blogimage {
-    position: relative;
-    top: 10px;
-}
-
-.view-video tr.odd,
-.view-video tr.even {
-    width: 300px;
-    margin-bottom: 20px;
-    margin-top: 30px;
-    border-bottom: 1px dotted #c8c5be;
-}
-
-.view-news-roll .views-row-first {
-    padding: none !important;
-}
-
-.view-id-recent_events .views-row {
-    position: relative;
-    width: 300px;
-    padding-bottom: 10px;
-    padding-top: 15px;
-    border-bottom: 1px dotted #c8c5be;
-}
-
-div.views-field views-field-field-newdate {
-    position: relative;
-    top: 10px;
-}
-
-.view-blog tr.row-1,
-.view-blog tr.row-2,
-.view-blog tr.row-3,
-.view-blog tr.row-4,
-.view-blog tr.row-5 {
-    width: 300px;
-    position: relative;
-    top: 15px;
-    border-bottom: 1px dotted #c8c5be;
-}
-
-/*div.field-content {
-    position: relative;
-    top: 20px;
-}*/
-
-
-.panels-flexible-region-9-right_rail .view-dom-id-4 img {
-    position: relative;
-    top: 68px;
-    left: 30px;
-}
-
-#featuredblog .pane-content {
-    position: relative;
-    top: 20px;
-}
-
-#recentpostsblog {
-    position: relative;
-    top: 30px;
-}
-
-#recentpostsblog .pane-content {
-    position: relative;
-    top: 20px;
-}
-
-.panels-flexible-row-30-2 {
-    padding: 0 30px 30px 30px;
-    position: relative;
-    top: 50px;
-}
-
-.panels-flexible-region-30-center__-inside .pane-node-title {
-    font-size: 1.8em;
-    line-height: 1.2em;
-    margin: 0em 0 .5em 0; /*Equivalent to 1.5em in the page's base font: 1.5 / 1.3 = 1.154 */
-    color: #746d5d;
-    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
-    font-weight: normal;
-}
-
-.panels-flexible-region-12-right_rail-inside .views-field-title {
-    position: relative;
-    vertical-align: top;
-}
-
-/* borders for images */
-
-
-
-.field-slideshow-0-pager li {
-    padding-right: 10px;
-}
-/*
- * Tables
- *
- * Drupal provides table styling which is only useful for its admin section
- * forms, so we override this default CSS. (We set it back in forms.css.)
- */
-table {
-  border-collapse: collapse;
-  /* width: 100%; */ /* Prevent cramped-looking tables */
-}
-
-th {
-  text-align: left; /* LTR */
-  padding: 0;
-  border-bottom: none;
-}
-
-tbody {
-  border-top: none;
-}
-
-thead {
-}
-
-tfoot {
-}
-
-caption {
-}
-
-colgroup {
-}
-
-col {
-}
-
-tr {
-    vertical-align: top;
-
-}
-
-.row-2 {
-    padding: 20px 0 0 0;
-}
-
-
-td {
-    /*vertical-align: top;*/
-    /*width: 220px;*/
-}
-
-.col-1 {
-    padding: 0px 10px 15px 0;
-}
-
-.col-2 {
-    padding: 0px 10px 15px 10px;
-}
-
-.col-3 {
-    padding: 0px 0px 15px 10px;
-}
-
-
-
-
-
-
-/*.panels-flexible-region-columnleft {
-    padding-left: 40px;
-}
-
-.panels-flexible-region-columnmiddle {
-    padding-left: 0px;
-}
-
-.panels-flexible-region-columnright {
-    padding-left: 0px;
-}*/
-
-/*
- * Forms
- */
-form {
-  margin: 0;
-  padding: 0;
-}
-
-fieldset {
-  padding: 0.5em;
-}
-
-legend {
-}
-
-label {
-}
-
-input {
-}
-
-select {
-}
-
-optgroup {
-}
-
-option {
-}
-
-textarea {
-}
-
-button {
-}
-
-/*
- * Links
- *
- * The order of link states are based on Eric Meyer's article:
- * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
- */
-a:link {
-    color: #007239;
-    text-decoration: none !important;
-}
-
-a:visited {
-    color: #007239;
-
-}
-
-a:hover,
-a:focus {
-
-}
-
-img:hover,
-img:focus {
-    
-}
-
-a:active {
-}
-
-
-
-/*
- * Other inline elements
- */
-img {
-  border: 0;
-  /* vertical-align: bottom; */ /* Suppress the space beneath the baseline */
-   
-}
-
-/*.border {
-    border: 1px solid #c8c5be;
-    padding: 2px;
-}
-
-.border:hover,
-.border:focus {
-    outline: 3px solid #6da838;
-}*/
-
-/***************** File Aggregation********************/
-
-/**
- * @file
- * Wireframes Styling
- *
- * Add wireframes to the basic layout elements.
- */
-
-
-.with-wireframes #header .section,
-.with-wireframes #content .section,
-.with-wireframes #navigation .section,
-.with-wireframes .region-sidebar-first .section,
-.with-wireframes .region-sidebar-second .section,
-.with-wireframes .region-footer,
-.with-wireframes .region-bottom {
-    outline: 1px solid #ccc;
-}
-
-/**
- * @file
- * Comment Styling
- */
-
-
-#comments /* Wrapper for the list of comments and its title */ {
-    margin: 1.5em 0;
-}
-
-#comments h2.title /* Heading for the list of comments */ {
-}
-
-#comments h2.comment-form /* Heading for the comment form */ {
-}
-
-.comment /* Wrapper for a single comment */ {
-}
-
-.comment-preview /* Preview of the comment before submitting new or updated comment */ {
-    background-color: #ffffea; /* Drupal core will use a #ffffea background. See #1110842 */
-}
-
-.comment.new /* A new comment since the user last viewed the page. */ {
-}
-
-.comment.first /* The first comment in the list of comments */ {
-}
-
-.comment.last /* The last comment in the list of comments */ {
-}
-
-.comment.odd /* An odd-numbered comment in the list of comments */ {
-}
-
-.comment.even /* An even-numbered comment in the list of comments */ {
-}
-
-.comment-unpublished /* Unpublished comments */ {
-    /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
-}
-
-.comment-unpublished div.unpublished /* The word "Unpublished" displayed underneath the content. See also the div.unpublished declaration in the nodes.css. */ {
-}
-
-.comment-by-anonymous /* A comment created by an anonymous user */ {
-}
-
-.comment-by-node-author /* A comment created by the node's author */ {
-}
-
-.comment-by-viewer /* A comment created by the current user */ {
-}
-
-h3.comment-title /* Comment title */ {
-}
-
-.new /* "New" marker for comments that are new for the current user */ {
-    color: #c00;
-}
-
-.comment .user-picture /* The picture of the comment author */ {
-}
-
-.comment .submitted /* The "posted by" information */ {
-}
-
-.comment .content /* Comment's content wrapper */ {
-}
-
-.comment .user-signature /* The user's signature */ {
-}
-
-.comment ul.links /* Comment links. See also the ul.links declaration in the pages.css. */ {
-}
-
-.indented /* Nested comments are indented */ {
-    /* margin-left: 25px; */ /* Drupal core uses a 25px left margin */
-}
-
-/**
- * @file
- * Block Styling
- */
-
-
-.block /* Block wrapper */ {
-    /*margin-bottom: 1.5em;*/
-}
-
-.block.first /* The first block in the region */ {
-}
-
-.block.last /* The last block in the region */ {
-}
-
-.block.odd /* Zebra striping for each block in the region */ {
-}
-
-.block.even /* Zebra striping for each block in the region */ {
-}
-
-h2.block-title /* Block title */ {
-}
-
-.block .content /* Block's content wrapper */ {
-}
-
-#block-aggregator-category-1 /* Block for the latest news items in the first category */ {
-}
-
-#block-aggregator-feed-1 /* Block for the latest news items in the first feed */ {
-}
-
-#block-block-1 /* First block created with "Add block" link */ {
-}
-
-#block-blog-recent /* "Recent blog posts" block */ {
-}
-
-#block-book-navigation /* "Book navigation" block for the current book's table of contents */ {
-}
-
-#block-comment-recent /* "Recent comments" block */ {
-}
-
-#block-forum-active /* "Active forum topics" block */ {
-}
-
-#block-forum-new /* "New forum topics" block */ {
-}
-
-#block-locale-language /* Language switcher block */ {
-}
-
-#block-menu-menu-NAME /* Custom menu block  */ {
-}
-
-#block-node-recent /* "Recent content" block */ {
-}
-
-#block-node-syndicate /* "Syndicate" block for primary RSS feed; see also page.css's .feed-icon */ {
-}
-
-#block-poll-recent /* "Most recent poll" block */ {
-}
-
-#block-profile-author-information /* "Author information" block for the profile of the page's author */ {
-}
-
-#block-search-form /* "Search form" block */ {
-}
-
-#block-shortcut-shortcuts /* "Shortcuts" block */ {
-}
-
-#block-statistics-popular /* "Popular content" block */ {
-}
-
-#block-system-main-menu /* "Main menu" block */ {
-}
-
-#block-system-management /* "Management" block for Drupal management menu */ {
-}
-
-#block-system-navigation /* "Navigation" block for Drupal navigation menu */ {
-}
-
-#block-system-user-menu /* "User menu" block for Drupal user menu */ {
-}
-
-#block-system-help /* "System help" block */ {
-}
-
-#block-system-main /* "Main page content" block */ {
-}
-
-#block-system-powered-by /* "Powered by Drupal" block */ {
-}
-
-#block-user-login /* "User login form" block */ {
-}
-
-#block-user-new /* "Who's new" block for a list of the newest users */ {
-}
-
-#block-user-online /* "Who's online" block for a list of the online users */ {
-}
-
-/**
- * @file
- * Views Styling
- */
-
-
-spotlightimg {
-    position: absolute;
-    top: 50px;
-}
-
-abbr, /* Abbreviations */
-acronym {
-  border-bottom: 1px dotted #666;
-  cursor: help;
-  white-space: nowrap;
-}
-
-/**
- * @file
- * Field Styling
- */
-
-
-.field /* Wrapper for any field. */ {
-}
-
-/*
- * Field types (Core)
- */
-.field-type-text {
-}
-
-.field-type-text-long {
-}
-
-.field-type-text-with-summary {
-}
-
-.field-type-image {
-}
-
-.field-type-file {
-}
-
-.field-type-taxonomy-term-reference {
-}
-
-.field-type-number-integer {
-}
-
-.field-type-number-decimal {
-}
-
-.field-type-number-float {
-}
-
-.field-type-list-text {
-}
-
-.field-type-list-boolean {
-}
-
-.field-type-list-integer {
-}
-
-.field-type-list-float {
-}
-
-/*
- * Field types (Contrib)
- */
-.field-type-datetime /* Always use "datetime" when creating new CCK date fields. "date" and "datestamp" are legacy types. */ {
-}
-
-.field-type-node-reference {
-}
-
-.field-type-user-reference {
-}
-
-.field-type-image-smallimage {
-    position: absolute;
-    top: 30;
-}
-
-/*
- * Named fields
- */
-.field-name-body {
-}
-
-.field-name-field-image {
-}
-
-.field-name-field-tags {
-}
-
-.field-name-field-FIELDNAME /* Underscores in field name are replaced with dashes. */ {
-}
-
-/**
- * @file
- * Node Styling
- *
- * Style anything that isn't in the $content variable.
- */
-
-
-.node /* Node wrapper */ {
-}
-
-.preview .node /* Preview of the content before submitting new or updated content */ {
-    /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
-}
-
-.node-promoted /* A node that has been promoted to the front page */ {
-}
-
-.node-sticky /* A sticky node (displayed before others in a list) */ {
-}
-
-.node-unpublished /* Unpublished nodes */ {
-    /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
-}
-
-.node-unpublished div.unpublished,
-.comment-unpublished div.unpublished /* The word "Unpublished" displayed underneath the content. */ {
-    height: 0;
-    overflow: visible;
-    color: #d8d8d8;
-    font-size: 75px;
-    line-height: 1;
-    font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    word-wrap: break-word; /* A very nice CSS3 property */
-}
-
-.node-by-viewer /* A node created by the current user */ {
-}
-
-.node-teaser /* A node displayed as teaser */ {
-}
-
-/* All nodes are given a node-FOO class that describes the type of content that
- * it is. If you create a new content type called "my-custom-type", it will
- * receive a "node-my-custom-type" class.
- */
-.node-page /* Page content node */ {
-}
-
-.node-article /* Article content node */ {
-}
-
-h2.node-title /* Node title */ {
-}
-
-.node .user-picture /* The picture of the node author */ {
-}
-
-.node .submitted /* The "posted by" information */ {
-}
-
-.node .content /* Node's content wrapper */ {
-}
-
-.node ul.links /* Node links. See also the ul.links declaration in the pages.css. */ {
-}
-
-/**
- * @file
- * Page Styling
- *
- * Style the markup found in page.tpl.php. Also includes some styling of
- * miscellaneous Drupal elements that appear in the $content variable, such as
- * ul.links, .pager, .more-link, etc.
- */
-
-
-/*
- * Body
- */
-body {
-    margin: 0;
-    padding: 0;
-}
-
-#page-wrapper {
-}
-
-#page {
-}
-
-/*
- * The skip-link link will be completely hidden until a user tabs to the link.
- * See the element-focusable rule in system.base.css.
- */
-#skip-link a,
-#skip-link a:visited {
-    display: block;
-    width: 100%;
-    padding: 2px 0 3px 0;
-    text-align: center;
-    background-color: #666;
-    color: #fff;
-}
-
-/*
- * Header
- */
-#header {
-    
-}
-
-#header,
-#main {
-   
-}
-
-#header .section {
-}
-
-#logo /* Wrapping link for logo */ {
-    /*float: left; /* LTR */
-    margin: 0;
-    padding: 0;
-}
-
-#logo img {
-    vertical-align: bottom;
-}
-
-#name-and-slogan /* Wrapper for website name and slogan */ {
-    float: left;
-}
-
-h1#site-name,
-div#site-name /* The name of the website */ {
-    margin: 0;
-    font-size: 2em;
-    line-height: 1.5em;
-}
-
-#site-name a:link,
-#site-name a:visited {
-    color: #000;
-    text-decoration: none;
-}
-
-#site-name a:hover,
-#site-name a:focus {
-    text-decoration: underline;
-}
-
-#site-slogan /* The slogan (or tagline) of a website */ {
-}
-
-.region-header /* Wrapper for any blocks placed in the header region */ {
-    clear: both; /* Clear the logo */
-}
-
-/*
- * Main (container for everything else)
- */
-#main-wrapper {
-}
-
->>>>>>> Stashed changes
 #main {
 }
 
@@ -4591,25 +3189,19 @@ div.messages ul {
 }
 
 div.status /* Normal priority messages */ {
-<<<<<<< Updated upstream
     z-index: 30;
     position: absolute;
     bottom: 0px;
     right: 0px;
-=======
->>>>>>> Stashed changes
 }
 
 div.warning,
 tr.warning /* Medium priority messages */ {
     /* border: 1px solid #f0c020; */ /* Drupal core uses: 1px solid #f0c020 */
-<<<<<<< Updated upstream
     z-index: 30;
     position: absolute;
     bottom: 40px;
     right: 0px;
-=======
->>>>>>> Stashed changes
 }
 
 div.error,
@@ -4660,11 +3252,8 @@ ul.links li {
 }
 
 .more-link /* Aggregator, blog, and forum more link */ {
-<<<<<<< Updated upstream
 	padding: 10px 0 10px 0;
 	text-align: left !important;
-=======
->>>>>>> Stashed changes
 }
 
 /*
@@ -4924,7 +3513,6 @@ ul.secondary li {
     padding: 5px 0;
     border-right: none; /* LTR */
 }
-<<<<<<< Updated upstream
 
 ul.secondary a {
     display: block;
@@ -4958,41 +3546,6 @@ ul.secondary a.active:focus {
     background: url(../images/tab-secondary.png) repeat-x left top;
 }
 
-=======
-
-ul.secondary a {
-    display: block;
-    height: 24px;
-    margin: 0;
-    padding: 0;
-    border: 1px solid #c0c0c0;
-    text-decoration: none;
-    color: #777;
-    background: url(../images/tab-secondary.png) repeat-x left -56px;
-}
-
-ul.secondary a .tab {
-    display: block;
-    height: 18px; /* 24px (parent) - 6px (padding) */
-    margin: 0;
-    padding: 3px 8px;
-    line-height: 18px;
-}
-
-ul.secondary a:hover,
-ul.secondary a:focus {
-    background: url(../images/tab-secondary.png) repeat-x left bottom;
-}
-
-ul.secondary a.active,
-ul.secondary a.active:hover,
-ul.secondary a.active:focus {
-    border: 1px solid #c0c0c0;
-    color: #000;
-    background: url(../images/tab-secondary.png) repeat-x left top;
-}
-
->>>>>>> Stashed changes
 
 
 q {
@@ -5056,3 +3609,327 @@ sup {
   width: 49%;
 }
 /* End Twitter Feed Styles */
+
+/* Press room */
+
+#longpress {
+background: url(../images/longpress.png);
+background-repeat: no-repeat;
+background-position: top left;
+position: relative;
+padding: 25px 0 30px 0;
+left: 20px;
+}
+
+.panels-flexible-region-69-centermost {
+	position: relative;
+	left: -30px;
+}
+
+.node-webform h2.node-title a {
+	color: #fff;
+	position: absolute;
+	top: -40px;
+	left: 23px;
+}
+
+.view-webform div.content {
+	position: relative;
+	top: 30px;
+}
+
+.panels-flexible-row-71-main-row .pane-promotions {
+	padding-bottom: 20px;
+}
+
+/*.spotlighttitle {
+		width: 130px;
+		font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+		font-size: 1.6em;
+		right: 20px;
+		position: relative;
+		line-height: 1.2em;
+}*/
+
+.node-type-webform .panels-flexible-row-61-5 {
+	padding: 0 30px 0 30px !important;
+}
+
+.spotlightbody {
+	width: 130px;
+	font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+	font-size: 1.1em;
+	right: 20px;
+position: relative;
+}
+
+.requestinfotitle {
+text-align: center;
+background: #8AB960;
+padding: 10px 0 10px 0;
+color: white !important;
+}
+
+.requestinfotitle a {
+color: white !important;
+}
+
+.view-id-taxonomy_term.view-display-id-panel_pane_27 {
+	position: absolute;
+	bottom: 82px;
+	right: 0px;
+}
+
+.pane-sharethis-block-sharethis-block {
+	padding-top: 10px;
+}
+
+.view-display-id-panel_pane_26 td.col-1.col-first,
+.view-display-id-panel_pane_26 td.col-2 {
+	width: 220px;
+}
+
+.div#mini-panel-bottom_row_national_parks.panel-flexible.panels-flexible-33.clearfix {
+	border: none !important;
+}
+
+.panels-flexible-region-71-content_right td.col-2,
+.panels-flexible-region-71-content_right td.col-1 {
+	width: 220px;
+}
+
+.panels-flexible-region-75-left {
+	width: 220px;
+}
+
+.panels-flexible-region-75-right {
+	left: 20px;
+	position: relative;
+}
+
+.panels-flexible-20-inside,
+.panels-flexible-75 {
+	padding-top: 20px;
+	border-top: 1px solid #c8c5be;
+}
+
+.panels-flexible-region-71-left-inside {
+	width: 200px;
+}
+
+.panels-flexible-region-71-left_content_-inside {
+	width: 460px;
+}
+
+.panels-flexible-region-71-left_content_ {
+	border-right: 1px solid #c8c5be;
+}
+
+.pane-node-field-eventintro ul {
+	list-style-type: disc;
+	left: -25px;
+	position: relative;
+	font-size: 1.1em;
+	line-height: 1.3em;
+}
+
+.pane-eventupperleftphoto-panel-pane-2 {
+	position: absolute;
+	top: 0px;
+	right: -16px;
+}
+
+.pane-eventupperleftphoto-panel-pane-2 img {
+	border: none !important;
+}
+
+
+/*** Bio Styling ***/
+
+#biotitle {
+	font-size: 2.4em;
+  	line-height: 1.1em;
+    margin: 0 0 0 0; /* Equivalent to 1.5em in the page's base font: 1.5 / 1.5 = 1em */
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    color: #746d5d;
+    font-weight: normal !important;
+}
+
+#biojob {
+	font-size: 1.4em;
+    margin: 0 0 0 0;
+    line-height: 1.2em;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    color: #746d5d;
+    font-weight: normal;
+}
+
+#bioquote {
+	font-size: 1.4em;
+    margin: 0 0 0 0;
+    line-height: 1.2em;
+    font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+    color: #746d5d;
+    font-weight: normal;
+	font-style: italic;
+}
+
+.panels-flexible-row-77-main-row-inside {
+	padding-left: 215px;
+}
+
+#biorecentblogs {
+	top: 10px;
+}
+
+.panels-flexible-region-77-centerbiobottom-inside {
+	margin-right: 50px;
+}
+
+.pane-node-field-inthenews {
+	top: 20px;
+	position: relative;
+}
+
+.pane-node-field-inthenews h2 {
+	font-size: 1.8em;
+}
+
+.pane-taxonomy-term-panel-pane-38 .nphead {
+	padding-bottom: 15px;
+}
+
+/*** Page Fixes ***/
+
+.panels-flexible-region-58-centermost-inside,
+.panels-flexible-region-51-centermost-inside,
+.panels-flexible-region-46-centermost-inside,
+.panels-flexible-region-42-centermost-inside,
+.panels-flexible-region-50-centermost-inside,
+.panels-flexible-region-48-centermost-inside,
+.panels-flexible-region-52-centermost-inside,
+.panels-flexible-region-40-centermost-inside,
+.panels-flexible-region-64-centermost-inside,
+.panels-flexible-region-57-centermost-inside,
+.panels-flexible-region-53-centermost-inside,
+.panels-flexible-region-59-centermost-inside {
+	margin-right: 60px;
+}
+
+/*.biotopbackground {
+	background-color: #f8f8f7 !important;
+}*/
+
+.panels-flexible-row-77-1-inside {
+	padding-left: 215px;
+}
+
+.panels-flexible-row-77-1-inside img {
+	position: absolute;
+	left: 0;
+}
+
+.page-templateahomepage-20 .pane-taxonomy-term-panel-pane-22 {
+	border-bottom: 1px solid #CCC;
+	margin-right: 20px;
+	margin-bottom: 15px;
+}
+
+.page-templateahomepage-20 .panels-flexible-region-21-leftmost .contextual-links-wrapper {
+	position: absolute;
+	top: 540px;
+	right: 770px !important;
+}
+
+.page-templateahomepage-20 .panels-flexible-region-21-leftmost h2.pane-title {
+	margin-top: 0;
+}
+
+.pane-promotions {
+	/*padding-bottom: 20px;*/
+}
+
+.page-newscomm .pane-promotions {
+	padding-bottom: 0 !important;
+}
+
+#views_slideshow_cycle_main_homepageheader-default {
+	position: absolute;
+}
+
+.views-field-field-hpheaderimage {
+	position: absolute;
+	left: 270px;
+	top: 30px
+}
+
+.views-slideshow-controls-top {
+	position: absolute;
+	left: 290px;
+	color: #fff;
+}
+
+.view-news-roll.view-display-id-block_5 td.views-field.views-field-title {
+	padding: 0 0 15px 0;
+}
+
+.view-footer-info .views-field-field-requestinformation {
+	position: absolute;
+	left: 825px;
+	top: 255px;
+	z-index: 20;
+	color: #e3e2df;
+}
+
+.view-footer-info .views-field-field-newaddress {
+	position: absolute;
+	left: 26px;
+	top: 290px;
+	z-index: 20;
+}
+
+.view-webform .views-field-field-imagetopc {
+	position: relative;
+	top: 20px;
+}
+
+.view-webform .views-field-field-imagetopright {
+	position: absolute;
+	top: 20px;
+	left: 700px;
+}
+
+/*Social Media Icons*/
+
+#node-1965 {
+	position: absolute;
+	left: 745px;
+	top: 177px;
+}
+
+#node-1976 {
+	left: 20px;
+	position: relative;
+	border-bottom: 1px solid #C8C5BE;
+	padding-bottom: 10px;
+}
+
+#node-1977 {
+	left: 20px;
+	position: relative;
+	border-bottom: 1px solid #C8C5BE;
+	padding-bottom: 10px;
+}
+	
+.panels-flexible-region-57-rightmost td.col-3,
+.panels-flexible-region-57-rightmost td.col-2 {
+	padding: 0px !important;
+}
+
+.panels-flexible-region-39-leftmost-inside {
+	width: 200px;
+}
+
+.view-id-promotions td.col-1.col-first {
+	padding: 0px !important;
+}

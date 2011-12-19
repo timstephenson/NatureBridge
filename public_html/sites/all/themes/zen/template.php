@@ -385,3 +385,9 @@ function zen_page_alter(&$page) {
     }
   }
 }
+
+function zen_process_page(&$variables) {
+  if (isset($variables['node'])) { 
+    $variables['theme_hook_suggestions'][] = 'page__'. $variables['node']->type;
+  }
+}

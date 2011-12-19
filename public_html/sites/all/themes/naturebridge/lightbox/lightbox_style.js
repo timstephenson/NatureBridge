@@ -3,11 +3,15 @@
 Drupal.behaviors.initColorboxDefaultStyle = {
   attach: function (context, settings) {
     $(document).bind('cbox_complete', function () {
-            
+      // Make sure the desired size is observed.
+      
       // Override styles that have been added inline that do not work with our format.
       $("#cboxLoadedContent").attr("style", "overflow-x: visible; overflow-y: visible;");
       $("#cboxClose").attr("style", "");
-
+      $("#cboxLoadedContent .field-slideshow").attr("style", "width: 580px; height: 435px; padding-right: 0px; padding-bottom: 0px; position: relative;");
+      $("#cboxNext").hide();
+      $("#cboxPrevious").hide();
+      $("#cboxCurrent").hide();
       // Clone the slideshow pager so it can be wrapped in a div to hide overflow.
       var slides = $("#cboxLoadedContent .field-slideshow-pager").first().clone(true)
       var width = slides.children().length * 75;
@@ -36,9 +40,9 @@ Drupal.behaviors.initColorboxDefaultStyle = {
       if ($("#image_title", context).length > 0){
         $("#image_title").html(caption);
       } else {
-        $("#cboxLoadedContent .field-slideshow-wrapper").after("<h4 id='image_title'>"+ caption +"</h4>");
+        $("#cboxLoadedContent .field-slideshow-wrapper").after("<p id='image_title'>" + caption + "</p>");
       }
-
+      
       // Add controls for scrolling the pager
       var right_button = "<div id='next-page'>Go</div>";
       var left_button = "<div id='last-page'>Go</div>";
@@ -56,18 +60,21 @@ Drupal.behaviors.initColorboxDefaultStyle = {
         });
       }
       
+      $(".photo_gallery_link").colorbox({width:500, height:500, iframe:true});
       
-      
+      // Make sure the video is the right size
+      $("#cboxContent .media-youtube-outer-wrapper").attr("style", "width: 480px; height: 360px;");
       
       // Only run if there is a title.
+      // Only run if there is a title.
       if ($('#cboxTitle:empty', context).length == false) {
-        setTimeout(function () { $('#cboxTitle', context).slideUp() }, 1500);
-        $('#cboxLoadedContent img', context).bind('mouseover', function () {
-          $('#cboxTitle', context).slideDown();
-        });
-        $('#cboxOverlay', context).bind('mouseover', function () {
-          $('#cboxTitle', context).slideUp();
-        });
+        // setTimeout(function () { $('#cboxTitle', context).slideUp() }, 1500);
+        // $('#cboxLoadedContent img', context).bind('mouseover', function () {
+        //   $('#cboxTitle', context).slideDown();
+        // });
+        // $('#cboxOverlay', context).bind('mouseover', function () {
+        //   $('#cboxTitle', context).slideUp();
+        // });
       }
       else {
         $('#cboxTitle', context).hide();

@@ -225,5 +225,17 @@ ul.nice-menu li.menu-634 a:visited {
 ul.nice-menu li.menu-657 a {
 	width: 100px !important;
 }
-=======
->>>>>>> Stashed changes
+
+#headerimageba {
+	position: relative;
+	left: 270px !important;
+	top: -130px !important;
+}
+
+#beneathtitleb {
+	top: 90px;
+}
+	
+.view-id-promotions td.col-1.col-first {
+	padding: 0px;
+}

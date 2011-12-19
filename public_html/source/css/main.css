@@ -1,0 +1,264 @@
+
+/*-  CSS "libraries"
+----------------------------------------------------------------------*/
+@import url("reset.css");
+
+
+/*-  Core, patch-free design
+----------------------------------------------------------------------*/
+@import url("core.css");
+
+
+/*-  Browser-specific patches
+----------------------------------------------------------------------*/
+/*\*//*/
+@import url("patches/mac-ie5.css");
+/**/
+
+body{
+	background-image: url('../img/bg_repeat.png');
+	background-position: 0 565px;
+	background-repeat: repeat-x;
+	font-family: "Trebuchet MS";
+	text-align: center;
+}
+
+h1{
+	color: #527749;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+p{
+	font-size: 14px;
+	line-height: 175%;
+}
+
+a{
+	color: #73A93F;
+	text-decoration: none;
+	border-bottom: 1px dotted #73A93F;
+}
+
+a:visited{
+	color: #527749;
+}
+
+a:hover{
+	color: #527749;
+}
+
+#wrapper{
+	margin: 0 auto;
+	text-align: left;
+	/*width: 1280px;*/
+}
+
+#flashWrapper {
+	background-image: url(../img/placeholder_swf.jpg);
+	background-repeat: no-repeat;
+    background-position: center center;
+    height:565px;
+    overflow:hidden;
+    width: 100%;
+}
+
+#flashContent{
+	margin: 0;
+    height:770px;
+    padding: 0;
+	/*width: 1280px; 1600px;*/ 
+    width:100%;
+}
+
+.playerButton{
+	width: 300px;
+	height: 100px;
+	position: absolute;
+	top: 335px;
+	left: 50%;
+	margin-left: 150px;
+}
+
+/*-  Navigation
+----------------------------------------------------------------------*/
+#navigation{
+	/*margin-left: 160px;*/
+	margin: 0 auto;
+    text-align:center;
+	height: 41px;
+	width: 960px;
+}
+
+.nav_ele{
+	list-style: none;
+}
+
+.nav_ele li{
+	display: block;
+	float: left;
+	padding: 10px 0 0 35px;
+	text-shadow: 1px 1px 1px #444;
+}
+
+.nav_ele li:first-child{
+	padding-left:0;	
+}
+
+.nav_ele li a{
+	border: none;
+	font-size: 21px;
+	color:#FFF;
+}
+
+.nav_ele li a:hover{
+	border: none;
+	color:#DAFF57;
+}
+
+/*-  Content
+----------------------------------------------------------------------*/
+#content{
+	margin: 0 auto;
+	width: 960px;
+}
+
+#mainContent{
+	width: 612px;
+	float: left;
+}
+
+#mainContent h1{
+	margin-top: 65px;
+}
+
+img.content{
+	float:left;
+	margin: 0 10px 10px 0px;
+}
+
+#sidebar{
+	float: right;
+	margin-top: 65px;
+	width: 318px;
+}
+
+#sidebar h1{
+	font-size: 21px;
+	margin-bottom: 24px;
+}
+
+#sidebar h2{
+	color: #6F875E;
+	font-size: 16px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+.sidebar_item{
+	background-color: #f3f8ee;
+	padding: 14px;
+}
+
+.video_thumb{
+	border: 1px solid gray;
+	display: block;
+	height: 164px;
+	margin: 0 auto 15px auto;
+	width: 280px;
+}
+
+.video_thumb img{
+	border: 5px solid white;
+	margin: 0;
+}
+
+.video_thumb a.play{
+	position:absolute;
+	background-image:url(../img/play.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	width:278px;
+	height:163px;
+	border:none;
+}
+
+.video_thumb a.play:hover{
+	background-image:url(../img/play_over.png);	
+}
+
+a.see_more {
+	font-style:italic;	
+}
+
+.date{
+	background-image: url(../img/blog_date.png);
+	background-repeat: no-repeat;
+	color: white;
+	height: 34px;
+	margin-top: 25px;
+	margin-bottom: 5px;
+	padding-top: 2px;
+	padding-left: 22px;
+	position: relative;
+	left: -21px;
+	width: 184px;
+	text-shadow: 1px 1px 1px #666;
+}
+
+.first{
+	margin-top: 0;
+}
+
+a.entry_title, a.entry_title:hover, a.entry_title:visited{
+	border:none;
+}
+	
+
+/*-  Footer
+----------------------------------------------------------------------*/
+#footer{
+	background-image: url('../img/footer_repeat.png');
+	background-repeat: repeat-x;
+	margin-top: 30px;
+	height: 340px;
+	width: 100%;
+	border-top:thin solid #73A93F;
+}
+
+#footer_content{
+	position: relative;
+	margin: 30px auto;
+	width: 895px;
+	padding-bottom: 10px;
+	border-bottom: thin solid #73A93F;
+}
+
+#footer_content img{
+	float: left;	
+}
+
+#footer ul{
+	list-style: none;	
+}
+
+#footer li {
+	display: inline;
+	padding: 10px 0 0 35px;
+}
+
+#footer li a {
+	font-size: 18px;
+	color: #73A93F;
+	border: none;
+}
+
+#footer li a:hover{
+	color: #527749;
+}
+
+/*-  Utils
+----------------------------------------------------------------------*/
+.clear{
+	clear: both;
+}

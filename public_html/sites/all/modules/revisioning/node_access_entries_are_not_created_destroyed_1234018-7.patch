@@ -1,0 +1,44 @@
+diff --git a/revisioning.module b/revisioning.module
+index 53683b6..434b812 100644
+--- a/revisioning.module
++++ b/revisioning.module
+@@ -566,6 +566,13 @@ function revisioning_node_update($node) {
+     revisioning_update_taxonomy_index($node); // fix for [#962664]
+   }
+ 
++  // check to see if the node has a current_status property and update the
++  // node status to allow node_save()'s call to node_access_acquire_grants()
++  // to create the correct node_access entry for the current_status
++  if (isset($node->current_status)) {
++    $node->status = $node->current_status;
++  }
++
+   if (empty($node->revision_moderation)) {
+     return;
+   }
+diff --git a/revisioning_api.inc b/revisioning_api.inc
+index 46ff64d..4cd7613 100644
+--- a/revisioning_api.inc
++++ b/revisioning_api.inc
+@@ -330,6 +330,10 @@ function _revisioning_unpublish_node($nid_or_node) {
+     ->condition('vid', $node->vid)
+     ->execute();
+ 
++  // update node_access table
++  $node->status = NODE_NOT_PUBLISHED;
++  node_access_acquire_grants($node);
++
+   cache_clear_all(); // requried?
+ }
+ 
+@@ -424,6 +428,10 @@ function _revisioning_publish_revision(&$node_revision) {
+     revisioning_update_taxonomy_index($node_revision);
+   }
+ 
++  // update node_access table
++  $node_revision->status = NODE_PUBLISHED;
++  node_access_acquire_grants($node_revision);
++
+   cache_clear_all(); // ? required ?
+ 
+   watchdog('content', 'Published rev #%revision of @type %title', array('@type' => $node_revision->type, '%title' => $node_revision->title, '%revision' => $node_revision->vid), WATCHDOG_NOTICE, l(t('view'), "node/$node_revision->nid/revisions/$node_revision->vid/view"));

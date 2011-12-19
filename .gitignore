@@ -3,3 +3,4 @@ logs/*
 public_html/sites/default/settings.php
 public_html/sites/default/files/feeds
 public_html/sites/default/files/xmlsitemap
+public_html/sites/default/files/*

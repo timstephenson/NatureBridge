@@ -4,25 +4,27 @@ div.footermap
   height: 100%;
   display: inline;
   margin: 0 auto;
-  text-align: left;
   position: absolute;
-  right: 20px;
-  
+  right: 30px;
 }
 
 div.footermap a {
   color: #f1f0ee !important;  
+  font-size: 10px;
 }
 
 div.footermap-col
 {
   float: left;
   margin: 0 0 0 20px;
-    height: 200px;
+  height: 200px;
 }
-
+#footermap-col-main-menu h3 {
+  display: none;
+}
 .footermap-header {
     height: 200px;
+    position: relative;
 }
 
 li.footermap-item {
@@ -33,107 +35,105 @@ li.footermap-item {
   list-style-image: none;
   margin: 0 0 5px;
   padding: 0px;
+  width: 160px;
 }
-
+/*
+  News Events and Community
+*/
 #footermap-item-669 {
     font-weight: bold;
-    margin-bottom: 5px;
     height: 40px;
+    margin-bottom: 5px;
+    position: absolute;
+    top: 30px;
     width: 80px;
+    right: 63px;
 }
+#footermap-item-674 { position: absolute; right: -16px; top: 75px; }
+#footermap-item-675 { position: absolute; right: -16px; top: 93px; }
+#footermap-item-676 { position: absolute; right: -16px; top: 111px; }
 
+/*
+  National Park Locations
+*/
 #footermap-item-599 {
     font-weight: bold;
-    position: relative;
-    right: 160px;
-    top: -98px;
     height: 40px;
+    position: absolute;
+    right: 224px;
+    top: 30px;
     width: 80px;
 }
+#footermap-item-629 { position: absolute; right: 145px; top: 75px; }
+#footermap-item-631 { position: absolute; right: 145px; top: 93px; }
+#footermap-item-632 { position: absolute; right: 145px; top: 111px; }
+#footermap-item-633 { position: absolute; right: 145px; top: 129px; }
+#footermap-item-634 { position: absolute; right: 145px; top: 147px; }
 
-#footermap-item-629,
-#footermap-item-631,
-#footermap-item-632,
-#footermap-item-633,
-#footermap-item-634 {
-    position: relative;
-    right: 160px;
-    top: -98px;
-}
-
+/*
+  Training and Tools
+*/
 #footermap-item-598 {
     font-weight: bold;
-    position: relative;
-    right: 320px;
-    top: -233px;
     height: 40px;
+    position: absolute;
+    right: 412px;
+    top: 30px;
     width: 50px;
 }
+#footermap-item-680 { position: absolute; right: 303px; top: 75px; }
+#footermap-item-685 { position: absolute; right: 303px; top: 93px; }
 
-#footermap-item-680,
-#footermap-item-685 {
-    position: relative;
-    right: 320px;
-    top: -233px;
-}
-
+/*
+  Family and Youth Programs
+*/
 #footermap-item-597 {
     font-weight: bold;
-    position: relative;
-    right: 480px;
-    top: -315px;
     height: 40px;
+    position: absolute;
+    right: 523px;
+    top: 30px;
     width: 100px;
 }
+#footermap-item-686 { position: absolute; right: 464px; top: 75px; }
+#footermap-item-687 { position: absolute; right: 464px; top: 93px; } 
+#footermap-item-688 { position: absolute; right: 464px; top: 111px; }
 
-#footermap-item-686,
-#footermap-item-687,
-#footermap-item-688 {
-    position: relative;
-    right: 480px;
-    top: -315px;
-}
-
+/*
+  School and Group Field Science
+*/
 #footermap-item-227 {
     font-weight: bold;
-    position: relative;
-    right: 640px;
-    top: -415px;
     height: 40px;
+    position: absolute;
+    right: 683px;
+    top: 30px;
     width: 100px;
 }
+#footermap-item-653 { position: absolute; right: 624px; top: 75px; }
+#footermap-item-654 { position: absolute; right: 624px; top: 93px; }
+#footermap-item-655 { position: absolute; right: 624px; top: 111px; }
+#footermap-item-656 { position: absolute; right: 624px; top: 129px; }
+#footermap-item-657 { position: absolute; right: 624px; top: 147px; }
 
-#footermap-item-653,
-#footermap-item-654,
-#footermap-item-655,
-#footermap-item-656,
-#footermap-item-657 {
-    position: relative;
-    right: 640px;
-    top: -415px;
-}
-
+/*
+  About Us
+*/
 #footermap-item-613 {
     font-weight: bold;
-    position: relative;
-    right: 800px;
-    top: -550px;
     height: 40px;
+    position: absolute;
+    right: 842px;
+    top: 30px;
     width: 100px;
 }
-
-#footermap-item-627,
-#footermap-item-628,
-#footermap-item-658,
-#footermap-item-659,
-#footermap-item-660,
-#footermap-item-661,
-#footermap-item-662 {
-    position: relative;
-    right: 800px;
-    top: -555px;
-}
-
+#footermap-item-627 { position: absolute; right: 783px; top: 75px; }
+#footermap-item-628 { position: absolute; right: 783px; top: 93px; }
+#footermap-item-658 { position: absolute; right: 783px; top: 111px; }
+#footermap-item-659 { position: absolute; right: 783px; top: 129px; }
+#footermap-item-660 { position: absolute; right: 783px; top: 147px; }
+#footermap-item-661 { position: absolute; right: 783px; top: 165px; }
+#footermap-item-662 { position: absolute; right: 783px; top: 183px; }
 
 
 

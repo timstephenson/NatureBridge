@@ -12,11 +12,11 @@
   /*z-index: 10;*/
 }
 
-ul.nice-menu,
+/*ul.nice-menu,
 ul.nice-menu ul {
   z-index: 5;
   position: relative;
-}
+}*/
 
 ul.nice-menu li {
   position: relative;

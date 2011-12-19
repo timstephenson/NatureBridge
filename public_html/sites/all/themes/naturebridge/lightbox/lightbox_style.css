@@ -9,6 +9,9 @@
   z-index: 9999;
   overflow: hidden;
 }
+#cboxWrapper {
+  position: relative;
+}
 #cboxOverlay {
   position: fixed;
   width: 100%;
@@ -43,7 +46,7 @@
 }
 .cboxIframe {
   width: 100%;
-  height: 100%;
+  height: 670px;
   display: block;
   border: 0;
 }
@@ -104,7 +107,7 @@
       }
       #cboxLoadedContent {
         position: relative;
-        margin-bottom: 28px;
+        margin-bottom: 20px;
       }
       #cboxLoadedContent div h3 {
         margin: -20px -20px 0 -20px;
@@ -122,6 +125,9 @@
         overflow-x: hidden;
         overflow-y: auto;
       }
+      #cboxLoadedContent div.details p {
+        font-size: 11px;
+      }
       #cboxLoadedContent div.details h3 {
         font-size: 1.3em;
         background: transparent;
@@ -134,6 +140,11 @@
         margin: 0 auto;
         margin-top: 20px;
       }
+     .field-slideshow-caption, .field-slideshow-caption-text {
+        display: none;
+        margin: 0;
+        height: 0;
+      }
       #cboxLoadedContent .media-youtube-outer-wrapper {
         width: 480px;
         margin: 0 auto;
@@ -141,12 +152,15 @@
       }
       #cboxTitle {
         position: absolute;
-        background: rgba(255, 255, 255, 0.7);
-        bottom: 28px;
-        left: 0;
-        color: #535353;
+        font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+        top: -20px;
+        left: -20px;
         width: 100%;
         padding: 4px;
+        background: #19804c;
+        color: #fff;
+        padding: 15px 20px;
+        font-size: 1.3em;
       }
       #cboxCurrent {
         position: absolute;
@@ -241,6 +255,9 @@
         text-indent: -9999px;
         cursor: pointer;
       }
+      .node-type-photo-gallery #next-page, .node-type-photo-gallery #last-page {
+         top: 470px;
+      }
 
 /* The following are fixes for IE. */
 .cboxIE6 #cboxTitle {
@@ -252,11 +269,136 @@
   height: 78px;
   overflow: hidden;
 }
+.field-slideshow-pager li {
+  margin-right: 0px;
+}
 
 #image_title {
-  margin-top: 20px;
+  margin-top: 12px;
   font-weight: normal;
-  font-size: 1.3em;
+  font-size: 11px;
   margin-left: 320px;
-  width: 300px;
+  width: 400px;
+  height: 83px;
+  overflow: hidden;
+}
+/*
+  Hide elements in galleries we don't want displayed
+*/
+#cboxLoadedContent #toolbar,
+#cboxLoadedContent #block-search-form,
+#cboxLoadedContent .status,
+#cboxLoadedContent .region-bottom,
+#cboxLoadedContent .region-page-top, 
+#cboxLoadedContent #skip-link,
+.node-type-photo-gallery #toolbar,
+.node-type-photo-gallery #block-search-form,
+.node-type-photo-gallery .status,
+.node-type-photo-gallery .region-bottom,
+.node-type-photo-gallery .region-page-top, 
+.node-type-photo-gallery #skip-link,
+.node-type-photo-gallery #comments,
+.node-type-bio #toolbar,
+.node-type-bio #block-search-form,
+.node-type-bio .status,
+.node-type-bio .region-bottom,
+.node-type-bio .region-page-top, 
+.node-type-bio #skip-link, 
+.node-type-videos #toolbar,
+.node-type-videos #block-search-form,
+.node-type-videos .status,
+.node-type-videos .region-bottom,
+.node-type-videos .region-page-top, 
+.node-type-videos #skip-link,
+.node-type-videos #comments,
+.node-type-videos .warning {
+  display: none;
+}
+/*
+#cboxLoadedContent .tabs,
+.node-type-bio .tabs,
+.node-type-photo-gallery .tabs,
+.node-type-videos .tabs,*/
+
+
+#cboxLoadedContent #page-wrapper, #cboxLoadedContent #content {
+  width: 100%;
+  margin: 0;
+  padding: 0px;
+}
+#cboxLoadedContent h1.title {
+  font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+  margin: 0px;
+  padding: 15px 20px;
+  font-size: 1.3em;
+  background: #19804c;
+  color: #fff;
+}
+#cboxLoadedContent #page-wrapper {
+  background:#f1f0ee;
+}
+
+.node-type-photo-gallery #page-wrapper, .node-type-bio  #page-wrapper {
+  width: 780px;
+  margin-top: 25px;
+  background:#f1f0ee;
+}
+.node-type-videos  #page-wrapper, .node-type-videos #content {
+  width: 500px;
+  margin-top: 25px;
+  background:#f1f0ee;
+}
+.node-type-videos h1.title {
+  position: absolute;
+  top: 400px;
+  left: 200px;
+  font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+  font-size: 16px;
+  background: transparent;
+  color: #746D5D;
+  margin: 5px 0px;
+  padding: 0px;
+}
+.node-type-videos .field-name-field-youtubeauthor {
+  margin-top: 50px;
+}
+.node-type-videos .field {
+  font-size: 11px;
+  margin-left: 200px;
+}
+.node-type-videos .field-name-field-videonew {
+  margin-left: 0px;
+}
+.node-type-videos .field-label {
+  font-weight: normal;
+}
+body.node-type-photo-gallery, body.node-type-bio, body.node-type-videos {
+  background:#f1f0ee;
+}
+.node-type-photo-gallery .field-slideshow-wrapper {
+  margin-left: 100px;
+  margin-top: 10px;
+}
+.node-type-photo-gallery .field-name-field-tags {
+  display: none;
+}
+.node-type-photo-gallery #content, .node-type-bio #content {
+  width: 100%;
+}
+.node-type-bio  #page-wrapper{
+  width: 920px;
+}
+.section-press-room #cboxClose,
+.section-leadership #cboxClose {
+  top: -15px;
+}
+.section-leadership .cboxIframe {
+  margin-top: 20px;
+  width: 100%;
+  height: 640px;
+  display: block;
+  border: 0;
+}
+.biotopbackground {
+  background:#f1f0ee;
 }

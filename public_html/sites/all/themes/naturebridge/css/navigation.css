@@ -60,8 +60,9 @@ ul.nice-menu li.menu-629 a:visited {
     background-position: 5px 5px;
     /*padding: 20px 0 0 10px;*/
     height: 78px;
-    width: 221px;
-    top: -10px
+    width: 222px;
+    top: -10px;
+	left: -445px;
 }
 
 ul.nice-menu li.menu-629 a {
@@ -90,6 +91,7 @@ ul.nice-menu li.menu-631 a:visited {
     height: 78px;
     width: 112px;
     top: -88px;
+	left: -333px;
 }
 
 ul.nice-menu li.menu-631 a {
@@ -118,6 +120,7 @@ ul.nice-menu li.menu-632 a:visited {
     height: 78px;
     width: 112px;
     top: -166px;
+	left: -222px;
 }
 
 ul.nice-menu li.menu-632 a {
@@ -145,6 +148,7 @@ ul.nice-menu li.menu-633 a:visited {
      height: 78px;
     width: 112px;
     top: -244px;
+	left: -112px
 }
 
 ul.nice-menu li.menu-633 a {
@@ -170,8 +174,9 @@ ul.nice-menu li.menu-634 a:visited {
     background-repeat: no-repeat;
     background-position: 5px 5px;
     height: 78px;
-    width: 112px;
+    width: 113px;
     top: -322px;
+	left: 0px;
 }
 
 ul.nice-menu li.menu-634 a {
@@ -225,6 +230,7 @@ ul.nice-menu li.menu-653 a:visited {
     height: 78px;
     width: 222px;
     top: -10px;
+	left: -112px;
 }
 
 ul.nice-menu li.menu-653 a {
@@ -333,8 +339,9 @@ ul.nice-menu li.menu-657 a:visited {
     background-repeat: no-repeat;
     background-position: 5px 5px;
     height: 78px;
-    width: 112px;
+    width: 113px;
     top: -322px;
+	left: 333px;
 }
 
 ul.nice-menu li.menu-657 a {
@@ -391,6 +398,7 @@ ul.nice-menu li.menu-627 a:visited {
     height: 30px;
     width: 141px;
     top: -10px;
+	left: -1px;
 }
 
 ul.nice-menu li.menu-627 a {
@@ -420,6 +428,7 @@ ul.nice-menu li.menu-628 a:visited {
     height: 16px;
     width: 141px;
     top: -10px;
+	left: -165px;
 }
 
 ul.nice-menu li.menu-628 a {
@@ -449,6 +458,7 @@ ul.nice-menu li.menu-658 a:visited {
     height: 31px;
     width: 141px;
     top: -36px;
+	left: -1px;
 }
 
 ul.nice-menu li.menu-658 a {
@@ -507,6 +517,7 @@ ul.nice-menu li.menu-660 a:visited {
     height: 17px;
     width: 305px;
     top: -115px;
+	left: 139px;
 }
 
 ul.nice-menu li.menu-660 a {
@@ -653,9 +664,9 @@ ul.nice-menu li.menu-686 a:visited {
     background-position: 5px 5px;
     /*padding: 20px 0 0 10px;*/
     height: 78px;
-    width: 221px;
+    width: 222px;
     top: -10px;
-    right: 222px;
+    right: 223px;
 }
 
 ul.nice-menu li.menu-686 a {
@@ -698,7 +709,7 @@ ul.nice-menu li.menu-687 a:visited {
     height: 78px;
     width: 112px;
     top: -88px;
-    right: 110px;
+    right: 111px;
 }
 
 ul.nice-menu li.menu-687 a {
@@ -727,7 +738,7 @@ ul.nice-menu li.menu-688 a:visited {
     height: 78px;
     width: 111px;
     top: -166px;
-    left: 0px;
+    left: -1px;
 }
 
 ul.nice-menu li.menu-688 a {
@@ -783,8 +794,9 @@ ul.nice-menu li.menu-674,
 ul.nice-menu li.menu-674 a:link,
 ul.nice-menu li.menu-674 a:visited {
     height: 31px;
-    width: 110px;
+    width: 112px;
     top: -10px;
+	left: -1px
 }
 
 ul.nice-menu li.menu-674 a {
@@ -807,8 +819,9 @@ ul.nice-menu li.menu-675,
 ul.nice-menu li.menu-675 a:link,
 ul.nice-menu li.menu-675 a:visited {
     height: 17px;
-    width: 110px;
+    width: 112px;
     top: -10px;
+	left: -1px;
 }
 
 ul.nice-menu li.menu-675 a {
@@ -835,8 +848,9 @@ ul.nice-menu li.menu-676 a:visited {
      background-position: 5px 5px;
      /*padding: 20px 0 0 10px;*/
     height: 30px;
-    width: 110px;
+    width: 112px;
     top: -10px;
+	left: -1px;
 }
 
 ul.nice-menu li.menu-676 a {
@@ -979,17 +993,10 @@ ul.nice-menu li.menu-676 a:active {
     font-size: 1.2em;
     font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
    /* z-index: 10 !important;*/
-<<<<<<< Updated upstream
-    position: absolute;
-    z-index: 19;
-    top: 50px;
-    right: 0px;
-=======
-    position: relative;
-    z-index: 19;
-    top: -40px;
-    left: 270px;
->>>>>>> Stashed changes
+	position: absolute;
+	right: 0;
+	top: 50px;
+	z-index: 19;
 }
 
 #block-nice-menus-1 a:hover {
@@ -998,17 +1005,10 @@ ul.nice-menu li.menu-676 a:active {
 }
 
 #block-nice-menus-1 {
-<<<<<<< Updated upstream
     position: absolute;
     z-index: 20;
     top: 0px;
     right: 0px;
-=======
-    position: relative;
-    z-index: 20;
-    top: -50px;
-    left: 270px;
->>>>>>> Stashed changes
 }
 
 .menu-624 {

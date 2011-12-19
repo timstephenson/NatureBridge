@@ -46,6 +46,7 @@ stylesheets[all][]        = css/nodes.css
 stylesheets[all][]        = css/comments.css
 stylesheets[all][]        = css/forms.css
 stylesheets[all][]        = css/fields.css
+stylesheets[all][]        = lightbox/lightbox_style.css
 stylesheets[print][]      = css/print.css
 
 ; Example of adding handheld stylesheets. The iPhone's preferred media type
@@ -60,6 +61,7 @@ stylesheets[print][]      = css/print.css
 ;stylesheets-conditional[IE][all][]       = css/ie.css
 stylesheets-conditional[lte IE 7][all][]  = css/ie7.css
 stylesheets-conditional[lte IE 6][all][]  = css/ie6.css
+stylesheets-conditional[lte IE 8][all][]  = css/ie8.css
 
 
 
@@ -67,7 +69,10 @@ stylesheets-conditional[lte IE 6][all][]  = css/ie6.css
 
 ;scripts[] = js/script.js
 scripts[] = js/jquery.tweet.js
+scripts[] = js/jquery.validate.js
+scripts[] = js/jquery.validation.functions.js
 scripts[] = js/app.js
+scripts[] = lightbox/lightbox_style.js
 
 
 
